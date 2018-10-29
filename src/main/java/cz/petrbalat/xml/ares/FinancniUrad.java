@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Finanční úřad (vz_podnik.k_fu)
- * 
+ *
  * <p>Java class for financni_urad complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="financni_urad">
  *   &lt;complexContent>
@@ -33,59 +33,51 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "financni_urad", propOrder = {
-    "kfu",
-    "nfu"
+  "kfu",
+  "nfu"
 })
 public class FinancniUrad {
 
-    @XmlElement(name = "KFU")
-    protected short kfu;
-    @XmlElement(name = "NFU", required = true)
-    protected String nfu;
+  @XmlElement(name = "KFU")
+  protected short kfu;
+  @XmlElement(name = "NFU", required = true)
+  protected String nfu;
 
-    /**
-     * Gets the value of the kfu property.
-     * 
-     */
-    public short getKFU() {
-        return kfu;
-    }
+  /**
+   * Gets the value of the kfu property.
+   */
+  public short getKFU() {
+    return kfu;
+  }
 
-    /**
-     * Sets the value of the kfu property.
-     * 
-     */
-    public void setKFU(short value) {
-        this.kfu = value;
-    }
+  /**
+   * Sets the value of the kfu property.
+   */
+  public void setKFU(short value) {
+    this.kfu = value;
+  }
 
-    /**
-     * Gets the value of the nfu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNFU() {
-        return nfu;
-    }
+  /**
+   * Gets the value of the nfu property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNFU() {
+    return nfu;
+  }
 
-    /**
-     * Sets the value of the nfu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNFU(String value) {
-        this.nfu = value;
-    }
+  /**
+   * Sets the value of the nfu property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNFU(String value) {
+    this.nfu = value;
+  }
 
 }

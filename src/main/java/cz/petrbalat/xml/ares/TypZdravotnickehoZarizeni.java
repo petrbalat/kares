@@ -8,18 +8,18 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigInteger;
 
 
 /**
  * <p>Java class for typ_zdravotnickeho_zarizeni complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="typ_zdravotnickeho_zarizeni">
  *   &lt;complexContent>
@@ -32,67 +32,57 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "typ_zdravotnickeho_zarizeni", propOrder = {
-    "zzk",
-    "zzn"
+  "zzk",
+  "zzn"
 })
 public class TypZdravotnickehoZarizeni {
 
-    @XmlElement(name = "ZZK")
-    protected BigInteger zzk;
-    @XmlElement(name = "ZZN")
-    protected String zzn;
+  @XmlElement(name = "ZZK")
+  protected BigInteger zzk;
+  @XmlElement(name = "ZZN")
+  protected String zzn;
 
-    /**
-     * Gets the value of the zzk property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getZZK() {
-        return zzk;
-    }
+  /**
+   * Gets the value of the zzk property.
+   *
+   * @return possible object is
+   * {@link BigInteger }
+   */
+  public BigInteger getZZK() {
+    return zzk;
+  }
 
-    /**
-     * Sets the value of the zzk property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setZZK(BigInteger value) {
-        this.zzk = value;
-    }
+  /**
+   * Sets the value of the zzk property.
+   *
+   * @param value allowed object is
+   *              {@link BigInteger }
+   */
+  public void setZZK(BigInteger value) {
+    this.zzk = value;
+  }
 
-    /**
-     * Gets the value of the zzn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZZN() {
-        return zzn;
-    }
+  /**
+   * Gets the value of the zzn property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZZN() {
+    return zzn;
+  }
 
-    /**
-     * Sets the value of the zzn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZZN(String value) {
-        this.zzn = value;
-    }
+  /**
+   * Sets the value of the zzn property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZZN(String value) {
+    this.zzn = value;
+  }
 
 }

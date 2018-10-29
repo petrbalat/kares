@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for vystup_format.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -27,23 +27,22 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "vystup_format")
 @XmlEnum
 public enum VystupFormat {
 
-    XML,
-    HTML,
-    XHTML,
-    TEXT;
+  XML,
+  HTML,
+  XHTML,
+  TEXT;
 
-    public String value() {
-        return name();
-    }
+  public static VystupFormat fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static VystupFormat fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

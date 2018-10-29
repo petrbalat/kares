@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Společné údaje o konkurzu, vyrovnání nebo zamítnutí konkurzu (K, V nebo Z)
- * 
+ *
  * <p>Java class for udaje_KVZ complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="udaje_KVZ">
  *   &lt;complexContent>
@@ -34,45 +34,41 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "udaje_KVZ", propOrder = {
-    "txtKVZ"
+  "txtKVZ"
 })
 public class UdajeKVZ {
 
-    @XmlElement(name = "Txt_KVZ")
-    protected List<TxtKVZ> txtKVZ;
+  @XmlElement(name = "Txt_KVZ")
+  protected List<TxtKVZ> txtKVZ;
 
-    /**
-     * Gets the value of the txtKVZ property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the txtKVZ property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getTxtKVZ().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TxtKVZ }
-     * 
-     * 
-     */
-    public List<TxtKVZ> getTxtKVZ() {
-        if (txtKVZ == null) {
-            txtKVZ = new ArrayList<TxtKVZ>();
-        }
-        return this.txtKVZ;
+  /**
+   * Gets the value of the txtKVZ property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the txtKVZ property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getTxtKVZ().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TxtKVZ }
+   */
+  public List<TxtKVZ> getTxtKVZ() {
+    if (txtKVZ == null) {
+      txtKVZ = new ArrayList<TxtKVZ>();
     }
+    return this.txtKVZ;
+  }
 
 }

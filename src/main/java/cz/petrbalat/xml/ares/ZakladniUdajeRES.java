@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Základní identifikační a alokační údaje ekonomického subjektu
- * 
+ *
  * <p>Java class for zakladni_udaje_RES complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zakladni_udaje_RES">
  *   &lt;complexContent>
@@ -41,231 +37,197 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zakladni_udaje_RES", propOrder = {
-    "ico",
-    "of",
-    "pf",
-    "fu",
-    "dv",
-    "dz",
-    "zpusobVzniku",
-    "zpusobZaniku"
+  "ico",
+  "of",
+  "pf",
+  "fu",
+  "dv",
+  "dz",
+  "zpusobVzniku",
+  "zpusobZaniku"
 })
 public class ZakladniUdajeRES {
 
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "OF")
-    protected String of;
-    @XmlElement(name = "PF")
-    protected PravniForma pf;
-    @XmlElement(name = "FU")
-    protected FinancniUrad fu;
-    @XmlElement(name = "DV")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "DZ")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dz;
-    @XmlElement(name = "Zpusob_vzniku")
-    protected Short zpusobVzniku;
-    @XmlElement(name = "Zpusob_zaniku")
-    protected Short zpusobZaniku;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "OF")
+  protected String of;
+  @XmlElement(name = "PF")
+  protected PravniForma pf;
+  @XmlElement(name = "FU")
+  protected FinancniUrad fu;
+  @XmlElement(name = "DV")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "DZ")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dz;
+  @XmlElement(name = "Zpusob_vzniku")
+  protected Short zpusobVzniku;
+  @XmlElement(name = "Zpusob_zaniku")
+  protected Short zpusobZaniku;
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the of property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOF() {
-        return of;
-    }
+  /**
+   * Gets the value of the of property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOF() {
+    return of;
+  }
 
-    /**
-     * Sets the value of the of property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOF(String value) {
-        this.of = value;
-    }
+  /**
+   * Sets the value of the of property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOF(String value) {
+    this.of = value;
+  }
 
-    /**
-     * Gets the value of the pf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PravniForma }
-     *     
-     */
-    public PravniForma getPF() {
-        return pf;
-    }
+  /**
+   * Gets the value of the pf property.
+   *
+   * @return possible object is
+   * {@link PravniForma }
+   */
+  public PravniForma getPF() {
+    return pf;
+  }
 
-    /**
-     * Sets the value of the pf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PravniForma }
-     *     
-     */
-    public void setPF(PravniForma value) {
-        this.pf = value;
-    }
+  /**
+   * Sets the value of the pf property.
+   *
+   * @param value allowed object is
+   *              {@link PravniForma }
+   */
+  public void setPF(PravniForma value) {
+    this.pf = value;
+  }
 
-    /**
-     * Gets the value of the fu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public FinancniUrad getFU() {
-        return fu;
-    }
+  /**
+   * Gets the value of the fu property.
+   *
+   * @return possible object is
+   * {@link FinancniUrad }
+   */
+  public FinancniUrad getFU() {
+    return fu;
+  }
 
-    /**
-     * Sets the value of the fu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public void setFU(FinancniUrad value) {
-        this.fu = value;
-    }
+  /**
+   * Sets the value of the fu property.
+   *
+   * @param value allowed object is
+   *              {@link FinancniUrad }
+   */
+  public void setFU(FinancniUrad value) {
+    this.fu = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the dz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDZ() {
-        return dz;
-    }
+  /**
+   * Gets the value of the dz property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDZ() {
+    return dz;
+  }
 
-    /**
-     * Sets the value of the dz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDZ(XMLGregorianCalendar value) {
-        this.dz = value;
-    }
+  /**
+   * Sets the value of the dz property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDZ(XMLGregorianCalendar value) {
+    this.dz = value;
+  }
 
-    /**
-     * Gets the value of the zpusobVzniku property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getZpusobVzniku() {
-        return zpusobVzniku;
-    }
+  /**
+   * Gets the value of the zpusobVzniku property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getZpusobVzniku() {
+    return zpusobVzniku;
+  }
 
-    /**
-     * Sets the value of the zpusobVzniku property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setZpusobVzniku(Short value) {
-        this.zpusobVzniku = value;
-    }
+  /**
+   * Sets the value of the zpusobVzniku property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setZpusobVzniku(Short value) {
+    this.zpusobVzniku = value;
+  }
 
-    /**
-     * Gets the value of the zpusobZaniku property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getZpusobZaniku() {
-        return zpusobZaniku;
-    }
+  /**
+   * Gets the value of the zpusobZaniku property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getZpusobZaniku() {
+    return zpusobZaniku;
+  }
 
-    /**
-     * Sets the value of the zpusobZaniku property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setZpusobZaniku(Short value) {
-        this.zpusobZaniku = value;
-    }
+  /**
+   * Sets the value of the zpusobZaniku property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setZpusobZaniku(Short value) {
+    this.zpusobZaniku = value;
+  }
 
 }

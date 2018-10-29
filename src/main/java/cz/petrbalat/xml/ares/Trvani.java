@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Datumy začátku a konce členství v orgánu pro členy dozorčích rad a statutárních orgánů
- * 
+ *
  * <p>Java class for trvani complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="trvani">
  *   &lt;complexContent>
@@ -35,69 +31,59 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "trvani", propOrder = {
-    "dza",
-    "dk"
+  "dza",
+  "dk"
 })
 public class Trvani {
 
-    @XmlElement(name = "DZA")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dza;
-    @XmlElement(name = "DK")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dk;
+  @XmlElement(name = "DZA")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dza;
+  @XmlElement(name = "DK")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dk;
 
-    /**
-     * Gets the value of the dza property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDZA() {
-        return dza;
-    }
+  /**
+   * Gets the value of the dza property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDZA() {
+    return dza;
+  }
 
-    /**
-     * Sets the value of the dza property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDZA(XMLGregorianCalendar value) {
-        this.dza = value;
-    }
+  /**
+   * Sets the value of the dza property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDZA(XMLGregorianCalendar value) {
+    this.dza = value;
+  }
 
-    /**
-     * Gets the value of the dk property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDK() {
-        return dk;
-    }
+  /**
+   * Gets the value of the dk property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDK() {
+    return dk;
+  }
 
-    /**
-     * Sets the value of the dk property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDK(XMLGregorianCalendar value) {
-        this.dk = value;
-    }
+  /**
+   * Sets the value of the dk property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDK(XMLGregorianCalendar value) {
+    this.dk = value;
+  }
 
 }

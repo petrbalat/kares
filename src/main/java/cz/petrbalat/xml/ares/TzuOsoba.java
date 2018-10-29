@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for tzu_osoba.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -32,41 +32,40 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "tzu_osoba")
 @XmlEnum
 public enum TzuOsoba {
 
-    T("T"),
-    Z("Z"),
-    U("U"),
-    E("E"),
-    @XmlEnumValue("Tuzemsk\u00e1")
-    TUZEMSKÁ("Tuzemsk\u00e1"),
-    @XmlEnumValue("Zahrani\u010dn\u00ed")
-    ZAHRANIČNÍ("Zahrani\u010dn\u00ed"),
-    @XmlEnumValue("Uprchl\u00edk")
-    UPRCHLÍK("Uprchl\u00edk"),
-    @XmlEnumValue("Evropsk\u00e1")
-    EVROPSKÁ("Evropsk\u00e1");
-    private final String value;
+  T("T"),
+  Z("Z"),
+  U("U"),
+  E("E"),
+  @XmlEnumValue("Tuzemsk\u00e1")
+  TUZEMSKÁ("Tuzemsk\u00e1"),
+  @XmlEnumValue("Zahrani\u010dn\u00ed")
+  ZAHRANIČNÍ("Zahrani\u010dn\u00ed"),
+  @XmlEnumValue("Uprchl\u00edk")
+  UPRCHLÍK("Uprchl\u00edk"),
+  @XmlEnumValue("Evropsk\u00e1")
+  EVROPSKÁ("Evropsk\u00e1");
+  private final String value;
 
-    TzuOsoba(String v) {
-        value = v;
-    }
+  TzuOsoba(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static TzuOsoba fromValue(String v) {
+    for (TzuOsoba c : TzuOsoba.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static TzuOsoba fromValue(String v) {
-        for (TzuOsoba c: TzuOsoba.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Doplňující právní formy v případě více právních forem u subjektu v RES
- * 
+ *
  * <p>Java class for doplnujici_pravni_formy complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="doplnujici_pravni_formy">
  *   &lt;complexContent>
@@ -34,45 +34,41 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "doplnujici_pravni_formy", propOrder = {
-    "pf"
+  "pf"
 })
 public class DoplnujiciPravniFormy {
 
-    @XmlElement(name = "PF")
-    protected List<PravniForma> pf;
+  @XmlElement(name = "PF")
+  protected List<PravniForma> pf;
 
-    /**
-     * Gets the value of the pf property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the pf property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getPF().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link PravniForma }
-     * 
-     * 
-     */
-    public List<PravniForma> getPF() {
-        if (pf == null) {
-            pf = new ArrayList<PravniForma>();
-        }
-        return this.pf;
+  /**
+   * Gets the value of the pf property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the pf property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getPF().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link PravniForma }
+   */
+  public List<PravniForma> getPF() {
+    if (pf == null) {
+      pf = new ArrayList<PravniForma>();
     }
+    return this.pf;
+  }
 
 }

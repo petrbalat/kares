@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Společník
- * 
+ *
  * <p>Java class for spolecnik complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="spolecnik">
  *   &lt;complexContent>
@@ -35,77 +35,71 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "spolecnik", propOrder = {
-    "spolecnik",
-    "t"
+  "spolecnik",
+  "t"
 })
 public class Spolecnik {
 
-    @XmlElement(name = "Spolecnik")
-    protected List<Angazma> spolecnik;
-    @XmlElement(name = "T")
-    protected List<TextType> t;
+  @XmlElement(name = "Spolecnik")
+  protected List<Angazma> spolecnik;
+  @XmlElement(name = "T")
+  protected List<TextType> t;
 
-    /**
-     * Gets the value of the spolecnik property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the spolecnik property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSpolecnik().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Angazma }
-     * 
-     * 
-     */
-    public List<Angazma> getSpolecnik() {
-        if (spolecnik == null) {
-            spolecnik = new ArrayList<Angazma>();
-        }
-        return this.spolecnik;
+  /**
+   * Gets the value of the spolecnik property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the spolecnik property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getSpolecnik().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Angazma }
+   */
+  public List<Angazma> getSpolecnik() {
+    if (spolecnik == null) {
+      spolecnik = new ArrayList<Angazma>();
     }
+    return this.spolecnik;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the t property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getT().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TextType }
-     * 
-     * 
-     */
-    public List<TextType> getT() {
-        if (t == null) {
-            t = new ArrayList<TextType>();
-        }
-        return this.t;
+  /**
+   * Gets the value of the t property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the t property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getT().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TextType }
+   */
+  public List<TextType> getT() {
+    if (t == null) {
+      t = new ArrayList<TextType>();
     }
+    return this.t;
+  }
 
 }

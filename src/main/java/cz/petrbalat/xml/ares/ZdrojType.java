@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for zdroj_type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -44,38 +44,37 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "zdroj_type")
 @XmlEnum
 public enum ZdrojType {
 
-    ARES,
-    OR,
-    RES,
-    RZP,
-    RŽP,
-    RZZ,
-    DPH,
-    SD,
-    SCP,
-    CEU,
-    CEDR,
-    RARIS,
-    RCNS,
-    PSH,
-    OSS,
-    SZR,
-    IR,
-    SKO,
-    EZP;
+  ARES,
+  OR,
+  RES,
+  RZP,
+  RŽP,
+  RZZ,
+  DPH,
+  SD,
+  SCP,
+  CEU,
+  CEDR,
+  RARIS,
+  RCNS,
+  PSH,
+  OSS,
+  SZR,
+  IR,
+  SKO,
+  EZP;
 
-    public String value() {
-        return name();
-    }
+  public static ZdrojType fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static ZdrojType fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

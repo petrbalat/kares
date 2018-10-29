@@ -8,19 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for mestska_cast_RFO complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="mestska_cast_RFO">
  *   &lt;complexContent>
@@ -34,99 +34,87 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "mestska_cast_RFO", propOrder = {
-    "kmc",
-    "nazev",
-    "castObce"
+  "kmc",
+  "nazev",
+  "castObce"
 })
 public class MestskaCastRFO {
 
-    @XmlElement(name = "KMC")
-    protected String kmc;
-    @XmlElement(name = "Nazev")
-    protected String nazev;
-    @XmlElement(name = "Cast_obce")
-    protected List<CastObceRFO> castObce;
+  @XmlElement(name = "KMC")
+  protected String kmc;
+  @XmlElement(name = "Nazev")
+  protected String nazev;
+  @XmlElement(name = "Cast_obce")
+  protected List<CastObceRFO> castObce;
 
-    /**
-     * Gets the value of the kmc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKMC() {
-        return kmc;
-    }
+  /**
+   * Gets the value of the kmc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKMC() {
+    return kmc;
+  }
 
-    /**
-     * Sets the value of the kmc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKMC(String value) {
-        this.kmc = value;
-    }
+  /**
+   * Sets the value of the kmc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKMC(String value) {
+    this.kmc = value;
+  }
 
-    /**
-     * Gets the value of the nazev property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNazev() {
-        return nazev;
-    }
+  /**
+   * Gets the value of the nazev property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNazev() {
+    return nazev;
+  }
 
-    /**
-     * Sets the value of the nazev property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNazev(String value) {
-        this.nazev = value;
-    }
+  /**
+   * Sets the value of the nazev property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNazev(String value) {
+    this.nazev = value;
+  }
 
-    /**
-     * Gets the value of the castObce property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the castObce property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCastObce().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link CastObceRFO }
-     * 
-     * 
-     */
-    public List<CastObceRFO> getCastObce() {
-        if (castObce == null) {
-            castObce = new ArrayList<CastObceRFO>();
-        }
-        return this.castObce;
+  /**
+   * Gets the value of the castObce property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the castObce property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getCastObce().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link CastObceRFO }
+   */
+  public List<CastObceRFO> getCastObce() {
+    if (castObce == null) {
+      castObce = new ArrayList<CastObceRFO>();
     }
+    return this.castObce;
+  }
 
 }

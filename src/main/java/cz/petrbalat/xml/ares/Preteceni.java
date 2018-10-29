@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for preteceni.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -25,21 +25,20 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "preteceni")
 @XmlEnum
 public enum Preteceni {
 
-    N,
-    P;
+  N,
+  P;
 
-    public String value() {
-        return name();
-    }
+  public static Preteceni fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static Preteceni fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

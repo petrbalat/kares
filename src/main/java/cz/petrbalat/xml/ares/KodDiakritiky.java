@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for kod_diakritiky.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -27,23 +27,22 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "kod_diakritiky")
 @XmlEnum
 public enum KodDiakritiky {
 
-    ISO,
-    WIN,
-    LAT,
-    UTF;
+  ISO,
+  WIN,
+  LAT,
+  UTF;
 
-    public String value() {
-        return name();
-    }
+  public static KodDiakritiky fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static KodDiakritiky fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

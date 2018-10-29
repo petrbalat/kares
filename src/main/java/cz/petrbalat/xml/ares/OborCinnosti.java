@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * Obor činnosti (od 1.7.2008)
- * 
+ *
  * <p>Java class for obor_cinnosti complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="obor_cinnosti">
  *   &lt;complexContent>
@@ -35,93 +31,79 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "obor_cinnosti", propOrder = {
-    "k",
-    "t"
+  "k",
+  "t"
 })
 public class OborCinnosti {
 
-    @XmlElement(name = "K")
-    protected String k;
-    @XmlElement(name = "T")
-    protected String t;
-    @XmlAttribute(name = "aktivni")
-    protected String aktivni;
+  @XmlElement(name = "K")
+  protected String k;
+  @XmlElement(name = "T")
+  protected String t;
+  @XmlAttribute(name = "aktivni")
+  protected String aktivni;
 
-    /**
-     * Gets the value of the k property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getK() {
-        return k;
-    }
+  /**
+   * Gets the value of the k property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getK() {
+    return k;
+  }
 
-    /**
-     * Sets the value of the k property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setK(String value) {
-        this.k = value;
-    }
+  /**
+   * Sets the value of the k property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setK(String value) {
+    this.k = value;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getT() {
-        return t;
-    }
+  /**
+   * Gets the value of the t property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getT() {
+    return t;
+  }
 
-    /**
-     * Sets the value of the t property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setT(String value) {
-        this.t = value;
-    }
+  /**
+   * Sets the value of the t property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setT(String value) {
+    this.t = value;
+  }
 
-    /**
-     * Gets the value of the aktivni property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAktivni() {
-        return aktivni;
-    }
+  /**
+   * Gets the value of the aktivni property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAktivni() {
+    return aktivni;
+  }
 
-    /**
-     * Sets the value of the aktivni property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAktivni(String value) {
-        this.aktivni = value;
-    }
+  /**
+   * Sets the value of the aktivni property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAktivni(String value) {
+    this.aktivni = value;
+  }
 
 }

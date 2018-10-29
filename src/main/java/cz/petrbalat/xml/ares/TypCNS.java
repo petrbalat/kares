@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for typ_CNS.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -28,37 +28,36 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "typ_CNS")
 @XmlEnum
 public enum TypCNS {
 
-    @XmlEnumValue("C\u00edrkev")
-    CÍRKEV("C\u00edrkev"),
-    @XmlEnumValue("Svaz")
-    SVAZ("Svaz"),
-    @XmlEnumValue("Pr\u00e1vnick\u00e1 osoba")
-    PRÁVNICKÁ_OSOBA("Pr\u00e1vnick\u00e1 osoba"),
-    @XmlEnumValue("C\u00edrkevn\u00ed pr\u00e1vnick\u00e1 osoba")
-    CÍRKEVNÍ_PRÁVNICKÁ_OSOBA("C\u00edrkevn\u00ed pr\u00e1vnick\u00e1 osoba");
-    private final String value;
+  @XmlEnumValue("C\u00edrkev")
+  CÍRKEV("C\u00edrkev"),
+  @XmlEnumValue("Svaz")
+  SVAZ("Svaz"),
+  @XmlEnumValue("Pr\u00e1vnick\u00e1 osoba")
+  PRÁVNICKÁ_OSOBA("Pr\u00e1vnick\u00e1 osoba"),
+  @XmlEnumValue("C\u00edrkevn\u00ed pr\u00e1vnick\u00e1 osoba")
+  CÍRKEVNÍ_PRÁVNICKÁ_OSOBA("C\u00edrkevn\u00ed pr\u00e1vnick\u00e1 osoba");
+  private final String value;
 
-    TypCNS(String v) {
-        value = v;
-    }
+  TypCNS(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static TypCNS fromValue(String v) {
+    for (TypCNS c : TypCNS.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static TypCNS fromValue(String v) {
-        for (TypCNS c: TypCNS.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

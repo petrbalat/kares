@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Údaje o jedné živnosti
- * 
+ *
  * <p>Java class for zivnost complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zivnost">
  *   &lt;complexContent>
@@ -32,40 +32,34 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zivnost", propOrder = {
-    "pp"
+  "pp"
 })
 public class Zivnost {
 
-    @XmlElement(name = "PP")
-    protected Texty pp;
+  @XmlElement(name = "PP")
+  protected Texty pp;
 
-    /**
-     * Gets the value of the pp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Texty }
-     *     
-     */
-    public Texty getPP() {
-        return pp;
-    }
+  /**
+   * Gets the value of the pp property.
+   *
+   * @return possible object is
+   * {@link Texty }
+   */
+  public Texty getPP() {
+    return pp;
+  }
 
-    /**
-     * Sets the value of the pp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Texty }
-     *     
-     */
-    public void setPP(Texty value) {
-        this.pp = value;
-    }
+  /**
+   * Sets the value of the pp property.
+   *
+   * @param value allowed object is
+   *              {@link Texty }
+   */
+  public void setPP(Texty value) {
+    this.pp = value;
+  }
 
 }

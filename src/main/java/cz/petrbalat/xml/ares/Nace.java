@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Klasifikace ekonomických činností (CZ-NACE) ČSÚ
- * 
+ *
  * <p>Java class for nace complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="nace">
  *   &lt;complexContent>
@@ -35,72 +35,64 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "nace", propOrder = {
-    "nace",
-    "nazevNACE"
+  "nace",
+  "nazevNACE"
 })
 public class Nace {
 
-    @XmlElement(name = "NACE", required = true)
-    protected List<KodNace> nace;
-    @XmlElement(name = "Nazev_NACE")
-    protected String nazevNACE;
+  @XmlElement(name = "NACE", required = true)
+  protected List<KodNace> nace;
+  @XmlElement(name = "Nazev_NACE")
+  protected String nazevNACE;
 
-    /**
-     * Gets the value of the nace property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nace property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNACE().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link KodNace }
-     * 
-     * 
-     */
-    public List<KodNace> getNACE() {
-        if (nace == null) {
-            nace = new ArrayList<KodNace>();
-        }
-        return this.nace;
+  /**
+   * Gets the value of the nace property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the nace property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getNACE().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link KodNace }
+   */
+  public List<KodNace> getNACE() {
+    if (nace == null) {
+      nace = new ArrayList<KodNace>();
     }
+    return this.nace;
+  }
 
-    /**
-     * Gets the value of the nazevNACE property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNazevNACE() {
-        return nazevNACE;
-    }
+  /**
+   * Gets the value of the nazevNACE property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNazevNACE() {
+    return nazevNACE;
+  }
 
-    /**
-     * Sets the value of the nazevNACE property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNazevNACE(String value) {
-        this.nazevNACE = value;
-    }
+  /**
+   * Sets the value of the nazevNACE property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNazevNACE(String value) {
+    this.nazevNACE = value;
+  }
 
 }

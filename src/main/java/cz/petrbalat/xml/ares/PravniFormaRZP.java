@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * Právní forma včetně popisných položek
- * 
+ *
  * <p>Java class for pravni_forma_RZP complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="pravni_forma_RZP">
  *   &lt;complexContent>
@@ -37,142 +33,122 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "pravni_forma_RZP", propOrder = {
-    "kpf",
-    "npf",
-    "zpf",
-    "pfo",
-    "tzu"
+  "kpf",
+  "npf",
+  "zpf",
+  "pfo",
+  "tzu"
 })
 public class PravniFormaRZP {
 
-    @XmlElement(name = "KPF")
-    protected short kpf;
-    @XmlElement(name = "NPF")
-    protected String npf;
-    @XmlElement(name = "ZPF")
-    protected String zpf;
-    @XmlElement(name = "PFO")
-    @XmlSchemaType(name = "string")
-    protected PfOsoba pfo;
-    @XmlElement(name = "TZU")
-    @XmlSchemaType(name = "string")
-    protected TzuOsoba tzu;
+  @XmlElement(name = "KPF")
+  protected short kpf;
+  @XmlElement(name = "NPF")
+  protected String npf;
+  @XmlElement(name = "ZPF")
+  protected String zpf;
+  @XmlElement(name = "PFO")
+  @XmlSchemaType(name = "string")
+  protected PfOsoba pfo;
+  @XmlElement(name = "TZU")
+  @XmlSchemaType(name = "string")
+  protected TzuOsoba tzu;
 
-    /**
-     * Gets the value of the kpf property.
-     * 
-     */
-    public short getKPF() {
-        return kpf;
-    }
+  /**
+   * Gets the value of the kpf property.
+   */
+  public short getKPF() {
+    return kpf;
+  }
 
-    /**
-     * Sets the value of the kpf property.
-     * 
-     */
-    public void setKPF(short value) {
-        this.kpf = value;
-    }
+  /**
+   * Sets the value of the kpf property.
+   */
+  public void setKPF(short value) {
+    this.kpf = value;
+  }
 
-    /**
-     * Gets the value of the npf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNPF() {
-        return npf;
-    }
+  /**
+   * Gets the value of the npf property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNPF() {
+    return npf;
+  }
 
-    /**
-     * Sets the value of the npf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNPF(String value) {
-        this.npf = value;
-    }
+  /**
+   * Sets the value of the npf property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNPF(String value) {
+    this.npf = value;
+  }
 
-    /**
-     * Gets the value of the zpf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZPF() {
-        return zpf;
-    }
+  /**
+   * Gets the value of the zpf property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZPF() {
+    return zpf;
+  }
 
-    /**
-     * Sets the value of the zpf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZPF(String value) {
-        this.zpf = value;
-    }
+  /**
+   * Sets the value of the zpf property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZPF(String value) {
+    this.zpf = value;
+  }
 
-    /**
-     * Gets the value of the pfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PfOsoba }
-     *     
-     */
-    public PfOsoba getPFO() {
-        return pfo;
-    }
+  /**
+   * Gets the value of the pfo property.
+   *
+   * @return possible object is
+   * {@link PfOsoba }
+   */
+  public PfOsoba getPFO() {
+    return pfo;
+  }
 
-    /**
-     * Sets the value of the pfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PfOsoba }
-     *     
-     */
-    public void setPFO(PfOsoba value) {
-        this.pfo = value;
-    }
+  /**
+   * Sets the value of the pfo property.
+   *
+   * @param value allowed object is
+   *              {@link PfOsoba }
+   */
+  public void setPFO(PfOsoba value) {
+    this.pfo = value;
+  }
 
-    /**
-     * Gets the value of the tzu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TzuOsoba }
-     *     
-     */
-    public TzuOsoba getTZU() {
-        return tzu;
-    }
+  /**
+   * Gets the value of the tzu property.
+   *
+   * @return possible object is
+   * {@link TzuOsoba }
+   */
+  public TzuOsoba getTZU() {
+    return tzu;
+  }
 
-    /**
-     * Sets the value of the tzu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TzuOsoba }
-     *     
-     */
-    public void setTZU(TzuOsoba value) {
-        this.tzu = value;
-    }
+  /**
+   * Sets the value of the tzu property.
+   *
+   * @param value allowed object is
+   *              {@link TzuOsoba }
+   */
+  public void setTZU(TzuOsoba value) {
+    this.tzu = value;
+  }
 
 }

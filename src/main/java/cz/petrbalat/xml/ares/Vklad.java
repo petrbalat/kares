@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Částka vkladu slouží k uložení finančních obnosů v Kč nebo volným textem
- * 
+ *
  * <p>Java class for vklad complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vklad">
  *   &lt;complexContent>
@@ -33,67 +33,57 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vklad", propOrder = {
-    "kc",
-    "ost"
+  "kc",
+  "ost"
 })
 public class Vklad {
 
-    @XmlElement(name = "KC")
-    protected String kc;
-    @XmlElement(name = "OST")
-    protected String ost;
+  @XmlElement(name = "KC")
+  protected String kc;
+  @XmlElement(name = "OST")
+  protected String ost;
 
-    /**
-     * Gets the value of the kc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKC() {
-        return kc;
-    }
+  /**
+   * Gets the value of the kc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKC() {
+    return kc;
+  }
 
-    /**
-     * Sets the value of the kc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKC(String value) {
-        this.kc = value;
-    }
+  /**
+   * Sets the value of the kc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKC(String value) {
+    this.kc = value;
+  }
 
-    /**
-     * Gets the value of the ost property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOST() {
-        return ost;
-    }
+  /**
+   * Gets the value of the ost property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOST() {
+    return ost;
+  }
 
-    /**
-     * Sets the value of the ost property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOST(String value) {
-        this.ost = value;
-    }
+  /**
+   * Sets the value of the ost property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOST(String value) {
+    this.ost = value;
+  }
 
 }

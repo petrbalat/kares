@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for konkurz_vyrovnani_CEU.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -25,21 +25,20 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "konkurz_vyrovnani_CEU")
 @XmlEnum
 public enum KonkurzVyrovnaniCEU {
 
-    K,
-    V;
+  K,
+  V;
 
-    public String value() {
-        return name();
-    }
+  public static KonkurzVyrovnaniCEU fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static KonkurzVyrovnaniCEU fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

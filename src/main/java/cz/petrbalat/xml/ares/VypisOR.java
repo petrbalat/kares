@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Výpis z obchodního rejstříku podle ARES
- * 
+ *
  * <p>Java class for vypis_OR complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vypis_OR">
  *   &lt;complexContent>
@@ -71,1054 +71,906 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vypis_OR", propOrder = {
-    "uvod",
-    "zau",
-    "reg",
-    "cin",
-    "ex",
-    "osk",
-    "kap",
-    "so",
-    "sos",
-    "sok",
-    "sop",
-    "pre",
-    "soz",
-    "sr",
-    "nad",
-    "nf",
-    "li",
-    "pro",
-    "rediteleOps",
-    "dr",
-    "kontrolniKomise",
-    "rei",
-    "sbv",
-    "ssv",
-    "aki",
-    "zsp",
-    "zops",
-    "zoz",
-    "zpr",
-    "nau",
-    "zn",
-    "vou",
-    "kme",
-    "dci",
-    "kpi",
-    "cls",
-    "kv",
-    "ozy"
+  "uvod",
+  "zau",
+  "reg",
+  "cin",
+  "ex",
+  "osk",
+  "kap",
+  "so",
+  "sos",
+  "sok",
+  "sop",
+  "pre",
+  "soz",
+  "sr",
+  "nad",
+  "nf",
+  "li",
+  "pro",
+  "rediteleOps",
+  "dr",
+  "kontrolniKomise",
+  "rei",
+  "sbv",
+  "ssv",
+  "aki",
+  "zsp",
+  "zops",
+  "zoz",
+  "zpr",
+  "nau",
+  "zn",
+  "vou",
+  "kme",
+  "dci",
+  "kpi",
+  "cls",
+  "kv",
+  "ozy"
 })
 public class VypisOR {
 
-    @XmlElement(name = "UVOD")
-    protected Uvod uvod;
-    @XmlElement(name = "ZAU", required = true)
-    protected ZakladniUdajeOR zau;
-    @XmlElement(name = "REG", required = true)
-    protected Registrace reg;
-    @XmlElement(name = "CIN")
-    protected Cinnosti cin;
-    @XmlElement(name = "EX")
-    protected List<Texty> ex;
-    @XmlElement(name = "OSK")
-    protected List<Texty> osk;
-    @XmlElement(name = "KAP")
-    protected Kapital kap;
-    @XmlElement(name = "SO")
-    protected StatutarniOrgan so;
-    @XmlElement(name = "SOS")
-    protected Sos sos;
-    @XmlElement(name = "SOK")
-    protected Sok sok;
-    @XmlElement(name = "SOP")
-    protected Sop sop;
-    @XmlElement(name = "PRE")
-    protected Predstavenstvo pre;
-    @XmlElement(name = "SOZ")
-    protected Szo soz;
-    @XmlElement(name = "SR")
-    protected SpravniRada sr;
-    @XmlElement(name = "NAD")
-    protected Nadace nad;
-    @XmlElement(name = "NF")
-    protected NadacniFond nf;
-    @XmlElement(name = "LI")
-    protected Likvidace li;
-    @XmlElement(name = "PRO")
-    protected Prokura pro;
-    @XmlElement(name = "Reditele_ops")
-    protected RediteleOps rediteleOps;
-    @XmlElement(name = "DR")
-    protected DozorciRada dr;
-    @XmlElement(name = "Kontrolni_komise")
-    protected KontrolniKomise kontrolniKomise;
-    @XmlElement(name = "REI")
-    protected Revizori rei;
-    @XmlElement(name = "SBV")
-    protected SpolecniciBezVkladu sbv;
-    @XmlElement(name = "SSV")
-    protected SpolecniciSVkladem ssv;
-    @XmlElement(name = "AKI")
-    protected Akcionari aki;
-    @XmlElement(name = "Z_SP")
-    protected ZakladateleSP zsp;
-    @XmlElement(name = "Z_OPS")
-    protected ZakladateleOPS zops;
-    @XmlElement(name = "Z_OZ")
-    protected ZrizovateleOZ zoz;
-    @XmlElement(name = "Z_PR")
-    protected ZrizovatelePR zpr;
-    @XmlElement(name = "NAU")
-    protected NastupciZrizovatele nau;
-    @XmlElement(name = "Z_N")
-    protected ZrizovateleNadace zn;
-    @XmlElement(name = "VOU")
-    protected VedOz vou;
-    @XmlElement(name = "KME")
-    protected Komanditiste kme;
-    @XmlElement(name = "DCI")
-    protected Druzstevnici dci;
-    @XmlElement(name = "KPI")
-    protected Komplementari kpi;
-    @XmlElement(name = "CLS")
-    protected ClenoveSdruzeni cls;
-    @XmlElement(name = "KV")
-    protected KonkurzyVyrovnani kv;
-    @XmlElement(name = "OZY")
-    protected List<OdstepneZavody> ozy;
-
-    /**
-     * Gets the value of the uvod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Uvod }
-     *     
-     */
-    public Uvod getUVOD() {
-        return uvod;
-    }
-
-    /**
-     * Sets the value of the uvod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Uvod }
-     *     
-     */
-    public void setUVOD(Uvod value) {
-        this.uvod = value;
-    }
-
-    /**
-     * Gets the value of the zau property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZakladniUdajeOR }
-     *     
-     */
-    public ZakladniUdajeOR getZAU() {
-        return zau;
-    }
-
-    /**
-     * Sets the value of the zau property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZakladniUdajeOR }
-     *     
-     */
-    public void setZAU(ZakladniUdajeOR value) {
-        this.zau = value;
-    }
-
-    /**
-     * Gets the value of the reg property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Registrace }
-     *     
-     */
-    public Registrace getREG() {
-        return reg;
-    }
-
-    /**
-     * Sets the value of the reg property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Registrace }
-     *     
-     */
-    public void setREG(Registrace value) {
-        this.reg = value;
-    }
-
-    /**
-     * Gets the value of the cin property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Cinnosti }
-     *     
-     */
-    public Cinnosti getCIN() {
-        return cin;
-    }
-
-    /**
-     * Sets the value of the cin property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Cinnosti }
-     *     
-     */
-    public void setCIN(Cinnosti value) {
-        this.cin = value;
-    }
-
-    /**
-     * Gets the value of the ex property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ex property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getEX().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Texty }
-     * 
-     * 
-     */
-    public List<Texty> getEX() {
-        if (ex == null) {
-            ex = new ArrayList<Texty>();
-        }
-        return this.ex;
-    }
-
-    /**
-     * Gets the value of the osk property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the osk property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOSK().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Texty }
-     * 
-     * 
-     */
-    public List<Texty> getOSK() {
-        if (osk == null) {
-            osk = new ArrayList<Texty>();
-        }
-        return this.osk;
-    }
-
-    /**
-     * Gets the value of the kap property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Kapital }
-     *     
-     */
-    public Kapital getKAP() {
-        return kap;
-    }
-
-    /**
-     * Sets the value of the kap property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Kapital }
-     *     
-     */
-    public void setKAP(Kapital value) {
-        this.kap = value;
-    }
-
-    /**
-     * Gets the value of the so property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StatutarniOrgan }
-     *     
-     */
-    public StatutarniOrgan getSO() {
-        return so;
-    }
-
-    /**
-     * Sets the value of the so property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StatutarniOrgan }
-     *     
-     */
-    public void setSO(StatutarniOrgan value) {
-        this.so = value;
-    }
-
-    /**
-     * Gets the value of the sos property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Sos }
-     *     
-     */
-    public Sos getSOS() {
-        return sos;
-    }
-
-    /**
-     * Sets the value of the sos property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Sos }
-     *     
-     */
-    public void setSOS(Sos value) {
-        this.sos = value;
-    }
-
-    /**
-     * Gets the value of the sok property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Sok }
-     *     
-     */
-    public Sok getSOK() {
-        return sok;
-    }
-
-    /**
-     * Sets the value of the sok property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Sok }
-     *     
-     */
-    public void setSOK(Sok value) {
-        this.sok = value;
-    }
-
-    /**
-     * Gets the value of the sop property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Sop }
-     *     
-     */
-    public Sop getSOP() {
-        return sop;
-    }
-
-    /**
-     * Sets the value of the sop property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Sop }
-     *     
-     */
-    public void setSOP(Sop value) {
-        this.sop = value;
-    }
-
-    /**
-     * Gets the value of the pre property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Predstavenstvo }
-     *     
-     */
-    public Predstavenstvo getPRE() {
-        return pre;
-    }
-
-    /**
-     * Sets the value of the pre property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Predstavenstvo }
-     *     
-     */
-    public void setPRE(Predstavenstvo value) {
-        this.pre = value;
-    }
-
-    /**
-     * Gets the value of the soz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Szo }
-     *     
-     */
-    public Szo getSOZ() {
-        return soz;
-    }
-
-    /**
-     * Sets the value of the soz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Szo }
-     *     
-     */
-    public void setSOZ(Szo value) {
-        this.soz = value;
-    }
-
-    /**
-     * Gets the value of the sr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SpravniRada }
-     *     
-     */
-    public SpravniRada getSR() {
-        return sr;
-    }
-
-    /**
-     * Sets the value of the sr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SpravniRada }
-     *     
-     */
-    public void setSR(SpravniRada value) {
-        this.sr = value;
-    }
-
-    /**
-     * Gets the value of the nad property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Nadace }
-     *     
-     */
-    public Nadace getNAD() {
-        return nad;
-    }
-
-    /**
-     * Sets the value of the nad property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Nadace }
-     *     
-     */
-    public void setNAD(Nadace value) {
-        this.nad = value;
-    }
-
-    /**
-     * Gets the value of the nf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NadacniFond }
-     *     
-     */
-    public NadacniFond getNF() {
-        return nf;
-    }
-
-    /**
-     * Sets the value of the nf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NadacniFond }
-     *     
-     */
-    public void setNF(NadacniFond value) {
-        this.nf = value;
-    }
-
-    /**
-     * Gets the value of the li property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Likvidace }
-     *     
-     */
-    public Likvidace getLI() {
-        return li;
-    }
-
-    /**
-     * Sets the value of the li property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Likvidace }
-     *     
-     */
-    public void setLI(Likvidace value) {
-        this.li = value;
-    }
-
-    /**
-     * Gets the value of the pro property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Prokura }
-     *     
-     */
-    public Prokura getPRO() {
-        return pro;
-    }
-
-    /**
-     * Sets the value of the pro property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Prokura }
-     *     
-     */
-    public void setPRO(Prokura value) {
-        this.pro = value;
-    }
-
-    /**
-     * Gets the value of the rediteleOps property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RediteleOps }
-     *     
-     */
-    public RediteleOps getRediteleOps() {
-        return rediteleOps;
-    }
-
-    /**
-     * Sets the value of the rediteleOps property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RediteleOps }
-     *     
-     */
-    public void setRediteleOps(RediteleOps value) {
-        this.rediteleOps = value;
-    }
-
-    /**
-     * Gets the value of the dr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DozorciRada }
-     *     
-     */
-    public DozorciRada getDR() {
-        return dr;
-    }
-
-    /**
-     * Sets the value of the dr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DozorciRada }
-     *     
-     */
-    public void setDR(DozorciRada value) {
-        this.dr = value;
-    }
-
-    /**
-     * Gets the value of the kontrolniKomise property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KontrolniKomise }
-     *     
-     */
-    public KontrolniKomise getKontrolniKomise() {
-        return kontrolniKomise;
-    }
-
-    /**
-     * Sets the value of the kontrolniKomise property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KontrolniKomise }
-     *     
-     */
-    public void setKontrolniKomise(KontrolniKomise value) {
-        this.kontrolniKomise = value;
-    }
-
-    /**
-     * Gets the value of the rei property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Revizori }
-     *     
-     */
-    public Revizori getREI() {
-        return rei;
-    }
-
-    /**
-     * Sets the value of the rei property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Revizori }
-     *     
-     */
-    public void setREI(Revizori value) {
-        this.rei = value;
-    }
-
-    /**
-     * Gets the value of the sbv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SpolecniciBezVkladu }
-     *     
-     */
-    public SpolecniciBezVkladu getSBV() {
-        return sbv;
-    }
-
-    /**
-     * Sets the value of the sbv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SpolecniciBezVkladu }
-     *     
-     */
-    public void setSBV(SpolecniciBezVkladu value) {
-        this.sbv = value;
-    }
-
-    /**
-     * Gets the value of the ssv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link SpolecniciSVkladem }
-     *     
-     */
-    public SpolecniciSVkladem getSSV() {
-        return ssv;
-    }
-
-    /**
-     * Sets the value of the ssv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link SpolecniciSVkladem }
-     *     
-     */
-    public void setSSV(SpolecniciSVkladem value) {
-        this.ssv = value;
-    }
-
-    /**
-     * Gets the value of the aki property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Akcionari }
-     *     
-     */
-    public Akcionari getAKI() {
-        return aki;
-    }
-
-    /**
-     * Sets the value of the aki property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Akcionari }
-     *     
-     */
-    public void setAKI(Akcionari value) {
-        this.aki = value;
-    }
-
-    /**
-     * Gets the value of the zsp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZakladateleSP }
-     *     
-     */
-    public ZakladateleSP getZSP() {
-        return zsp;
-    }
-
-    /**
-     * Sets the value of the zsp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZakladateleSP }
-     *     
-     */
-    public void setZSP(ZakladateleSP value) {
-        this.zsp = value;
-    }
-
-    /**
-     * Gets the value of the zops property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZakladateleOPS }
-     *     
-     */
-    public ZakladateleOPS getZOPS() {
-        return zops;
-    }
-
-    /**
-     * Sets the value of the zops property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZakladateleOPS }
-     *     
-     */
-    public void setZOPS(ZakladateleOPS value) {
-        this.zops = value;
-    }
-
-    /**
-     * Gets the value of the zoz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZrizovateleOZ }
-     *     
-     */
-    public ZrizovateleOZ getZOZ() {
-        return zoz;
-    }
-
-    /**
-     * Sets the value of the zoz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZrizovateleOZ }
-     *     
-     */
-    public void setZOZ(ZrizovateleOZ value) {
-        this.zoz = value;
-    }
-
-    /**
-     * Gets the value of the zpr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZrizovatelePR }
-     *     
-     */
-    public ZrizovatelePR getZPR() {
-        return zpr;
-    }
-
-    /**
-     * Sets the value of the zpr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZrizovatelePR }
-     *     
-     */
-    public void setZPR(ZrizovatelePR value) {
-        this.zpr = value;
-    }
-
-    /**
-     * Gets the value of the nau property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link NastupciZrizovatele }
-     *     
-     */
-    public NastupciZrizovatele getNAU() {
-        return nau;
-    }
-
-    /**
-     * Sets the value of the nau property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link NastupciZrizovatele }
-     *     
-     */
-    public void setNAU(NastupciZrizovatele value) {
-        this.nau = value;
-    }
-
-    /**
-     * Gets the value of the zn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZrizovateleNadace }
-     *     
-     */
-    public ZrizovateleNadace getZN() {
-        return zn;
-    }
-
-    /**
-     * Sets the value of the zn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZrizovateleNadace }
-     *     
-     */
-    public void setZN(ZrizovateleNadace value) {
-        this.zn = value;
-    }
-
-    /**
-     * Gets the value of the vou property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VedOz }
-     *     
-     */
-    public VedOz getVOU() {
-        return vou;
-    }
-
-    /**
-     * Sets the value of the vou property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VedOz }
-     *     
-     */
-    public void setVOU(VedOz value) {
-        this.vou = value;
-    }
-
-    /**
-     * Gets the value of the kme property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Komanditiste }
-     *     
-     */
-    public Komanditiste getKME() {
-        return kme;
-    }
-
-    /**
-     * Sets the value of the kme property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Komanditiste }
-     *     
-     */
-    public void setKME(Komanditiste value) {
-        this.kme = value;
-    }
-
-    /**
-     * Gets the value of the dci property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Druzstevnici }
-     *     
-     */
-    public Druzstevnici getDCI() {
-        return dci;
-    }
-
-    /**
-     * Sets the value of the dci property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Druzstevnici }
-     *     
-     */
-    public void setDCI(Druzstevnici value) {
-        this.dci = value;
-    }
-
-    /**
-     * Gets the value of the kpi property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Komplementari }
-     *     
-     */
-    public Komplementari getKPI() {
-        return kpi;
-    }
-
-    /**
-     * Sets the value of the kpi property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Komplementari }
-     *     
-     */
-    public void setKPI(Komplementari value) {
-        this.kpi = value;
-    }
-
-    /**
-     * Gets the value of the cls property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ClenoveSdruzeni }
-     *     
-     */
-    public ClenoveSdruzeni getCLS() {
-        return cls;
-    }
-
-    /**
-     * Sets the value of the cls property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ClenoveSdruzeni }
-     *     
-     */
-    public void setCLS(ClenoveSdruzeni value) {
-        this.cls = value;
-    }
-
-    /**
-     * Gets the value of the kv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KonkurzyVyrovnani }
-     *     
-     */
-    public KonkurzyVyrovnani getKV() {
-        return kv;
-    }
-
-    /**
-     * Sets the value of the kv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KonkurzyVyrovnani }
-     *     
-     */
-    public void setKV(KonkurzyVyrovnani value) {
-        this.kv = value;
-    }
-
-    /**
-     * Gets the value of the ozy property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ozy property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOZY().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link OdstepneZavody }
-     * 
-     * 
-     */
-    public List<OdstepneZavody> getOZY() {
-        if (ozy == null) {
-            ozy = new ArrayList<OdstepneZavody>();
-        }
-        return this.ozy;
-    }
+  @XmlElement(name = "UVOD")
+  protected Uvod uvod;
+  @XmlElement(name = "ZAU", required = true)
+  protected ZakladniUdajeOR zau;
+  @XmlElement(name = "REG", required = true)
+  protected Registrace reg;
+  @XmlElement(name = "CIN")
+  protected Cinnosti cin;
+  @XmlElement(name = "EX")
+  protected List<Texty> ex;
+  @XmlElement(name = "OSK")
+  protected List<Texty> osk;
+  @XmlElement(name = "KAP")
+  protected Kapital kap;
+  @XmlElement(name = "SO")
+  protected StatutarniOrgan so;
+  @XmlElement(name = "SOS")
+  protected Sos sos;
+  @XmlElement(name = "SOK")
+  protected Sok sok;
+  @XmlElement(name = "SOP")
+  protected Sop sop;
+  @XmlElement(name = "PRE")
+  protected Predstavenstvo pre;
+  @XmlElement(name = "SOZ")
+  protected Szo soz;
+  @XmlElement(name = "SR")
+  protected SpravniRada sr;
+  @XmlElement(name = "NAD")
+  protected Nadace nad;
+  @XmlElement(name = "NF")
+  protected NadacniFond nf;
+  @XmlElement(name = "LI")
+  protected Likvidace li;
+  @XmlElement(name = "PRO")
+  protected Prokura pro;
+  @XmlElement(name = "Reditele_ops")
+  protected RediteleOps rediteleOps;
+  @XmlElement(name = "DR")
+  protected DozorciRada dr;
+  @XmlElement(name = "Kontrolni_komise")
+  protected KontrolniKomise kontrolniKomise;
+  @XmlElement(name = "REI")
+  protected Revizori rei;
+  @XmlElement(name = "SBV")
+  protected SpolecniciBezVkladu sbv;
+  @XmlElement(name = "SSV")
+  protected SpolecniciSVkladem ssv;
+  @XmlElement(name = "AKI")
+  protected Akcionari aki;
+  @XmlElement(name = "Z_SP")
+  protected ZakladateleSP zsp;
+  @XmlElement(name = "Z_OPS")
+  protected ZakladateleOPS zops;
+  @XmlElement(name = "Z_OZ")
+  protected ZrizovateleOZ zoz;
+  @XmlElement(name = "Z_PR")
+  protected ZrizovatelePR zpr;
+  @XmlElement(name = "NAU")
+  protected NastupciZrizovatele nau;
+  @XmlElement(name = "Z_N")
+  protected ZrizovateleNadace zn;
+  @XmlElement(name = "VOU")
+  protected VedOz vou;
+  @XmlElement(name = "KME")
+  protected Komanditiste kme;
+  @XmlElement(name = "DCI")
+  protected Druzstevnici dci;
+  @XmlElement(name = "KPI")
+  protected Komplementari kpi;
+  @XmlElement(name = "CLS")
+  protected ClenoveSdruzeni cls;
+  @XmlElement(name = "KV")
+  protected KonkurzyVyrovnani kv;
+  @XmlElement(name = "OZY")
+  protected List<OdstepneZavody> ozy;
+
+  /**
+   * Gets the value of the uvod property.
+   *
+   * @return possible object is
+   * {@link Uvod }
+   */
+  public Uvod getUVOD() {
+    return uvod;
+  }
+
+  /**
+   * Sets the value of the uvod property.
+   *
+   * @param value allowed object is
+   *              {@link Uvod }
+   */
+  public void setUVOD(Uvod value) {
+    this.uvod = value;
+  }
+
+  /**
+   * Gets the value of the zau property.
+   *
+   * @return possible object is
+   * {@link ZakladniUdajeOR }
+   */
+  public ZakladniUdajeOR getZAU() {
+    return zau;
+  }
+
+  /**
+   * Sets the value of the zau property.
+   *
+   * @param value allowed object is
+   *              {@link ZakladniUdajeOR }
+   */
+  public void setZAU(ZakladniUdajeOR value) {
+    this.zau = value;
+  }
+
+  /**
+   * Gets the value of the reg property.
+   *
+   * @return possible object is
+   * {@link Registrace }
+   */
+  public Registrace getREG() {
+    return reg;
+  }
+
+  /**
+   * Sets the value of the reg property.
+   *
+   * @param value allowed object is
+   *              {@link Registrace }
+   */
+  public void setREG(Registrace value) {
+    this.reg = value;
+  }
+
+  /**
+   * Gets the value of the cin property.
+   *
+   * @return possible object is
+   * {@link Cinnosti }
+   */
+  public Cinnosti getCIN() {
+    return cin;
+  }
+
+  /**
+   * Sets the value of the cin property.
+   *
+   * @param value allowed object is
+   *              {@link Cinnosti }
+   */
+  public void setCIN(Cinnosti value) {
+    this.cin = value;
+  }
+
+  /**
+   * Gets the value of the ex property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the ex property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getEX().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Texty }
+   */
+  public List<Texty> getEX() {
+    if (ex == null) {
+      ex = new ArrayList<Texty>();
+    }
+    return this.ex;
+  }
+
+  /**
+   * Gets the value of the osk property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the osk property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getOSK().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Texty }
+   */
+  public List<Texty> getOSK() {
+    if (osk == null) {
+      osk = new ArrayList<Texty>();
+    }
+    return this.osk;
+  }
+
+  /**
+   * Gets the value of the kap property.
+   *
+   * @return possible object is
+   * {@link Kapital }
+   */
+  public Kapital getKAP() {
+    return kap;
+  }
+
+  /**
+   * Sets the value of the kap property.
+   *
+   * @param value allowed object is
+   *              {@link Kapital }
+   */
+  public void setKAP(Kapital value) {
+    this.kap = value;
+  }
+
+  /**
+   * Gets the value of the so property.
+   *
+   * @return possible object is
+   * {@link StatutarniOrgan }
+   */
+  public StatutarniOrgan getSO() {
+    return so;
+  }
+
+  /**
+   * Sets the value of the so property.
+   *
+   * @param value allowed object is
+   *              {@link StatutarniOrgan }
+   */
+  public void setSO(StatutarniOrgan value) {
+    this.so = value;
+  }
+
+  /**
+   * Gets the value of the sos property.
+   *
+   * @return possible object is
+   * {@link Sos }
+   */
+  public Sos getSOS() {
+    return sos;
+  }
+
+  /**
+   * Sets the value of the sos property.
+   *
+   * @param value allowed object is
+   *              {@link Sos }
+   */
+  public void setSOS(Sos value) {
+    this.sos = value;
+  }
+
+  /**
+   * Gets the value of the sok property.
+   *
+   * @return possible object is
+   * {@link Sok }
+   */
+  public Sok getSOK() {
+    return sok;
+  }
+
+  /**
+   * Sets the value of the sok property.
+   *
+   * @param value allowed object is
+   *              {@link Sok }
+   */
+  public void setSOK(Sok value) {
+    this.sok = value;
+  }
+
+  /**
+   * Gets the value of the sop property.
+   *
+   * @return possible object is
+   * {@link Sop }
+   */
+  public Sop getSOP() {
+    return sop;
+  }
+
+  /**
+   * Sets the value of the sop property.
+   *
+   * @param value allowed object is
+   *              {@link Sop }
+   */
+  public void setSOP(Sop value) {
+    this.sop = value;
+  }
+
+  /**
+   * Gets the value of the pre property.
+   *
+   * @return possible object is
+   * {@link Predstavenstvo }
+   */
+  public Predstavenstvo getPRE() {
+    return pre;
+  }
+
+  /**
+   * Sets the value of the pre property.
+   *
+   * @param value allowed object is
+   *              {@link Predstavenstvo }
+   */
+  public void setPRE(Predstavenstvo value) {
+    this.pre = value;
+  }
+
+  /**
+   * Gets the value of the soz property.
+   *
+   * @return possible object is
+   * {@link Szo }
+   */
+  public Szo getSOZ() {
+    return soz;
+  }
+
+  /**
+   * Sets the value of the soz property.
+   *
+   * @param value allowed object is
+   *              {@link Szo }
+   */
+  public void setSOZ(Szo value) {
+    this.soz = value;
+  }
+
+  /**
+   * Gets the value of the sr property.
+   *
+   * @return possible object is
+   * {@link SpravniRada }
+   */
+  public SpravniRada getSR() {
+    return sr;
+  }
+
+  /**
+   * Sets the value of the sr property.
+   *
+   * @param value allowed object is
+   *              {@link SpravniRada }
+   */
+  public void setSR(SpravniRada value) {
+    this.sr = value;
+  }
+
+  /**
+   * Gets the value of the nad property.
+   *
+   * @return possible object is
+   * {@link Nadace }
+   */
+  public Nadace getNAD() {
+    return nad;
+  }
+
+  /**
+   * Sets the value of the nad property.
+   *
+   * @param value allowed object is
+   *              {@link Nadace }
+   */
+  public void setNAD(Nadace value) {
+    this.nad = value;
+  }
+
+  /**
+   * Gets the value of the nf property.
+   *
+   * @return possible object is
+   * {@link NadacniFond }
+   */
+  public NadacniFond getNF() {
+    return nf;
+  }
+
+  /**
+   * Sets the value of the nf property.
+   *
+   * @param value allowed object is
+   *              {@link NadacniFond }
+   */
+  public void setNF(NadacniFond value) {
+    this.nf = value;
+  }
+
+  /**
+   * Gets the value of the li property.
+   *
+   * @return possible object is
+   * {@link Likvidace }
+   */
+  public Likvidace getLI() {
+    return li;
+  }
+
+  /**
+   * Sets the value of the li property.
+   *
+   * @param value allowed object is
+   *              {@link Likvidace }
+   */
+  public void setLI(Likvidace value) {
+    this.li = value;
+  }
+
+  /**
+   * Gets the value of the pro property.
+   *
+   * @return possible object is
+   * {@link Prokura }
+   */
+  public Prokura getPRO() {
+    return pro;
+  }
+
+  /**
+   * Sets the value of the pro property.
+   *
+   * @param value allowed object is
+   *              {@link Prokura }
+   */
+  public void setPRO(Prokura value) {
+    this.pro = value;
+  }
+
+  /**
+   * Gets the value of the rediteleOps property.
+   *
+   * @return possible object is
+   * {@link RediteleOps }
+   */
+  public RediteleOps getRediteleOps() {
+    return rediteleOps;
+  }
+
+  /**
+   * Sets the value of the rediteleOps property.
+   *
+   * @param value allowed object is
+   *              {@link RediteleOps }
+   */
+  public void setRediteleOps(RediteleOps value) {
+    this.rediteleOps = value;
+  }
+
+  /**
+   * Gets the value of the dr property.
+   *
+   * @return possible object is
+   * {@link DozorciRada }
+   */
+  public DozorciRada getDR() {
+    return dr;
+  }
+
+  /**
+   * Sets the value of the dr property.
+   *
+   * @param value allowed object is
+   *              {@link DozorciRada }
+   */
+  public void setDR(DozorciRada value) {
+    this.dr = value;
+  }
+
+  /**
+   * Gets the value of the kontrolniKomise property.
+   *
+   * @return possible object is
+   * {@link KontrolniKomise }
+   */
+  public KontrolniKomise getKontrolniKomise() {
+    return kontrolniKomise;
+  }
+
+  /**
+   * Sets the value of the kontrolniKomise property.
+   *
+   * @param value allowed object is
+   *              {@link KontrolniKomise }
+   */
+  public void setKontrolniKomise(KontrolniKomise value) {
+    this.kontrolniKomise = value;
+  }
+
+  /**
+   * Gets the value of the rei property.
+   *
+   * @return possible object is
+   * {@link Revizori }
+   */
+  public Revizori getREI() {
+    return rei;
+  }
+
+  /**
+   * Sets the value of the rei property.
+   *
+   * @param value allowed object is
+   *              {@link Revizori }
+   */
+  public void setREI(Revizori value) {
+    this.rei = value;
+  }
+
+  /**
+   * Gets the value of the sbv property.
+   *
+   * @return possible object is
+   * {@link SpolecniciBezVkladu }
+   */
+  public SpolecniciBezVkladu getSBV() {
+    return sbv;
+  }
+
+  /**
+   * Sets the value of the sbv property.
+   *
+   * @param value allowed object is
+   *              {@link SpolecniciBezVkladu }
+   */
+  public void setSBV(SpolecniciBezVkladu value) {
+    this.sbv = value;
+  }
+
+  /**
+   * Gets the value of the ssv property.
+   *
+   * @return possible object is
+   * {@link SpolecniciSVkladem }
+   */
+  public SpolecniciSVkladem getSSV() {
+    return ssv;
+  }
+
+  /**
+   * Sets the value of the ssv property.
+   *
+   * @param value allowed object is
+   *              {@link SpolecniciSVkladem }
+   */
+  public void setSSV(SpolecniciSVkladem value) {
+    this.ssv = value;
+  }
+
+  /**
+   * Gets the value of the aki property.
+   *
+   * @return possible object is
+   * {@link Akcionari }
+   */
+  public Akcionari getAKI() {
+    return aki;
+  }
+
+  /**
+   * Sets the value of the aki property.
+   *
+   * @param value allowed object is
+   *              {@link Akcionari }
+   */
+  public void setAKI(Akcionari value) {
+    this.aki = value;
+  }
+
+  /**
+   * Gets the value of the zsp property.
+   *
+   * @return possible object is
+   * {@link ZakladateleSP }
+   */
+  public ZakladateleSP getZSP() {
+    return zsp;
+  }
+
+  /**
+   * Sets the value of the zsp property.
+   *
+   * @param value allowed object is
+   *              {@link ZakladateleSP }
+   */
+  public void setZSP(ZakladateleSP value) {
+    this.zsp = value;
+  }
+
+  /**
+   * Gets the value of the zops property.
+   *
+   * @return possible object is
+   * {@link ZakladateleOPS }
+   */
+  public ZakladateleOPS getZOPS() {
+    return zops;
+  }
+
+  /**
+   * Sets the value of the zops property.
+   *
+   * @param value allowed object is
+   *              {@link ZakladateleOPS }
+   */
+  public void setZOPS(ZakladateleOPS value) {
+    this.zops = value;
+  }
+
+  /**
+   * Gets the value of the zoz property.
+   *
+   * @return possible object is
+   * {@link ZrizovateleOZ }
+   */
+  public ZrizovateleOZ getZOZ() {
+    return zoz;
+  }
+
+  /**
+   * Sets the value of the zoz property.
+   *
+   * @param value allowed object is
+   *              {@link ZrizovateleOZ }
+   */
+  public void setZOZ(ZrizovateleOZ value) {
+    this.zoz = value;
+  }
+
+  /**
+   * Gets the value of the zpr property.
+   *
+   * @return possible object is
+   * {@link ZrizovatelePR }
+   */
+  public ZrizovatelePR getZPR() {
+    return zpr;
+  }
+
+  /**
+   * Sets the value of the zpr property.
+   *
+   * @param value allowed object is
+   *              {@link ZrizovatelePR }
+   */
+  public void setZPR(ZrizovatelePR value) {
+    this.zpr = value;
+  }
+
+  /**
+   * Gets the value of the nau property.
+   *
+   * @return possible object is
+   * {@link NastupciZrizovatele }
+   */
+  public NastupciZrizovatele getNAU() {
+    return nau;
+  }
+
+  /**
+   * Sets the value of the nau property.
+   *
+   * @param value allowed object is
+   *              {@link NastupciZrizovatele }
+   */
+  public void setNAU(NastupciZrizovatele value) {
+    this.nau = value;
+  }
+
+  /**
+   * Gets the value of the zn property.
+   *
+   * @return possible object is
+   * {@link ZrizovateleNadace }
+   */
+  public ZrizovateleNadace getZN() {
+    return zn;
+  }
+
+  /**
+   * Sets the value of the zn property.
+   *
+   * @param value allowed object is
+   *              {@link ZrizovateleNadace }
+   */
+  public void setZN(ZrizovateleNadace value) {
+    this.zn = value;
+  }
+
+  /**
+   * Gets the value of the vou property.
+   *
+   * @return possible object is
+   * {@link VedOz }
+   */
+  public VedOz getVOU() {
+    return vou;
+  }
+
+  /**
+   * Sets the value of the vou property.
+   *
+   * @param value allowed object is
+   *              {@link VedOz }
+   */
+  public void setVOU(VedOz value) {
+    this.vou = value;
+  }
+
+  /**
+   * Gets the value of the kme property.
+   *
+   * @return possible object is
+   * {@link Komanditiste }
+   */
+  public Komanditiste getKME() {
+    return kme;
+  }
+
+  /**
+   * Sets the value of the kme property.
+   *
+   * @param value allowed object is
+   *              {@link Komanditiste }
+   */
+  public void setKME(Komanditiste value) {
+    this.kme = value;
+  }
+
+  /**
+   * Gets the value of the dci property.
+   *
+   * @return possible object is
+   * {@link Druzstevnici }
+   */
+  public Druzstevnici getDCI() {
+    return dci;
+  }
+
+  /**
+   * Sets the value of the dci property.
+   *
+   * @param value allowed object is
+   *              {@link Druzstevnici }
+   */
+  public void setDCI(Druzstevnici value) {
+    this.dci = value;
+  }
+
+  /**
+   * Gets the value of the kpi property.
+   *
+   * @return possible object is
+   * {@link Komplementari }
+   */
+  public Komplementari getKPI() {
+    return kpi;
+  }
+
+  /**
+   * Sets the value of the kpi property.
+   *
+   * @param value allowed object is
+   *              {@link Komplementari }
+   */
+  public void setKPI(Komplementari value) {
+    this.kpi = value;
+  }
+
+  /**
+   * Gets the value of the cls property.
+   *
+   * @return possible object is
+   * {@link ClenoveSdruzeni }
+   */
+  public ClenoveSdruzeni getCLS() {
+    return cls;
+  }
+
+  /**
+   * Sets the value of the cls property.
+   *
+   * @param value allowed object is
+   *              {@link ClenoveSdruzeni }
+   */
+  public void setCLS(ClenoveSdruzeni value) {
+    this.cls = value;
+  }
+
+  /**
+   * Gets the value of the kv property.
+   *
+   * @return possible object is
+   * {@link KonkurzyVyrovnani }
+   */
+  public KonkurzyVyrovnani getKV() {
+    return kv;
+  }
+
+  /**
+   * Sets the value of the kv property.
+   *
+   * @param value allowed object is
+   *              {@link KonkurzyVyrovnani }
+   */
+  public void setKV(KonkurzyVyrovnani value) {
+    this.kv = value;
+  }
+
+  /**
+   * Gets the value of the ozy property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the ozy property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getOZY().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link OdstepneZavody }
+   */
+  public List<OdstepneZavody> getOZY() {
+    if (ozy == null) {
+      ozy = new ArrayList<OdstepneZavody>();
+    }
+    return this.ozy;
+  }
 
 }

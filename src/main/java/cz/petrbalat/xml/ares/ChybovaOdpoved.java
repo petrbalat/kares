@@ -15,11 +15,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Chybová odpověď v elementu Fault
- * 
+ *
  * <p>Java class for chybova_odpoved complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="chybova_odpoved">
  *   &lt;complexContent>
@@ -32,65 +32,55 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "chybova_odpoved", propOrder = {
-    "faultcode",
-    "faultstring"
+  "faultcode",
+  "faultstring"
 })
 public class ChybovaOdpoved {
 
-    protected String faultcode;
-    protected String faultstring;
+  protected String faultcode;
+  protected String faultstring;
 
-    /**
-     * Gets the value of the faultcode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFaultcode() {
-        return faultcode;
-    }
+  /**
+   * Gets the value of the faultcode property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getFaultcode() {
+    return faultcode;
+  }
 
-    /**
-     * Sets the value of the faultcode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFaultcode(String value) {
-        this.faultcode = value;
-    }
+  /**
+   * Sets the value of the faultcode property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setFaultcode(String value) {
+    this.faultcode = value;
+  }
 
-    /**
-     * Gets the value of the faultstring property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getFaultstring() {
-        return faultstring;
-    }
+  /**
+   * Gets the value of the faultstring property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getFaultstring() {
+    return faultstring;
+  }
 
-    /**
-     * Sets the value of the faultstring property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setFaultstring(String value) {
-        this.faultstring = value;
-    }
+  /**
+   * Sets the value of the faultstring property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setFaultstring(String value) {
+    this.faultstring = value;
+  }
 
 }

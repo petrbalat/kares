@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Správci konkurzu
- * 
+ *
  * <p>Java class for spravce_konkurzu_CEU complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="spravce_konkurzu_CEU">
  *   &lt;complexContent>
@@ -34,94 +34,80 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "spravce_konkurzu_CEU", propOrder = {
-    "celeJmenoSpravce",
-    "aSpravce",
-    "bSpravce"
+  "celeJmenoSpravce",
+  "aSpravce",
+  "bSpravce"
 })
 public class SpravceKonkurzuCEU {
 
-    @XmlElement(name = "Cele_jmeno_spravce", required = true)
-    protected String celeJmenoSpravce;
-    @XmlElement(name = "A_spravce")
-    protected AdresaARES aSpravce;
-    @XmlElement(name = "B_spravce")
-    protected AdresaARES bSpravce;
+  @XmlElement(name = "Cele_jmeno_spravce", required = true)
+  protected String celeJmenoSpravce;
+  @XmlElement(name = "A_spravce")
+  protected AdresaARES aSpravce;
+  @XmlElement(name = "B_spravce")
+  protected AdresaARES bSpravce;
 
-    /**
-     * Gets the value of the celeJmenoSpravce property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCeleJmenoSpravce() {
-        return celeJmenoSpravce;
-    }
+  /**
+   * Gets the value of the celeJmenoSpravce property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCeleJmenoSpravce() {
+    return celeJmenoSpravce;
+  }
 
-    /**
-     * Sets the value of the celeJmenoSpravce property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCeleJmenoSpravce(String value) {
-        this.celeJmenoSpravce = value;
-    }
+  /**
+   * Sets the value of the celeJmenoSpravce property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCeleJmenoSpravce(String value) {
+    this.celeJmenoSpravce = value;
+  }
 
-    /**
-     * Gets the value of the aSpravce property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getASpravce() {
-        return aSpravce;
-    }
+  /**
+   * Gets the value of the aSpravce property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getASpravce() {
+    return aSpravce;
+  }
 
-    /**
-     * Sets the value of the aSpravce property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setASpravce(AdresaARES value) {
-        this.aSpravce = value;
-    }
+  /**
+   * Sets the value of the aSpravce property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setASpravce(AdresaARES value) {
+    this.aSpravce = value;
+  }
 
-    /**
-     * Gets the value of the bSpravce property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getBSpravce() {
-        return bSpravce;
-    }
+  /**
+   * Gets the value of the bSpravce property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getBSpravce() {
+    return bSpravce;
+  }
 
-    /**
-     * Sets the value of the bSpravce property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setBSpravce(AdresaARES value) {
-        this.bSpravce = value;
-    }
+  /**
+   * Sets the value of the bSpravce property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setBSpravce(AdresaARES value) {
+    this.bSpravce = value;
+  }
 
 }

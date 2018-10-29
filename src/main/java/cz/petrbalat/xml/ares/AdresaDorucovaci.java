@@ -8,18 +8,14 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * <p>Java class for adresa_dorucovaci complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="adresa_dorucovaci">
  *   &lt;complexContent>
@@ -33,93 +29,79 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "adresa_dorucovaci", propOrder = {
-    "uc",
-    "pb"
+  "uc",
+  "pb"
 })
 public class AdresaDorucovaci {
 
-    @XmlElement(name = "UC")
-    protected String uc;
-    @XmlElement(name = "PB")
-    protected String pb;
-    @XmlAttribute(name = "zdroj")
-    protected ZdrojType zdroj;
+  @XmlElement(name = "UC")
+  protected String uc;
+  @XmlElement(name = "PB")
+  protected String pb;
+  @XmlAttribute(name = "zdroj")
+  protected ZdrojType zdroj;
 
-    /**
-     * Gets the value of the uc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getUC() {
-        return uc;
-    }
+  /**
+   * Gets the value of the uc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getUC() {
+    return uc;
+  }
 
-    /**
-     * Sets the value of the uc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setUC(String value) {
-        this.uc = value;
-    }
+  /**
+   * Sets the value of the uc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setUC(String value) {
+    this.uc = value;
+  }
 
-    /**
-     * Gets the value of the pb property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPB() {
-        return pb;
-    }
+  /**
+   * Gets the value of the pb property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPB() {
+    return pb;
+  }
 
-    /**
-     * Sets the value of the pb property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPB(String value) {
-        this.pb = value;
-    }
+  /**
+   * Sets the value of the pb property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPB(String value) {
+    this.pb = value;
+  }
 
-    /**
-     * Gets the value of the zdroj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public ZdrojType getZdroj() {
-        return zdroj;
-    }
+  /**
+   * Gets the value of the zdroj property.
+   *
+   * @return possible object is
+   * {@link ZdrojType }
+   */
+  public ZdrojType getZdroj() {
+    return zdroj;
+  }
 
-    /**
-     * Sets the value of the zdroj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public void setZdroj(ZdrojType value) {
-        this.zdroj = value;
-    }
+  /**
+   * Sets the value of the zdroj property.
+   *
+   * @param value allowed object is
+   *              {@link ZdrojType }
+   */
+  public void setZdroj(ZdrojType value) {
+    this.zdroj = value;
+  }
 
 }

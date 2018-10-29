@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Ředitel obecně prospěšné společnosti se může vyskytovat pouze jako fyzická osoba
- * 
+ *
  * <p>Java class for reditele_ops complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="reditele_ops">
  *   &lt;complexContent>
@@ -35,77 +35,71 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "reditele_ops", propOrder = {
-    "reditelOps",
-    "t"
+  "reditelOps",
+  "t"
 })
 public class RediteleOps {
 
-    @XmlElement(name = "Reditel_ops")
-    protected List<Angazma> reditelOps;
-    @XmlElement(name = "T")
-    protected List<TextType> t;
+  @XmlElement(name = "Reditel_ops")
+  protected List<Angazma> reditelOps;
+  @XmlElement(name = "T")
+  protected List<TextType> t;
 
-    /**
-     * Gets the value of the reditelOps property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the reditelOps property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getReditelOps().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Angazma }
-     * 
-     * 
-     */
-    public List<Angazma> getReditelOps() {
-        if (reditelOps == null) {
-            reditelOps = new ArrayList<Angazma>();
-        }
-        return this.reditelOps;
+  /**
+   * Gets the value of the reditelOps property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the reditelOps property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getReditelOps().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Angazma }
+   */
+  public List<Angazma> getReditelOps() {
+    if (reditelOps == null) {
+      reditelOps = new ArrayList<Angazma>();
     }
+    return this.reditelOps;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the t property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getT().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TextType }
-     * 
-     * 
-     */
-    public List<TextType> getT() {
-        if (t == null) {
-            t = new ArrayList<TextType>();
-        }
-        return this.t;
+  /**
+   * Gets the value of the t property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the t property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getT().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TextType }
+   */
+  public List<TextType> getT() {
+    if (t == null) {
+      t = new ArrayList<TextType>();
     }
+    return this.t;
+  }
 
 }

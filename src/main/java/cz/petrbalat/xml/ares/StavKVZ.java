@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Číselník stavů pro atributy KKZ, VY, ZAM, LI
- * 
+ *
  * <p>Java class for stav_KVZ complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="stav_KVZ">
  *   &lt;complexContent>
@@ -33,59 +33,51 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "stav_KVZ", propOrder = {
-    "k",
-    "t"
+  "k",
+  "t"
 })
 public class StavKVZ {
 
-    @XmlElement(name = "K")
-    protected int k;
-    @XmlElement(name = "T")
-    protected String t;
+  @XmlElement(name = "K")
+  protected int k;
+  @XmlElement(name = "T")
+  protected String t;
 
-    /**
-     * Gets the value of the k property.
-     * 
-     */
-    public int getK() {
-        return k;
-    }
+  /**
+   * Gets the value of the k property.
+   */
+  public int getK() {
+    return k;
+  }
 
-    /**
-     * Sets the value of the k property.
-     * 
-     */
-    public void setK(int value) {
-        this.k = value;
-    }
+  /**
+   * Sets the value of the k property.
+   */
+  public void setK(int value) {
+    this.k = value;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getT() {
-        return t;
-    }
+  /**
+   * Gets the value of the t property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getT() {
+    return t;
+  }
 
-    /**
-     * Sets the value of the t property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setT(String value) {
-        this.t = value;
-    }
+  /**
+   * Sets the value of the t property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setT(String value) {
+    this.t = value;
+  }
 
 }

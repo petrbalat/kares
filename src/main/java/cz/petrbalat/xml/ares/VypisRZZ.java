@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Výpis z registru zdravotnických zařízení
- * 
+ *
  * <p>Java class for vypis_RZZ complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vypis_RZZ">
  *   &lt;complexContent>
@@ -36,148 +36,126 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vypis_RZZ", propOrder = {
-    "uvod",
-    "zau",
-    "si",
-    "zuj",
-    "dau"
+  "uvod",
+  "zau",
+  "si",
+  "zuj",
+  "dau"
 })
 public class VypisRZZ {
 
-    @XmlElement(name = "UVOD")
-    protected Uvod uvod;
-    @XmlElement(name = "ZAU", required = true)
-    protected ZakladniUdajeRZZ zau;
-    @XmlElement(name = "SI")
-    protected AdresaARES si;
-    @XmlElement(name = "ZUJ")
-    protected Zuj zuj;
-    @XmlElement(name = "DAU")
-    protected DalsiUdaje dau;
+  @XmlElement(name = "UVOD")
+  protected Uvod uvod;
+  @XmlElement(name = "ZAU", required = true)
+  protected ZakladniUdajeRZZ zau;
+  @XmlElement(name = "SI")
+  protected AdresaARES si;
+  @XmlElement(name = "ZUJ")
+  protected Zuj zuj;
+  @XmlElement(name = "DAU")
+  protected DalsiUdaje dau;
 
-    /**
-     * Gets the value of the uvod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Uvod }
-     *     
-     */
-    public Uvod getUVOD() {
-        return uvod;
-    }
+  /**
+   * Gets the value of the uvod property.
+   *
+   * @return possible object is
+   * {@link Uvod }
+   */
+  public Uvod getUVOD() {
+    return uvod;
+  }
 
-    /**
-     * Sets the value of the uvod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Uvod }
-     *     
-     */
-    public void setUVOD(Uvod value) {
-        this.uvod = value;
-    }
+  /**
+   * Sets the value of the uvod property.
+   *
+   * @param value allowed object is
+   *              {@link Uvod }
+   */
+  public void setUVOD(Uvod value) {
+    this.uvod = value;
+  }
 
-    /**
-     * Gets the value of the zau property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZakladniUdajeRZZ }
-     *     
-     */
-    public ZakladniUdajeRZZ getZAU() {
-        return zau;
-    }
+  /**
+   * Gets the value of the zau property.
+   *
+   * @return possible object is
+   * {@link ZakladniUdajeRZZ }
+   */
+  public ZakladniUdajeRZZ getZAU() {
+    return zau;
+  }
 
-    /**
-     * Sets the value of the zau property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZakladniUdajeRZZ }
-     *     
-     */
-    public void setZAU(ZakladniUdajeRZZ value) {
-        this.zau = value;
-    }
+  /**
+   * Sets the value of the zau property.
+   *
+   * @param value allowed object is
+   *              {@link ZakladniUdajeRZZ }
+   */
+  public void setZAU(ZakladniUdajeRZZ value) {
+    this.zau = value;
+  }
 
-    /**
-     * Gets the value of the si property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getSI() {
-        return si;
-    }
+  /**
+   * Gets the value of the si property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getSI() {
+    return si;
+  }
 
-    /**
-     * Sets the value of the si property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setSI(AdresaARES value) {
-        this.si = value;
-    }
+  /**
+   * Sets the value of the si property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setSI(AdresaARES value) {
+    this.si = value;
+  }
 
-    /**
-     * Gets the value of the zuj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Zuj }
-     *     
-     */
-    public Zuj getZUJ() {
-        return zuj;
-    }
+  /**
+   * Gets the value of the zuj property.
+   *
+   * @return possible object is
+   * {@link Zuj }
+   */
+  public Zuj getZUJ() {
+    return zuj;
+  }
 
-    /**
-     * Sets the value of the zuj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Zuj }
-     *     
-     */
-    public void setZUJ(Zuj value) {
-        this.zuj = value;
-    }
+  /**
+   * Sets the value of the zuj property.
+   *
+   * @param value allowed object is
+   *              {@link Zuj }
+   */
+  public void setZUJ(Zuj value) {
+    this.zuj = value;
+  }
 
-    /**
-     * Gets the value of the dau property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DalsiUdaje }
-     *     
-     */
-    public DalsiUdaje getDAU() {
-        return dau;
-    }
+  /**
+   * Gets the value of the dau property.
+   *
+   * @return possible object is
+   * {@link DalsiUdaje }
+   */
+  public DalsiUdaje getDAU() {
+    return dau;
+  }
 
-    /**
-     * Sets the value of the dau property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DalsiUdaje }
-     *     
-     */
-    public void setDAU(DalsiUdaje value) {
-        this.dau = value;
-    }
+  /**
+   * Sets the value of the dau property.
+   *
+   * @param value allowed object is
+   *              {@link DalsiUdaje }
+   */
+  public void setDAU(DalsiUdaje value) {
+    this.dau = value;
+  }
 
 }

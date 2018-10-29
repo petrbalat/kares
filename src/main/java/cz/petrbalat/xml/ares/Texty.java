@@ -8,24 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
+import javax.xml.bind.annotation.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * TY předmětů podnikání, ostat.skutečnosti atd. s atributy
- * 
+ *
  * <p>Java class for texty complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="texty">
  *   &lt;complexContent>
@@ -40,125 +35,109 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "texty", propOrder = {
-    "t"
+  "t"
 })
 public class Texty {
 
-    @XmlElement(name = "T", required = true)
-    protected List<TextType> t;
-    @XmlAttribute(name = "dod")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dod;
-    @XmlAttribute(name = "ddo")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar ddo;
-    @XmlAttribute(name = "zdroj")
-    protected ZdrojType zdroj;
+  @XmlElement(name = "T", required = true)
+  protected List<TextType> t;
+  @XmlAttribute(name = "dod")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dod;
+  @XmlAttribute(name = "ddo")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar ddo;
+  @XmlAttribute(name = "zdroj")
+  protected ZdrojType zdroj;
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the t property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getT().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TextType }
-     * 
-     * 
-     */
-    public List<TextType> getT() {
-        if (t == null) {
-            t = new ArrayList<TextType>();
-        }
-        return this.t;
+  /**
+   * Gets the value of the t property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the t property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getT().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TextType }
+   */
+  public List<TextType> getT() {
+    if (t == null) {
+      t = new ArrayList<TextType>();
     }
+    return this.t;
+  }
 
-    /**
-     * Gets the value of the dod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDod() {
-        return dod;
-    }
+  /**
+   * Gets the value of the dod property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDod() {
+    return dod;
+  }
 
-    /**
-     * Sets the value of the dod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDod(XMLGregorianCalendar value) {
-        this.dod = value;
-    }
+  /**
+   * Sets the value of the dod property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDod(XMLGregorianCalendar value) {
+    this.dod = value;
+  }
 
-    /**
-     * Gets the value of the ddo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDdo() {
-        return ddo;
-    }
+  /**
+   * Gets the value of the ddo property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDdo() {
+    return ddo;
+  }
 
-    /**
-     * Sets the value of the ddo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDdo(XMLGregorianCalendar value) {
-        this.ddo = value;
-    }
+  /**
+   * Sets the value of the ddo property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDdo(XMLGregorianCalendar value) {
+    this.ddo = value;
+  }
 
-    /**
-     * Gets the value of the zdroj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public ZdrojType getZdroj() {
-        return zdroj;
-    }
+  /**
+   * Gets the value of the zdroj property.
+   *
+   * @return possible object is
+   * {@link ZdrojType }
+   */
+  public ZdrojType getZdroj() {
+    return zdroj;
+  }
 
-    /**
-     * Sets the value of the zdroj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public void setZdroj(ZdrojType value) {
-        this.zdroj = value;
-    }
+  /**
+   * Sets the value of the zdroj property.
+   *
+   * @param value allowed object is
+   *              {@link ZdrojType }
+   */
+  public void setZdroj(ZdrojType value) {
+    this.zdroj = value;
+  }
 
 }

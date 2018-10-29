@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Vstupní tabulka s nahranými daty z Ministerstva spravedlnosti
- * 
+ *
  * <p>Java class for vk_podnet complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vk_podnet">
  *   &lt;complexContent>
@@ -51,455 +47,393 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vk_podnet", propOrder = {
-    "sPodnetu",
-    "cisloVetyCeu",
-    "stornuj",
-    "dv",
-    "cisloSoudu",
-    "kUkonu",
-    "cisloSenatu",
-    "cisloZnacky",
-    "rokZnacky",
-    "kkzVyrovnani",
-    "pfo",
-    "celeJmeno",
-    "ico",
-    "rc",
-    "urlDetail",
-    "urlUsneseni",
-    "spravceKonkurzniPodstaty",
-    "sVety"
+  "sPodnetu",
+  "cisloVetyCeu",
+  "stornuj",
+  "dv",
+  "cisloSoudu",
+  "kUkonu",
+  "cisloSenatu",
+  "cisloZnacky",
+  "rokZnacky",
+  "kkzVyrovnani",
+  "pfo",
+  "celeJmeno",
+  "ico",
+  "rc",
+  "urlDetail",
+  "urlUsneseni",
+  "spravceKonkurzniPodstaty",
+  "sVety"
 })
 public class VkPodnet {
 
-    @XmlElement(name = "S_podnetu")
-    protected int sPodnetu;
-    @XmlElement(name = "Cislo_vety_ceu")
-    protected int cisloVetyCeu;
-    @XmlElement(name = "Stornuj")
-    protected Integer stornuj;
-    @XmlElement(name = "DV", required = true)
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "Cislo_soudu")
-    protected short cisloSoudu;
-    @XmlElement(name = "K_ukonu")
-    protected short kUkonu;
-    @XmlElement(name = "Cislo_senatu")
-    protected Short cisloSenatu;
-    @XmlElement(name = "Cislo_znacky")
-    protected short cisloZnacky;
-    @XmlElement(name = "Rok_znacky")
-    protected short rokZnacky;
-    @XmlElement(name = "KKZ_vyrovnani", required = true)
-    @XmlSchemaType(name = "string")
-    protected KonkurzVyrovnaniCEU kkzVyrovnani;
-    @XmlElement(name = "PFO", required = true)
-    @XmlSchemaType(name = "string")
-    protected Pfc pfo;
-    @XmlElement(name = "Cele_jmeno")
-    protected String celeJmeno;
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "RC")
-    protected String rc;
-    @XmlElement(name = "URL_detail", required = true)
-    protected String urlDetail;
-    @XmlElement(name = "URL_usneseni")
-    protected String urlUsneseni;
-    @XmlElement(name = "Spravce_konkurzni_podstaty")
-    protected String spravceKonkurzniPodstaty;
-    @XmlElement(name = "S_vety", required = true)
-    @XmlSchemaType(name = "string")
-    protected StavVetyCEU sVety;
+  @XmlElement(name = "S_podnetu")
+  protected int sPodnetu;
+  @XmlElement(name = "Cislo_vety_ceu")
+  protected int cisloVetyCeu;
+  @XmlElement(name = "Stornuj")
+  protected Integer stornuj;
+  @XmlElement(name = "DV", required = true)
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "Cislo_soudu")
+  protected short cisloSoudu;
+  @XmlElement(name = "K_ukonu")
+  protected short kUkonu;
+  @XmlElement(name = "Cislo_senatu")
+  protected Short cisloSenatu;
+  @XmlElement(name = "Cislo_znacky")
+  protected short cisloZnacky;
+  @XmlElement(name = "Rok_znacky")
+  protected short rokZnacky;
+  @XmlElement(name = "KKZ_vyrovnani", required = true)
+  @XmlSchemaType(name = "string")
+  protected KonkurzVyrovnaniCEU kkzVyrovnani;
+  @XmlElement(name = "PFO", required = true)
+  @XmlSchemaType(name = "string")
+  protected Pfc pfo;
+  @XmlElement(name = "Cele_jmeno")
+  protected String celeJmeno;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "RC")
+  protected String rc;
+  @XmlElement(name = "URL_detail", required = true)
+  protected String urlDetail;
+  @XmlElement(name = "URL_usneseni")
+  protected String urlUsneseni;
+  @XmlElement(name = "Spravce_konkurzni_podstaty")
+  protected String spravceKonkurzniPodstaty;
+  @XmlElement(name = "S_vety", required = true)
+  @XmlSchemaType(name = "string")
+  protected StavVetyCEU sVety;
 
-    /**
-     * Gets the value of the sPodnetu property.
-     * 
-     */
-    public int getSPodnetu() {
-        return sPodnetu;
-    }
+  /**
+   * Gets the value of the sPodnetu property.
+   */
+  public int getSPodnetu() {
+    return sPodnetu;
+  }
 
-    /**
-     * Sets the value of the sPodnetu property.
-     * 
-     */
-    public void setSPodnetu(int value) {
-        this.sPodnetu = value;
-    }
+  /**
+   * Sets the value of the sPodnetu property.
+   */
+  public void setSPodnetu(int value) {
+    this.sPodnetu = value;
+  }
 
-    /**
-     * Gets the value of the cisloVetyCeu property.
-     * 
-     */
-    public int getCisloVetyCeu() {
-        return cisloVetyCeu;
-    }
+  /**
+   * Gets the value of the cisloVetyCeu property.
+   */
+  public int getCisloVetyCeu() {
+    return cisloVetyCeu;
+  }
 
-    /**
-     * Sets the value of the cisloVetyCeu property.
-     * 
-     */
-    public void setCisloVetyCeu(int value) {
-        this.cisloVetyCeu = value;
-    }
+  /**
+   * Sets the value of the cisloVetyCeu property.
+   */
+  public void setCisloVetyCeu(int value) {
+    this.cisloVetyCeu = value;
+  }
 
-    /**
-     * Gets the value of the stornuj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getStornuj() {
-        return stornuj;
-    }
+  /**
+   * Gets the value of the stornuj property.
+   *
+   * @return possible object is
+   * {@link Integer }
+   */
+  public Integer getStornuj() {
+    return stornuj;
+  }
 
-    /**
-     * Sets the value of the stornuj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setStornuj(Integer value) {
-        this.stornuj = value;
-    }
+  /**
+   * Sets the value of the stornuj property.
+   *
+   * @param value allowed object is
+   *              {@link Integer }
+   */
+  public void setStornuj(Integer value) {
+    this.stornuj = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the cisloSoudu property.
-     * 
-     */
-    public short getCisloSoudu() {
-        return cisloSoudu;
-    }
+  /**
+   * Gets the value of the cisloSoudu property.
+   */
+  public short getCisloSoudu() {
+    return cisloSoudu;
+  }
 
-    /**
-     * Sets the value of the cisloSoudu property.
-     * 
-     */
-    public void setCisloSoudu(short value) {
-        this.cisloSoudu = value;
-    }
+  /**
+   * Sets the value of the cisloSoudu property.
+   */
+  public void setCisloSoudu(short value) {
+    this.cisloSoudu = value;
+  }
 
-    /**
-     * Gets the value of the kUkonu property.
-     * 
-     */
-    public short getKUkonu() {
-        return kUkonu;
-    }
+  /**
+   * Gets the value of the kUkonu property.
+   */
+  public short getKUkonu() {
+    return kUkonu;
+  }
 
-    /**
-     * Sets the value of the kUkonu property.
-     * 
-     */
-    public void setKUkonu(short value) {
-        this.kUkonu = value;
-    }
+  /**
+   * Sets the value of the kUkonu property.
+   */
+  public void setKUkonu(short value) {
+    this.kUkonu = value;
+  }
 
-    /**
-     * Gets the value of the cisloSenatu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getCisloSenatu() {
-        return cisloSenatu;
-    }
+  /**
+   * Gets the value of the cisloSenatu property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getCisloSenatu() {
+    return cisloSenatu;
+  }
 
-    /**
-     * Sets the value of the cisloSenatu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setCisloSenatu(Short value) {
-        this.cisloSenatu = value;
-    }
+  /**
+   * Sets the value of the cisloSenatu property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setCisloSenatu(Short value) {
+    this.cisloSenatu = value;
+  }
 
-    /**
-     * Gets the value of the cisloZnacky property.
-     * 
-     */
-    public short getCisloZnacky() {
-        return cisloZnacky;
-    }
+  /**
+   * Gets the value of the cisloZnacky property.
+   */
+  public short getCisloZnacky() {
+    return cisloZnacky;
+  }
 
-    /**
-     * Sets the value of the cisloZnacky property.
-     * 
-     */
-    public void setCisloZnacky(short value) {
-        this.cisloZnacky = value;
-    }
+  /**
+   * Sets the value of the cisloZnacky property.
+   */
+  public void setCisloZnacky(short value) {
+    this.cisloZnacky = value;
+  }
 
-    /**
-     * Gets the value of the rokZnacky property.
-     * 
-     */
-    public short getRokZnacky() {
-        return rokZnacky;
-    }
+  /**
+   * Gets the value of the rokZnacky property.
+   */
+  public short getRokZnacky() {
+    return rokZnacky;
+  }
 
-    /**
-     * Sets the value of the rokZnacky property.
-     * 
-     */
-    public void setRokZnacky(short value) {
-        this.rokZnacky = value;
-    }
+  /**
+   * Sets the value of the rokZnacky property.
+   */
+  public void setRokZnacky(short value) {
+    this.rokZnacky = value;
+  }
 
-    /**
-     * Gets the value of the kkzVyrovnani property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KonkurzVyrovnaniCEU }
-     *     
-     */
-    public KonkurzVyrovnaniCEU getKKZVyrovnani() {
-        return kkzVyrovnani;
-    }
+  /**
+   * Gets the value of the kkzVyrovnani property.
+   *
+   * @return possible object is
+   * {@link KonkurzVyrovnaniCEU }
+   */
+  public KonkurzVyrovnaniCEU getKKZVyrovnani() {
+    return kkzVyrovnani;
+  }
 
-    /**
-     * Sets the value of the kkzVyrovnani property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KonkurzVyrovnaniCEU }
-     *     
-     */
-    public void setKKZVyrovnani(KonkurzVyrovnaniCEU value) {
-        this.kkzVyrovnani = value;
-    }
+  /**
+   * Sets the value of the kkzVyrovnani property.
+   *
+   * @param value allowed object is
+   *              {@link KonkurzVyrovnaniCEU }
+   */
+  public void setKKZVyrovnani(KonkurzVyrovnaniCEU value) {
+    this.kkzVyrovnani = value;
+  }
 
-    /**
-     * Gets the value of the pfo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Pfc }
-     *     
-     */
-    public Pfc getPFO() {
-        return pfo;
-    }
+  /**
+   * Gets the value of the pfo property.
+   *
+   * @return possible object is
+   * {@link Pfc }
+   */
+  public Pfc getPFO() {
+    return pfo;
+  }
 
-    /**
-     * Sets the value of the pfo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Pfc }
-     *     
-     */
-    public void setPFO(Pfc value) {
-        this.pfo = value;
-    }
+  /**
+   * Sets the value of the pfo property.
+   *
+   * @param value allowed object is
+   *              {@link Pfc }
+   */
+  public void setPFO(Pfc value) {
+    this.pfo = value;
+  }
 
-    /**
-     * Gets the value of the celeJmeno property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCeleJmeno() {
-        return celeJmeno;
-    }
+  /**
+   * Gets the value of the celeJmeno property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCeleJmeno() {
+    return celeJmeno;
+  }
 
-    /**
-     * Sets the value of the celeJmeno property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCeleJmeno(String value) {
-        this.celeJmeno = value;
-    }
+  /**
+   * Sets the value of the celeJmeno property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCeleJmeno(String value) {
+    this.celeJmeno = value;
+  }
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the rc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getRC() {
-        return rc;
-    }
+  /**
+   * Gets the value of the rc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getRC() {
+    return rc;
+  }
 
-    /**
-     * Sets the value of the rc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setRC(String value) {
-        this.rc = value;
-    }
+  /**
+   * Sets the value of the rc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setRC(String value) {
+    this.rc = value;
+  }
 
-    /**
-     * Gets the value of the urlDetail property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getURLDetail() {
-        return urlDetail;
-    }
+  /**
+   * Gets the value of the urlDetail property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getURLDetail() {
+    return urlDetail;
+  }
 
-    /**
-     * Sets the value of the urlDetail property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setURLDetail(String value) {
-        this.urlDetail = value;
-    }
+  /**
+   * Sets the value of the urlDetail property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setURLDetail(String value) {
+    this.urlDetail = value;
+  }
 
-    /**
-     * Gets the value of the urlUsneseni property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getURLUsneseni() {
-        return urlUsneseni;
-    }
+  /**
+   * Gets the value of the urlUsneseni property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getURLUsneseni() {
+    return urlUsneseni;
+  }
 
-    /**
-     * Sets the value of the urlUsneseni property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setURLUsneseni(String value) {
-        this.urlUsneseni = value;
-    }
+  /**
+   * Sets the value of the urlUsneseni property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setURLUsneseni(String value) {
+    this.urlUsneseni = value;
+  }
 
-    /**
-     * Gets the value of the spravceKonkurzniPodstaty property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getSpravceKonkurzniPodstaty() {
-        return spravceKonkurzniPodstaty;
-    }
+  /**
+   * Gets the value of the spravceKonkurzniPodstaty property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getSpravceKonkurzniPodstaty() {
+    return spravceKonkurzniPodstaty;
+  }
 
-    /**
-     * Sets the value of the spravceKonkurzniPodstaty property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSpravceKonkurzniPodstaty(String value) {
-        this.spravceKonkurzniPodstaty = value;
-    }
+  /**
+   * Sets the value of the spravceKonkurzniPodstaty property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setSpravceKonkurzniPodstaty(String value) {
+    this.spravceKonkurzniPodstaty = value;
+  }
 
-    /**
-     * Gets the value of the sVety property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavVetyCEU }
-     *     
-     */
-    public StavVetyCEU getSVety() {
-        return sVety;
-    }
+  /**
+   * Gets the value of the sVety property.
+   *
+   * @return possible object is
+   * {@link StavVetyCEU }
+   */
+  public StavVetyCEU getSVety() {
+    return sVety;
+  }
 
-    /**
-     * Sets the value of the sVety property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavVetyCEU }
-     *     
-     */
-    public void setSVety(StavVetyCEU value) {
-        this.sVety = value;
-    }
+  /**
+   * Sets the value of the sVety property.
+   *
+   * @param value allowed object is
+   *              {@link StavVetyCEU }
+   */
+  public void setSVety(StavVetyCEU value) {
+    this.sVety = value;
+  }
 
 }

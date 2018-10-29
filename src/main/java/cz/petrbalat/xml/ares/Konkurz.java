@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Specifické údaje o konkurzu
- * 
+ *
  * <p>Java class for konkurz complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="konkurz">
  *   &lt;complexContent>
@@ -36,148 +36,126 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "konkurz", propOrder = {
-    "kvz",
-    "skp",
-    "zas",
-    "zvs",
-    "prs"
+  "kvz",
+  "skp",
+  "zas",
+  "zvs",
+  "prs"
 })
 public class Konkurz {
 
-    @XmlElement(name = "KVZ", required = true)
-    protected UdajeKVZ kvz;
-    @XmlElement(name = "SKP")
-    protected Spravce skp;
-    @XmlElement(name = "ZAS")
-    protected Spravce zas;
-    @XmlElement(name = "ZVS")
-    protected Spravce zvs;
-    @XmlElement(name = "PRS")
-    protected Spravce prs;
+  @XmlElement(name = "KVZ", required = true)
+  protected UdajeKVZ kvz;
+  @XmlElement(name = "SKP")
+  protected Spravce skp;
+  @XmlElement(name = "ZAS")
+  protected Spravce zas;
+  @XmlElement(name = "ZVS")
+  protected Spravce zvs;
+  @XmlElement(name = "PRS")
+  protected Spravce prs;
 
-    /**
-     * Gets the value of the kvz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link UdajeKVZ }
-     *     
-     */
-    public UdajeKVZ getKVZ() {
-        return kvz;
-    }
+  /**
+   * Gets the value of the kvz property.
+   *
+   * @return possible object is
+   * {@link UdajeKVZ }
+   */
+  public UdajeKVZ getKVZ() {
+    return kvz;
+  }
 
-    /**
-     * Sets the value of the kvz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link UdajeKVZ }
-     *     
-     */
-    public void setKVZ(UdajeKVZ value) {
-        this.kvz = value;
-    }
+  /**
+   * Sets the value of the kvz property.
+   *
+   * @param value allowed object is
+   *              {@link UdajeKVZ }
+   */
+  public void setKVZ(UdajeKVZ value) {
+    this.kvz = value;
+  }
 
-    /**
-     * Gets the value of the skp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Spravce }
-     *     
-     */
-    public Spravce getSKP() {
-        return skp;
-    }
+  /**
+   * Gets the value of the skp property.
+   *
+   * @return possible object is
+   * {@link Spravce }
+   */
+  public Spravce getSKP() {
+    return skp;
+  }
 
-    /**
-     * Sets the value of the skp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Spravce }
-     *     
-     */
-    public void setSKP(Spravce value) {
-        this.skp = value;
-    }
+  /**
+   * Sets the value of the skp property.
+   *
+   * @param value allowed object is
+   *              {@link Spravce }
+   */
+  public void setSKP(Spravce value) {
+    this.skp = value;
+  }
 
-    /**
-     * Gets the value of the zas property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Spravce }
-     *     
-     */
-    public Spravce getZAS() {
-        return zas;
-    }
+  /**
+   * Gets the value of the zas property.
+   *
+   * @return possible object is
+   * {@link Spravce }
+   */
+  public Spravce getZAS() {
+    return zas;
+  }
 
-    /**
-     * Sets the value of the zas property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Spravce }
-     *     
-     */
-    public void setZAS(Spravce value) {
-        this.zas = value;
-    }
+  /**
+   * Sets the value of the zas property.
+   *
+   * @param value allowed object is
+   *              {@link Spravce }
+   */
+  public void setZAS(Spravce value) {
+    this.zas = value;
+  }
 
-    /**
-     * Gets the value of the zvs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Spravce }
-     *     
-     */
-    public Spravce getZVS() {
-        return zvs;
-    }
+  /**
+   * Gets the value of the zvs property.
+   *
+   * @return possible object is
+   * {@link Spravce }
+   */
+  public Spravce getZVS() {
+    return zvs;
+  }
 
-    /**
-     * Sets the value of the zvs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Spravce }
-     *     
-     */
-    public void setZVS(Spravce value) {
-        this.zvs = value;
-    }
+  /**
+   * Sets the value of the zvs property.
+   *
+   * @param value allowed object is
+   *              {@link Spravce }
+   */
+  public void setZVS(Spravce value) {
+    this.zvs = value;
+  }
 
-    /**
-     * Gets the value of the prs property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Spravce }
-     *     
-     */
-    public Spravce getPRS() {
-        return prs;
-    }
+  /**
+   * Gets the value of the prs property.
+   *
+   * @return possible object is
+   * {@link Spravce }
+   */
+  public Spravce getPRS() {
+    return prs;
+  }
 
-    /**
-     * Sets the value of the prs property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Spravce }
-     *     
-     */
-    public void setPRS(Spravce value) {
-        this.prs = value;
-    }
+  /**
+   * Sets the value of the prs property.
+   *
+   * @param value allowed object is
+   *              {@link Spravce }
+   */
+  public void setPRS(Spravce value) {
+    this.prs = value;
+  }
 
 }

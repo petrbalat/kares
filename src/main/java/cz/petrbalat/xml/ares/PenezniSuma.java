@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
+import javax.xml.bind.annotation.*;
 import java.math.BigDecimal;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
 
 
 /**
  * Libovolná peněžní částka
- * 
+ *
  * <p>Java class for penezni_suma complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="penezni_suma">
  *   &lt;complexContent>
@@ -35,68 +31,58 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "penezni_suma", propOrder = {
-    "castka",
-    "mena"
+  "castka",
+  "mena"
 })
 public class PenezniSuma {
 
-    @XmlElement(name = "Castka", required = true)
-    protected BigDecimal castka;
-    @XmlElement(name = "Mena", required = true)
-    @XmlSchemaType(name = "string")
-    protected Mena mena;
+  @XmlElement(name = "Castka", required = true)
+  protected BigDecimal castka;
+  @XmlElement(name = "Mena", required = true)
+  @XmlSchemaType(name = "string")
+  protected Mena mena;
 
-    /**
-     * Gets the value of the castka property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getCastka() {
-        return castka;
-    }
+  /**
+   * Gets the value of the castka property.
+   *
+   * @return possible object is
+   * {@link BigDecimal }
+   */
+  public BigDecimal getCastka() {
+    return castka;
+  }
 
-    /**
-     * Sets the value of the castka property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setCastka(BigDecimal value) {
-        this.castka = value;
-    }
+  /**
+   * Sets the value of the castka property.
+   *
+   * @param value allowed object is
+   *              {@link BigDecimal }
+   */
+  public void setCastka(BigDecimal value) {
+    this.castka = value;
+  }
 
-    /**
-     * Gets the value of the mena property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Mena }
-     *     
-     */
-    public Mena getMena() {
-        return mena;
-    }
+  /**
+   * Gets the value of the mena property.
+   *
+   * @return possible object is
+   * {@link Mena }
+   */
+  public Mena getMena() {
+    return mena;
+  }
 
-    /**
-     * Sets the value of the mena property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Mena }
-     *     
-     */
-    public void setMena(Mena value) {
-        this.mena = value;
-    }
+  /**
+   * Sets the value of the mena property.
+   *
+   * @param value allowed object is
+   *              {@link Mena }
+   */
+  public void setMena(Mena value) {
+    this.mena = value;
+  }
 
 }

@@ -8,23 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
+import javax.xml.bind.annotation.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Základní identifikační  údaje
- * 
+ *
  * <p>Java class for zakladni_udaje_CNS complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zakladni_udaje_CNS">
  *   &lt;complexContent>
@@ -44,262 +40,226 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zakladni_udaje_CNS", propOrder = {
-    "ico",
-    "pridelenoICO",
-    "nazevCPO",
-    "dic",
-    "pf",
-    "typRejstriku",
-    "zrizovatel",
-    "a",
-    "rozhodnuti"
+  "ico",
+  "pridelenoICO",
+  "nazevCPO",
+  "dic",
+  "pf",
+  "typRejstriku",
+  "zrizovatel",
+  "a",
+  "rozhodnuti"
 })
 public class ZakladniUdajeCNS {
 
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "Prideleno_ICO")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar pridelenoICO;
-    @XmlElement(name = "Nazev_CPO")
-    protected String nazevCPO;
-    @XmlElement(name = "DIC")
-    protected Dic dic;
-    @XmlElement(name = "PF")
-    protected PravniForma pf;
-    @XmlElement(name = "Typ_rejstriku")
-    protected Short typRejstriku;
-    @XmlElement(name = "Zrizovatel")
-    protected String zrizovatel;
-    @XmlElement(name = "A")
-    protected AdresaARES a;
-    @XmlElement(name = "Rozhodnuti")
-    protected List<Rozhodnuti> rozhodnuti;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "Prideleno_ICO")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar pridelenoICO;
+  @XmlElement(name = "Nazev_CPO")
+  protected String nazevCPO;
+  @XmlElement(name = "DIC")
+  protected Dic dic;
+  @XmlElement(name = "PF")
+  protected PravniForma pf;
+  @XmlElement(name = "Typ_rejstriku")
+  protected Short typRejstriku;
+  @XmlElement(name = "Zrizovatel")
+  protected String zrizovatel;
+  @XmlElement(name = "A")
+  protected AdresaARES a;
+  @XmlElement(name = "Rozhodnuti")
+  protected List<Rozhodnuti> rozhodnuti;
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the pridelenoICO property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getPridelenoICO() {
-        return pridelenoICO;
-    }
+  /**
+   * Gets the value of the pridelenoICO property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getPridelenoICO() {
+    return pridelenoICO;
+  }
 
-    /**
-     * Sets the value of the pridelenoICO property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setPridelenoICO(XMLGregorianCalendar value) {
-        this.pridelenoICO = value;
-    }
+  /**
+   * Sets the value of the pridelenoICO property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setPridelenoICO(XMLGregorianCalendar value) {
+    this.pridelenoICO = value;
+  }
 
-    /**
-     * Gets the value of the nazevCPO property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNazevCPO() {
-        return nazevCPO;
-    }
+  /**
+   * Gets the value of the nazevCPO property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNazevCPO() {
+    return nazevCPO;
+  }
 
-    /**
-     * Sets the value of the nazevCPO property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNazevCPO(String value) {
-        this.nazevCPO = value;
-    }
+  /**
+   * Sets the value of the nazevCPO property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNazevCPO(String value) {
+    this.nazevCPO = value;
+  }
 
-    /**
-     * Gets the value of the dic property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Dic }
-     *     
-     */
-    public Dic getDIC() {
-        return dic;
-    }
+  /**
+   * Gets the value of the dic property.
+   *
+   * @return possible object is
+   * {@link Dic }
+   */
+  public Dic getDIC() {
+    return dic;
+  }
 
-    /**
-     * Sets the value of the dic property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Dic }
-     *     
-     */
-    public void setDIC(Dic value) {
-        this.dic = value;
-    }
+  /**
+   * Sets the value of the dic property.
+   *
+   * @param value allowed object is
+   *              {@link Dic }
+   */
+  public void setDIC(Dic value) {
+    this.dic = value;
+  }
 
-    /**
-     * Gets the value of the pf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PravniForma }
-     *     
-     */
-    public PravniForma getPF() {
-        return pf;
-    }
+  /**
+   * Gets the value of the pf property.
+   *
+   * @return possible object is
+   * {@link PravniForma }
+   */
+  public PravniForma getPF() {
+    return pf;
+  }
 
-    /**
-     * Sets the value of the pf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PravniForma }
-     *     
-     */
-    public void setPF(PravniForma value) {
-        this.pf = value;
-    }
+  /**
+   * Sets the value of the pf property.
+   *
+   * @param value allowed object is
+   *              {@link PravniForma }
+   */
+  public void setPF(PravniForma value) {
+    this.pf = value;
+  }
 
-    /**
-     * Gets the value of the typRejstriku property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getTypRejstriku() {
-        return typRejstriku;
-    }
+  /**
+   * Gets the value of the typRejstriku property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getTypRejstriku() {
+    return typRejstriku;
+  }
 
-    /**
-     * Sets the value of the typRejstriku property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setTypRejstriku(Short value) {
-        this.typRejstriku = value;
-    }
+  /**
+   * Sets the value of the typRejstriku property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setTypRejstriku(Short value) {
+    this.typRejstriku = value;
+  }
 
-    /**
-     * Gets the value of the zrizovatel property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZrizovatel() {
-        return zrizovatel;
-    }
+  /**
+   * Gets the value of the zrizovatel property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZrizovatel() {
+    return zrizovatel;
+  }
 
-    /**
-     * Sets the value of the zrizovatel property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZrizovatel(String value) {
-        this.zrizovatel = value;
-    }
+  /**
+   * Sets the value of the zrizovatel property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZrizovatel(String value) {
+    this.zrizovatel = value;
+  }
 
-    /**
-     * Gets the value of the a property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getA() {
-        return a;
-    }
+  /**
+   * Gets the value of the a property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getA() {
+    return a;
+  }
 
-    /**
-     * Sets the value of the a property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setA(AdresaARES value) {
-        this.a = value;
-    }
+  /**
+   * Sets the value of the a property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setA(AdresaARES value) {
+    this.a = value;
+  }
 
-    /**
-     * Gets the value of the rozhodnuti property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the rozhodnuti property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRozhodnuti().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Rozhodnuti }
-     * 
-     * 
-     */
-    public List<Rozhodnuti> getRozhodnuti() {
-        if (rozhodnuti == null) {
-            rozhodnuti = new ArrayList<Rozhodnuti>();
-        }
-        return this.rozhodnuti;
+  /**
+   * Gets the value of the rozhodnuti property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the rozhodnuti property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getRozhodnuti().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Rozhodnuti }
+   */
+  public List<Rozhodnuti> getRozhodnuti() {
+    if (rozhodnuti == null) {
+      rozhodnuti = new ArrayList<Rozhodnuti>();
     }
+    return this.rozhodnuti;
+  }
 
 }

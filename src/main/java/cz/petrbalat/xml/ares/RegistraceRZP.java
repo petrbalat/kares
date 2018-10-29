@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * Údaje o registraci subjektu
- * 
+ *
  * <p>Java class for registrace_RZP complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="registrace_RZP">
  *   &lt;complexContent>
@@ -37,147 +33,125 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "registrace_RZP", propOrder = {
-    "zu",
-    "vj",
-    "or",
-    "fu"
+  "zu",
+  "vj",
+  "or",
+  "fu"
 })
 public class RegistraceRZP {
 
-    @XmlElement(name = "ZU")
-    protected ZivnostenskyUrad zu;
-    @XmlElement(name = "VJ")
-    protected String vj;
-    @XmlElement(name = "OR")
-    protected String or;
-    @XmlElement(name = "FU")
-    protected FinancniUrad fu;
-    @XmlAttribute(name = "aktivni")
-    protected String aktivni;
+  @XmlElement(name = "ZU")
+  protected ZivnostenskyUrad zu;
+  @XmlElement(name = "VJ")
+  protected String vj;
+  @XmlElement(name = "OR")
+  protected String or;
+  @XmlElement(name = "FU")
+  protected FinancniUrad fu;
+  @XmlAttribute(name = "aktivni")
+  protected String aktivni;
 
-    /**
-     * Gets the value of the zu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZivnostenskyUrad }
-     *     
-     */
-    public ZivnostenskyUrad getZU() {
-        return zu;
-    }
+  /**
+   * Gets the value of the zu property.
+   *
+   * @return possible object is
+   * {@link ZivnostenskyUrad }
+   */
+  public ZivnostenskyUrad getZU() {
+    return zu;
+  }
 
-    /**
-     * Sets the value of the zu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZivnostenskyUrad }
-     *     
-     */
-    public void setZU(ZivnostenskyUrad value) {
-        this.zu = value;
-    }
+  /**
+   * Sets the value of the zu property.
+   *
+   * @param value allowed object is
+   *              {@link ZivnostenskyUrad }
+   */
+  public void setZU(ZivnostenskyUrad value) {
+    this.zu = value;
+  }
 
-    /**
-     * Gets the value of the vj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVJ() {
-        return vj;
-    }
+  /**
+   * Gets the value of the vj property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getVJ() {
+    return vj;
+  }
 
-    /**
-     * Sets the value of the vj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVJ(String value) {
-        this.vj = value;
-    }
+  /**
+   * Sets the value of the vj property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setVJ(String value) {
+    this.vj = value;
+  }
 
-    /**
-     * Gets the value of the or property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOR() {
-        return or;
-    }
+  /**
+   * Gets the value of the or property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOR() {
+    return or;
+  }
 
-    /**
-     * Sets the value of the or property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOR(String value) {
-        this.or = value;
-    }
+  /**
+   * Sets the value of the or property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOR(String value) {
+    this.or = value;
+  }
 
-    /**
-     * Gets the value of the fu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public FinancniUrad getFU() {
-        return fu;
-    }
+  /**
+   * Gets the value of the fu property.
+   *
+   * @return possible object is
+   * {@link FinancniUrad }
+   */
+  public FinancniUrad getFU() {
+    return fu;
+  }
 
-    /**
-     * Sets the value of the fu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public void setFU(FinancniUrad value) {
-        this.fu = value;
-    }
+  /**
+   * Sets the value of the fu property.
+   *
+   * @param value allowed object is
+   *              {@link FinancniUrad }
+   */
+  public void setFU(FinancniUrad value) {
+    this.fu = value;
+  }
 
-    /**
-     * Gets the value of the aktivni property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAktivni() {
-        return aktivni;
-    }
+  /**
+   * Gets the value of the aktivni property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAktivni() {
+    return aktivni;
+  }
 
-    /**
-     * Sets the value of the aktivni property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAktivni(String value) {
-        this.aktivni = value;
-    }
+  /**
+   * Sets the value of the aktivni property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAktivni(String value) {
+    this.aktivni = value;
+  }
 
 }

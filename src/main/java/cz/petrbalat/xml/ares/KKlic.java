@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * Tabulka pro uložení logických klíčů
- * 
+ *
  * <p>Java class for k_klic complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="k_klic">
  *   &lt;complexContent>
@@ -37,125 +33,109 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "k_klic", propOrder = {
-    "cisloSoudu",
-    "cisloSenatu",
-    "cisloZnacky",
-    "rokZnacky",
-    "kkzVyrovnani"
+  "cisloSoudu",
+  "cisloSenatu",
+  "cisloZnacky",
+  "rokZnacky",
+  "kkzVyrovnani"
 })
 public class KKlic {
 
-    @XmlElement(name = "Cislo_soudu")
-    protected short cisloSoudu;
-    @XmlElement(name = "Cislo_senatu")
-    protected Short cisloSenatu;
-    @XmlElement(name = "Cislo_znacky")
-    protected short cisloZnacky;
-    @XmlElement(name = "Rok_znacky")
-    protected short rokZnacky;
-    @XmlElement(name = "KKZ_vyrovnani", required = true)
-    @XmlSchemaType(name = "string")
-    protected KonkurzVyrovnaniCEU kkzVyrovnani;
+  @XmlElement(name = "Cislo_soudu")
+  protected short cisloSoudu;
+  @XmlElement(name = "Cislo_senatu")
+  protected Short cisloSenatu;
+  @XmlElement(name = "Cislo_znacky")
+  protected short cisloZnacky;
+  @XmlElement(name = "Rok_znacky")
+  protected short rokZnacky;
+  @XmlElement(name = "KKZ_vyrovnani", required = true)
+  @XmlSchemaType(name = "string")
+  protected KonkurzVyrovnaniCEU kkzVyrovnani;
 
-    /**
-     * Gets the value of the cisloSoudu property.
-     * 
-     */
-    public short getCisloSoudu() {
-        return cisloSoudu;
-    }
+  /**
+   * Gets the value of the cisloSoudu property.
+   */
+  public short getCisloSoudu() {
+    return cisloSoudu;
+  }
 
-    /**
-     * Sets the value of the cisloSoudu property.
-     * 
-     */
-    public void setCisloSoudu(short value) {
-        this.cisloSoudu = value;
-    }
+  /**
+   * Sets the value of the cisloSoudu property.
+   */
+  public void setCisloSoudu(short value) {
+    this.cisloSoudu = value;
+  }
 
-    /**
-     * Gets the value of the cisloSenatu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getCisloSenatu() {
-        return cisloSenatu;
-    }
+  /**
+   * Gets the value of the cisloSenatu property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getCisloSenatu() {
+    return cisloSenatu;
+  }
 
-    /**
-     * Sets the value of the cisloSenatu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setCisloSenatu(Short value) {
-        this.cisloSenatu = value;
-    }
+  /**
+   * Sets the value of the cisloSenatu property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setCisloSenatu(Short value) {
+    this.cisloSenatu = value;
+  }
 
-    /**
-     * Gets the value of the cisloZnacky property.
-     * 
-     */
-    public short getCisloZnacky() {
-        return cisloZnacky;
-    }
+  /**
+   * Gets the value of the cisloZnacky property.
+   */
+  public short getCisloZnacky() {
+    return cisloZnacky;
+  }
 
-    /**
-     * Sets the value of the cisloZnacky property.
-     * 
-     */
-    public void setCisloZnacky(short value) {
-        this.cisloZnacky = value;
-    }
+  /**
+   * Sets the value of the cisloZnacky property.
+   */
+  public void setCisloZnacky(short value) {
+    this.cisloZnacky = value;
+  }
 
-    /**
-     * Gets the value of the rokZnacky property.
-     * 
-     */
-    public short getRokZnacky() {
-        return rokZnacky;
-    }
+  /**
+   * Gets the value of the rokZnacky property.
+   */
+  public short getRokZnacky() {
+    return rokZnacky;
+  }
 
-    /**
-     * Sets the value of the rokZnacky property.
-     * 
-     */
-    public void setRokZnacky(short value) {
-        this.rokZnacky = value;
-    }
+  /**
+   * Sets the value of the rokZnacky property.
+   */
+  public void setRokZnacky(short value) {
+    this.rokZnacky = value;
+  }
 
-    /**
-     * Gets the value of the kkzVyrovnani property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KonkurzVyrovnaniCEU }
-     *     
-     */
-    public KonkurzVyrovnaniCEU getKKZVyrovnani() {
-        return kkzVyrovnani;
-    }
+  /**
+   * Gets the value of the kkzVyrovnani property.
+   *
+   * @return possible object is
+   * {@link KonkurzVyrovnaniCEU }
+   */
+  public KonkurzVyrovnaniCEU getKKZVyrovnani() {
+    return kkzVyrovnani;
+  }
 
-    /**
-     * Sets the value of the kkzVyrovnani property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KonkurzVyrovnaniCEU }
-     *     
-     */
-    public void setKKZVyrovnani(KonkurzVyrovnaniCEU value) {
-        this.kkzVyrovnani = value;
-    }
+  /**
+   * Sets the value of the kkzVyrovnani property.
+   *
+   * @param value allowed object is
+   *              {@link KonkurzVyrovnaniCEU }
+   */
+  public void setKKZVyrovnani(KonkurzVyrovnaniCEU value) {
+    this.kkzVyrovnani = value;
+  }
 
 }

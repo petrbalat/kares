@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Údaje o zakladatelích obecně prospěšné společnosti
- * 
+ *
  * <p>Java class for zakladatele_OPS complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zakladatele_OPS">
  *   &lt;complexContent>
@@ -35,77 +35,71 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zakladatele_OPS", propOrder = {
-    "zops",
-    "t"
+  "zops",
+  "t"
 })
 public class ZakladateleOPS {
 
-    @XmlElement(name = "ZOPS", required = true)
-    protected List<Angazma> zops;
-    @XmlElement(name = "T")
-    protected List<TextType> t;
+  @XmlElement(name = "ZOPS", required = true)
+  protected List<Angazma> zops;
+  @XmlElement(name = "T")
+  protected List<TextType> t;
 
-    /**
-     * Gets the value of the zops property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the zops property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getZOPS().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Angazma }
-     * 
-     * 
-     */
-    public List<Angazma> getZOPS() {
-        if (zops == null) {
-            zops = new ArrayList<Angazma>();
-        }
-        return this.zops;
+  /**
+   * Gets the value of the zops property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the zops property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getZOPS().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Angazma }
+   */
+  public List<Angazma> getZOPS() {
+    if (zops == null) {
+      zops = new ArrayList<Angazma>();
     }
+    return this.zops;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the t property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getT().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TextType }
-     * 
-     * 
-     */
-    public List<TextType> getT() {
-        if (t == null) {
-            t = new ArrayList<TextType>();
-        }
-        return this.t;
+  /**
+   * Gets the value of the t property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the t property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getT().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TextType }
+   */
+  public List<TextType> getT() {
+    if (t == null) {
+      t = new ArrayList<TextType>();
     }
+    return this.t;
+  }
 
 }

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for error_type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -27,35 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "error_type", namespace = "http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.3")
 @XmlEnum
 public enum ErrorType {
 
-    @XmlEnumValue("global")
-    GLOBAL("global"),
-    @XmlEnumValue("local")
-    LOCAL("local"),
-    @XmlEnumValue("info")
-    INFO("info");
-    private final String value;
+  @XmlEnumValue("global")
+  GLOBAL("global"),
+  @XmlEnumValue("local")
+  LOCAL("local"),
+  @XmlEnumValue("info")
+  INFO("info");
+  private final String value;
 
-    ErrorType(String v) {
-        value = v;
-    }
+  ErrorType(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static ErrorType fromValue(String v) {
+    for (ErrorType c : ErrorType.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static ErrorType fromValue(String v) {
-        for (ErrorType c: ErrorType.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

@@ -8,19 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for kraj_RFO complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="kraj_RFO">
  *   &lt;complexContent>
@@ -34,91 +34,81 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "kraj_RFO", propOrder = {
-    "kk",
-    "nazev",
-    "okres"
+  "kk",
+  "nazev",
+  "okres"
 })
 public class KrajRFO {
 
-    @XmlElement(name = "KK")
-    protected short kk;
-    @XmlElement(name = "Nazev", required = true)
-    protected String nazev;
-    @XmlElement(name = "Okres")
-    protected List<OkresRFO> okres;
+  @XmlElement(name = "KK")
+  protected short kk;
+  @XmlElement(name = "Nazev", required = true)
+  protected String nazev;
+  @XmlElement(name = "Okres")
+  protected List<OkresRFO> okres;
 
-    /**
-     * Gets the value of the kk property.
-     * 
-     */
-    public short getKK() {
-        return kk;
-    }
+  /**
+   * Gets the value of the kk property.
+   */
+  public short getKK() {
+    return kk;
+  }
 
-    /**
-     * Sets the value of the kk property.
-     * 
-     */
-    public void setKK(short value) {
-        this.kk = value;
-    }
+  /**
+   * Sets the value of the kk property.
+   */
+  public void setKK(short value) {
+    this.kk = value;
+  }
 
-    /**
-     * Gets the value of the nazev property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNazev() {
-        return nazev;
-    }
+  /**
+   * Gets the value of the nazev property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNazev() {
+    return nazev;
+  }
 
-    /**
-     * Sets the value of the nazev property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNazev(String value) {
-        this.nazev = value;
-    }
+  /**
+   * Sets the value of the nazev property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNazev(String value) {
+    this.nazev = value;
+  }
 
-    /**
-     * Gets the value of the okres property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the okres property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOkres().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link OkresRFO }
-     * 
-     * 
-     */
-    public List<OkresRFO> getOkres() {
-        if (okres == null) {
-            okres = new ArrayList<OkresRFO>();
-        }
-        return this.okres;
+  /**
+   * Gets the value of the okres property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the okres property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getOkres().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link OkresRFO }
+   */
+  public List<OkresRFO> getOkres() {
+    if (okres == null) {
+      okres = new ArrayList<OkresRFO>();
     }
+    return this.okres;
+  }
 
 }

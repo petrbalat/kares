@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * z Hlavní tabulky úpadců - slouží zejména pro rozlišení, o jakého úpadce se jedná
- * 
+ *
  * <p>Java class for stav_subjektu_ceu complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="stav_subjektu_ceu">
  *   &lt;complexContent>
@@ -34,69 +30,59 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "stav_subjektu_ceu", propOrder = {
-    "sko",
-    "svy"
+  "sko",
+  "svy"
 })
 public class StavSubjektuCeu {
 
-    @XmlElement(name = "SKO", required = true)
-    @XmlSchemaType(name = "string")
-    protected StavUpadceCEU sko;
-    @XmlElement(name = "SVY", required = true)
-    @XmlSchemaType(name = "string")
-    protected StavUpadceCEU svy;
+  @XmlElement(name = "SKO", required = true)
+  @XmlSchemaType(name = "string")
+  protected StavUpadceCEU sko;
+  @XmlElement(name = "SVY", required = true)
+  @XmlSchemaType(name = "string")
+  protected StavUpadceCEU svy;
 
-    /**
-     * Gets the value of the sko property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public StavUpadceCEU getSKO() {
-        return sko;
-    }
+  /**
+   * Gets the value of the sko property.
+   *
+   * @return possible object is
+   * {@link StavUpadceCEU }
+   */
+  public StavUpadceCEU getSKO() {
+    return sko;
+  }
 
-    /**
-     * Sets the value of the sko property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public void setSKO(StavUpadceCEU value) {
-        this.sko = value;
-    }
+  /**
+   * Sets the value of the sko property.
+   *
+   * @param value allowed object is
+   *              {@link StavUpadceCEU }
+   */
+  public void setSKO(StavUpadceCEU value) {
+    this.sko = value;
+  }
 
-    /**
-     * Gets the value of the svy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public StavUpadceCEU getSVY() {
-        return svy;
-    }
+  /**
+   * Gets the value of the svy property.
+   *
+   * @return possible object is
+   * {@link StavUpadceCEU }
+   */
+  public StavUpadceCEU getSVY() {
+    return svy;
+  }
 
-    /**
-     * Sets the value of the svy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public void setSVY(StavUpadceCEU value) {
-        this.svy = value;
-    }
+  /**
+   * Sets the value of the svy property.
+   *
+   * @param value allowed object is
+   *              {@link StavUpadceCEU }
+   */
+  public void setSVY(StavUpadceCEU value) {
+    this.svy = value;
+  }
 
 }

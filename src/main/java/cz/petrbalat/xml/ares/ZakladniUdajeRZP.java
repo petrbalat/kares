@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Základní identifikační a alokační údaje ekonomického subjektu
- * 
+ *
  * <p>Java class for zakladni_udaje_RZP complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zakladni_udaje_RZP">
  *   &lt;complexContent>
@@ -48,258 +44,220 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zakladni_udaje_RZP", propOrder = {
-    "s",
-    "ico",
-    "zic",
-    "of",
-    "pfr",
-    "dv",
-    "dz",
-    "si",
-    "mp"
+  "s",
+  "ico",
+  "zic",
+  "of",
+  "pfr",
+  "dv",
+  "dz",
+  "si",
+  "mp"
 })
 public class ZakladniUdajeRZP {
 
-    @XmlElement(name = "S")
-    protected String s;
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "ZIC")
-    protected String zic;
-    @XmlElement(name = "OF")
-    protected String of;
-    @XmlElement(name = "PFR")
-    protected PravniFormaRZP pfr;
-    @XmlElement(name = "DV")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "DZ")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dz;
-    @XmlElement(name = "SI")
-    protected AdresaARES si;
-    @XmlElement(name = "MP")
-    protected AdresaARES mp;
+  @XmlElement(name = "S")
+  protected String s;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "ZIC")
+  protected String zic;
+  @XmlElement(name = "OF")
+  protected String of;
+  @XmlElement(name = "PFR")
+  protected PravniFormaRZP pfr;
+  @XmlElement(name = "DV")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "DZ")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dz;
+  @XmlElement(name = "SI")
+  protected AdresaARES si;
+  @XmlElement(name = "MP")
+  protected AdresaARES mp;
 
-    /**
-     * Gets the value of the s property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getS() {
-        return s;
-    }
+  /**
+   * Gets the value of the s property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getS() {
+    return s;
+  }
 
-    /**
-     * Sets the value of the s property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setS(String value) {
-        this.s = value;
-    }
+  /**
+   * Sets the value of the s property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setS(String value) {
+    this.s = value;
+  }
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the zic property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZIC() {
-        return zic;
-    }
+  /**
+   * Gets the value of the zic property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZIC() {
+    return zic;
+  }
 
-    /**
-     * Sets the value of the zic property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZIC(String value) {
-        this.zic = value;
-    }
+  /**
+   * Sets the value of the zic property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZIC(String value) {
+    this.zic = value;
+  }
 
-    /**
-     * Gets the value of the of property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOF() {
-        return of;
-    }
+  /**
+   * Gets the value of the of property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOF() {
+    return of;
+  }
 
-    /**
-     * Sets the value of the of property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOF(String value) {
-        this.of = value;
-    }
+  /**
+   * Sets the value of the of property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOF(String value) {
+    this.of = value;
+  }
 
-    /**
-     * Gets the value of the pfr property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PravniFormaRZP }
-     *     
-     */
-    public PravniFormaRZP getPFR() {
-        return pfr;
-    }
+  /**
+   * Gets the value of the pfr property.
+   *
+   * @return possible object is
+   * {@link PravniFormaRZP }
+   */
+  public PravniFormaRZP getPFR() {
+    return pfr;
+  }
 
-    /**
-     * Sets the value of the pfr property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PravniFormaRZP }
-     *     
-     */
-    public void setPFR(PravniFormaRZP value) {
-        this.pfr = value;
-    }
+  /**
+   * Sets the value of the pfr property.
+   *
+   * @param value allowed object is
+   *              {@link PravniFormaRZP }
+   */
+  public void setPFR(PravniFormaRZP value) {
+    this.pfr = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the dz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDZ() {
-        return dz;
-    }
+  /**
+   * Gets the value of the dz property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDZ() {
+    return dz;
+  }
 
-    /**
-     * Sets the value of the dz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDZ(XMLGregorianCalendar value) {
-        this.dz = value;
-    }
+  /**
+   * Sets the value of the dz property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDZ(XMLGregorianCalendar value) {
+    this.dz = value;
+  }
 
-    /**
-     * Gets the value of the si property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getSI() {
-        return si;
-    }
+  /**
+   * Gets the value of the si property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getSI() {
+    return si;
+  }
 
-    /**
-     * Sets the value of the si property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setSI(AdresaARES value) {
-        this.si = value;
-    }
+  /**
+   * Sets the value of the si property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setSI(AdresaARES value) {
+    this.si = value;
+  }
 
-    /**
-     * Gets the value of the mp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getMP() {
-        return mp;
-    }
+  /**
+   * Gets the value of the mp property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getMP() {
+    return mp;
+  }
 
-    /**
-     * Sets the value of the mp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setMP(AdresaARES value) {
-        this.mp = value;
-    }
+  /**
+   * Sets the value of the mp property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setMP(AdresaARES value) {
+    this.mp = value;
+  }
 
 }

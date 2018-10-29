@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for ares_vyber_typ.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -27,23 +27,22 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "ares_vyber_typ")
 @XmlEnum
 public enum AresVyberTyp {
 
-    FREE,
-    ICO,
-    RC,
-    OF;
+  FREE,
+  ICO,
+  RC,
+  OF;
 
-    public String value() {
-        return name();
-    }
+  public static AresVyberTyp fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static AresVyberTyp fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

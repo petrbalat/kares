@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for pf_osoba.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -26,22 +26,21 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "pf_osoba")
 @XmlEnum
 public enum PfOsoba {
 
-    P,
-    F,
-    Z;
+  P,
+  F,
+  Z;
 
-    public String value() {
-        return name();
-    }
+  public static PfOsoba fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static PfOsoba fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

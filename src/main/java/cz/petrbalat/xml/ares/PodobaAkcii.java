@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for podoba_akcii.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -26,33 +26,32 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "podoba_akcii")
 @XmlEnum
 public enum PodobaAkcii {
 
-    @XmlEnumValue("v listinn\u00e9 podob\u011b")
-    V_LISTINNÉ_PODOBĚ("v listinn\u00e9 podob\u011b"),
-    @XmlEnumValue("v zaknihovan\u00e9 podob\u011b")
-    V_ZAKNIHOVANÉ_PODOBĚ("v zaknihovan\u00e9 podob\u011b");
-    private final String value;
+  @XmlEnumValue("v listinn\u00e9 podob\u011b")
+  V_LISTINNÉ_PODOBĚ("v listinn\u00e9 podob\u011b"),
+  @XmlEnumValue("v zaknihovan\u00e9 podob\u011b")
+  V_ZAKNIHOVANÉ_PODOBĚ("v zaknihovan\u00e9 podob\u011b");
+  private final String value;
 
-    PodobaAkcii(String v) {
-        value = v;
-    }
+  PodobaAkcii(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static PodobaAkcii fromValue(String v) {
+    for (PodobaAkcii c : PodobaAkcii.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static PodobaAkcii fromValue(String v) {
-        for (PodobaAkcii c: PodobaAkcii.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

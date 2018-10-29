@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Základní identifikační a alokační údaje ekonomického subjektu
- * 
+ *
  * <p>Java class for zakladni_udaje_RZZ complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="zakladni_udaje_RZZ">
  *   &lt;complexContent>
@@ -39,177 +35,151 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "zakladni_udaje_RZZ", propOrder = {
-    "ico",
-    "drz",
-    "zzt",
-    "fu",
-    "dv",
-    "dz"
+  "ico",
+  "drz",
+  "zzt",
+  "fu",
+  "dv",
+  "dz"
 })
 public class ZakladniUdajeRZZ {
 
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "DRZ")
-    protected String drz;
-    @XmlElement(name = "ZZT")
-    protected TypZdravotnickehoZarizeni zzt;
-    @XmlElement(name = "FU")
-    protected FinancniUrad fu;
-    @XmlElement(name = "DV")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "DZ")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dz;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "DRZ")
+  protected String drz;
+  @XmlElement(name = "ZZT")
+  protected TypZdravotnickehoZarizeni zzt;
+  @XmlElement(name = "FU")
+  protected FinancniUrad fu;
+  @XmlElement(name = "DV")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "DZ")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dz;
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the drz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDRZ() {
-        return drz;
-    }
+  /**
+   * Gets the value of the drz property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getDRZ() {
+    return drz;
+  }
 
-    /**
-     * Sets the value of the drz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDRZ(String value) {
-        this.drz = value;
-    }
+  /**
+   * Sets the value of the drz property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setDRZ(String value) {
+    this.drz = value;
+  }
 
-    /**
-     * Gets the value of the zzt property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TypZdravotnickehoZarizeni }
-     *     
-     */
-    public TypZdravotnickehoZarizeni getZZT() {
-        return zzt;
-    }
+  /**
+   * Gets the value of the zzt property.
+   *
+   * @return possible object is
+   * {@link TypZdravotnickehoZarizeni }
+   */
+  public TypZdravotnickehoZarizeni getZZT() {
+    return zzt;
+  }
 
-    /**
-     * Sets the value of the zzt property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TypZdravotnickehoZarizeni }
-     *     
-     */
-    public void setZZT(TypZdravotnickehoZarizeni value) {
-        this.zzt = value;
-    }
+  /**
+   * Sets the value of the zzt property.
+   *
+   * @param value allowed object is
+   *              {@link TypZdravotnickehoZarizeni }
+   */
+  public void setZZT(TypZdravotnickehoZarizeni value) {
+    this.zzt = value;
+  }
 
-    /**
-     * Gets the value of the fu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public FinancniUrad getFU() {
-        return fu;
-    }
+  /**
+   * Gets the value of the fu property.
+   *
+   * @return possible object is
+   * {@link FinancniUrad }
+   */
+  public FinancniUrad getFU() {
+    return fu;
+  }
 
-    /**
-     * Sets the value of the fu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public void setFU(FinancniUrad value) {
-        this.fu = value;
-    }
+  /**
+   * Sets the value of the fu property.
+   *
+   * @param value allowed object is
+   *              {@link FinancniUrad }
+   */
+  public void setFU(FinancniUrad value) {
+    this.fu = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the dz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDZ() {
-        return dz;
-    }
+  /**
+   * Gets the value of the dz property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDZ() {
+    return dz;
+  }
 
-    /**
-     * Sets the value of the dz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDZ(XMLGregorianCalendar value) {
-        this.dz = value;
-    }
+  /**
+   * Sets the value of the dz property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDZ(XMLGregorianCalendar value) {
+    this.dz = value;
+  }
 
 }

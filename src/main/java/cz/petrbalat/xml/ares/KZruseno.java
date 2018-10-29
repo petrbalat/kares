@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Data o fyzicky zrušených větách
- * 
+ *
  * <p>Java class for k_zruseno complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="k_zruseno">
  *   &lt;complexContent>
@@ -34,70 +34,62 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "k_zruseno", propOrder = {
-    "oPodnetu",
-    "oPodnZrus",
-    "oUpadce"
+  "oPodnetu",
+  "oPodnZrus",
+  "oUpadce"
 })
 public class KZruseno {
 
-    @XmlElement(name = "O_podnetu")
-    protected int oPodnetu;
-    @XmlElement(name = "O_podn_zrus")
-    protected int oPodnZrus;
-    @XmlElement(name = "O_upadce")
-    protected int oUpadce;
+  @XmlElement(name = "O_podnetu")
+  protected int oPodnetu;
+  @XmlElement(name = "O_podn_zrus")
+  protected int oPodnZrus;
+  @XmlElement(name = "O_upadce")
+  protected int oUpadce;
 
-    /**
-     * Gets the value of the oPodnetu property.
-     * 
-     */
-    public int getOPodnetu() {
-        return oPodnetu;
-    }
+  /**
+   * Gets the value of the oPodnetu property.
+   */
+  public int getOPodnetu() {
+    return oPodnetu;
+  }
 
-    /**
-     * Sets the value of the oPodnetu property.
-     * 
-     */
-    public void setOPodnetu(int value) {
-        this.oPodnetu = value;
-    }
+  /**
+   * Sets the value of the oPodnetu property.
+   */
+  public void setOPodnetu(int value) {
+    this.oPodnetu = value;
+  }
 
-    /**
-     * Gets the value of the oPodnZrus property.
-     * 
-     */
-    public int getOPodnZrus() {
-        return oPodnZrus;
-    }
+  /**
+   * Gets the value of the oPodnZrus property.
+   */
+  public int getOPodnZrus() {
+    return oPodnZrus;
+  }
 
-    /**
-     * Sets the value of the oPodnZrus property.
-     * 
-     */
-    public void setOPodnZrus(int value) {
-        this.oPodnZrus = value;
-    }
+  /**
+   * Sets the value of the oPodnZrus property.
+   */
+  public void setOPodnZrus(int value) {
+    this.oPodnZrus = value;
+  }
 
-    /**
-     * Gets the value of the oUpadce property.
-     * 
-     */
-    public int getOUpadce() {
-        return oUpadce;
-    }
+  /**
+   * Gets the value of the oUpadce property.
+   */
+  public int getOUpadce() {
+    return oUpadce;
+  }
 
-    /**
-     * Sets the value of the oUpadce property.
-     * 
-     */
-    public void setOUpadce(int value) {
-        this.oUpadce = value;
-    }
+  /**
+   * Sets the value of the oUpadce property.
+   */
+  public void setOUpadce(int value) {
+    this.oUpadce = value;
+  }
 
 }

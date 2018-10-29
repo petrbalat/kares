@@ -8,22 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Definice elementu návratové adresy ARES
- * 
+ *
  * <p>Java class for adresa_ARES complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="adresa_ARES">
  *   &lt;complexContent>
@@ -53,525 +48,447 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "adresa_ARES", propOrder = {
-    "ida",
-    "ks",
-    "ns",
-    "nok",
-    "n",
-    "nco",
-    "nmc",
-    "nu",
-    "cd",
-    "tcd",
-    "co",
-    "ca",
-    "psc",
-    "zahrPSC",
-    "at",
-    "au"
+  "ida",
+  "ks",
+  "ns",
+  "nok",
+  "n",
+  "nco",
+  "nmc",
+  "nu",
+  "cd",
+  "tcd",
+  "co",
+  "ca",
+  "psc",
+  "zahrPSC",
+  "at",
+  "au"
 })
 public class AdresaARES {
 
-    @XmlElement(name = "IDA")
-    protected String ida;
-    @XmlElement(name = "KS")
-    protected String ks;
-    @XmlElement(name = "NS")
-    protected String ns;
-    @XmlElement(name = "NOK")
-    protected String nok;
-    @XmlElement(name = "N")
-    protected String n;
-    @XmlElement(name = "NCO")
-    protected String nco;
-    @XmlElement(name = "NMC")
-    protected String nmc;
-    @XmlElement(name = "NU")
-    protected String nu;
-    @XmlElement(name = "CD")
-    protected Integer cd;
-    @XmlElement(name = "TCD")
-    protected Byte tcd;
-    @XmlElement(name = "CO")
-    protected String co;
-    @XmlElement(name = "CA")
-    protected String ca;
-    @XmlElement(name = "PSC")
-    protected String psc;
-    @XmlElement(name = "Zahr_PSC")
-    protected String zahrPSC;
-    @XmlElement(name = "AT")
-    protected String at;
-    @XmlElement(name = "AU")
-    protected AdresaUIR au;
-    @XmlAttribute(name = "dod")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dod;
-    @XmlAttribute(name = "ddo")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar ddo;
-    @XmlAttribute(name = "zdroj")
-    protected ZdrojType zdroj;
+  @XmlElement(name = "IDA")
+  protected String ida;
+  @XmlElement(name = "KS")
+  protected String ks;
+  @XmlElement(name = "NS")
+  protected String ns;
+  @XmlElement(name = "NOK")
+  protected String nok;
+  @XmlElement(name = "N")
+  protected String n;
+  @XmlElement(name = "NCO")
+  protected String nco;
+  @XmlElement(name = "NMC")
+  protected String nmc;
+  @XmlElement(name = "NU")
+  protected String nu;
+  @XmlElement(name = "CD")
+  protected Integer cd;
+  @XmlElement(name = "TCD")
+  protected Byte tcd;
+  @XmlElement(name = "CO")
+  protected String co;
+  @XmlElement(name = "CA")
+  protected String ca;
+  @XmlElement(name = "PSC")
+  protected String psc;
+  @XmlElement(name = "Zahr_PSC")
+  protected String zahrPSC;
+  @XmlElement(name = "AT")
+  protected String at;
+  @XmlElement(name = "AU")
+  protected AdresaUIR au;
+  @XmlAttribute(name = "dod")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dod;
+  @XmlAttribute(name = "ddo")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar ddo;
+  @XmlAttribute(name = "zdroj")
+  protected ZdrojType zdroj;
 
-    /**
-     * Gets the value of the ida property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIDA() {
-        return ida;
-    }
+  /**
+   * Gets the value of the ida property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getIDA() {
+    return ida;
+  }
 
-    /**
-     * Sets the value of the ida property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIDA(String value) {
-        this.ida = value;
-    }
+  /**
+   * Sets the value of the ida property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setIDA(String value) {
+    this.ida = value;
+  }
 
-    /**
-     * Gets the value of the ks property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKS() {
-        return ks;
-    }
+  /**
+   * Gets the value of the ks property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKS() {
+    return ks;
+  }
 
-    /**
-     * Sets the value of the ks property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKS(String value) {
-        this.ks = value;
-    }
+  /**
+   * Sets the value of the ks property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKS(String value) {
+    this.ks = value;
+  }
 
-    /**
-     * Gets the value of the ns property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNS() {
-        return ns;
-    }
+  /**
+   * Gets the value of the ns property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNS() {
+    return ns;
+  }
 
-    /**
-     * Sets the value of the ns property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNS(String value) {
-        this.ns = value;
-    }
+  /**
+   * Sets the value of the ns property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNS(String value) {
+    this.ns = value;
+  }
 
-    /**
-     * Gets the value of the nok property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNOK() {
-        return nok;
-    }
+  /**
+   * Gets the value of the nok property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNOK() {
+    return nok;
+  }
 
-    /**
-     * Sets the value of the nok property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNOK(String value) {
-        this.nok = value;
-    }
+  /**
+   * Sets the value of the nok property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNOK(String value) {
+    this.nok = value;
+  }
 
-    /**
-     * Gets the value of the n property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getN() {
-        return n;
-    }
+  /**
+   * Gets the value of the n property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getN() {
+    return n;
+  }
 
-    /**
-     * Sets the value of the n property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setN(String value) {
-        this.n = value;
-    }
+  /**
+   * Sets the value of the n property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setN(String value) {
+    this.n = value;
+  }
 
-    /**
-     * Gets the value of the nco property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNCO() {
-        return nco;
-    }
+  /**
+   * Gets the value of the nco property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNCO() {
+    return nco;
+  }
 
-    /**
-     * Sets the value of the nco property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNCO(String value) {
-        this.nco = value;
-    }
+  /**
+   * Sets the value of the nco property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNCO(String value) {
+    this.nco = value;
+  }
 
-    /**
-     * Gets the value of the nmc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNMC() {
-        return nmc;
-    }
+  /**
+   * Gets the value of the nmc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNMC() {
+    return nmc;
+  }
 
-    /**
-     * Sets the value of the nmc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNMC(String value) {
-        this.nmc = value;
-    }
+  /**
+   * Sets the value of the nmc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNMC(String value) {
+    this.nmc = value;
+  }
 
-    /**
-     * Gets the value of the nu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNU() {
-        return nu;
-    }
+  /**
+   * Gets the value of the nu property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNU() {
+    return nu;
+  }
 
-    /**
-     * Sets the value of the nu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNU(String value) {
-        this.nu = value;
-    }
+  /**
+   * Sets the value of the nu property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNU(String value) {
+    this.nu = value;
+  }
 
-    /**
-     * Gets the value of the cd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getCD() {
-        return cd;
-    }
+  /**
+   * Gets the value of the cd property.
+   *
+   * @return possible object is
+   * {@link Integer }
+   */
+  public Integer getCD() {
+    return cd;
+  }
 
-    /**
-     * Sets the value of the cd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setCD(Integer value) {
-        this.cd = value;
-    }
+  /**
+   * Sets the value of the cd property.
+   *
+   * @param value allowed object is
+   *              {@link Integer }
+   */
+  public void setCD(Integer value) {
+    this.cd = value;
+  }
 
-    /**
-     * Gets the value of the tcd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Byte }
-     *     
-     */
-    public Byte getTCD() {
-        return tcd;
-    }
+  /**
+   * Gets the value of the tcd property.
+   *
+   * @return possible object is
+   * {@link Byte }
+   */
+  public Byte getTCD() {
+    return tcd;
+  }
 
-    /**
-     * Sets the value of the tcd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Byte }
-     *     
-     */
-    public void setTCD(Byte value) {
-        this.tcd = value;
-    }
+  /**
+   * Sets the value of the tcd property.
+   *
+   * @param value allowed object is
+   *              {@link Byte }
+   */
+  public void setTCD(Byte value) {
+    this.tcd = value;
+  }
 
-    /**
-     * Gets the value of the co property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCO() {
-        return co;
-    }
+  /**
+   * Gets the value of the co property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCO() {
+    return co;
+  }
 
-    /**
-     * Sets the value of the co property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCO(String value) {
-        this.co = value;
-    }
+  /**
+   * Sets the value of the co property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCO(String value) {
+    this.co = value;
+  }
 
-    /**
-     * Gets the value of the ca property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCA() {
-        return ca;
-    }
+  /**
+   * Gets the value of the ca property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCA() {
+    return ca;
+  }
 
-    /**
-     * Sets the value of the ca property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCA(String value) {
-        this.ca = value;
-    }
+  /**
+   * Sets the value of the ca property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCA(String value) {
+    this.ca = value;
+  }
 
-    /**
-     * Gets the value of the psc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPSC() {
-        return psc;
-    }
+  /**
+   * Gets the value of the psc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPSC() {
+    return psc;
+  }
 
-    /**
-     * Sets the value of the psc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPSC(String value) {
-        this.psc = value;
-    }
+  /**
+   * Sets the value of the psc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPSC(String value) {
+    this.psc = value;
+  }
 
-    /**
-     * Gets the value of the zahrPSC property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZahrPSC() {
-        return zahrPSC;
-    }
+  /**
+   * Gets the value of the zahrPSC property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZahrPSC() {
+    return zahrPSC;
+  }
 
-    /**
-     * Sets the value of the zahrPSC property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZahrPSC(String value) {
-        this.zahrPSC = value;
-    }
+  /**
+   * Sets the value of the zahrPSC property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZahrPSC(String value) {
+    this.zahrPSC = value;
+  }
 
-    /**
-     * Gets the value of the at property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAT() {
-        return at;
-    }
+  /**
+   * Gets the value of the at property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getAT() {
+    return at;
+  }
 
-    /**
-     * Sets the value of the at property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAT(String value) {
-        this.at = value;
-    }
+  /**
+   * Sets the value of the at property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setAT(String value) {
+    this.at = value;
+  }
 
-    /**
-     * Gets the value of the au property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaUIR }
-     *     
-     */
-    public AdresaUIR getAU() {
-        return au;
-    }
+  /**
+   * Gets the value of the au property.
+   *
+   * @return possible object is
+   * {@link AdresaUIR }
+   */
+  public AdresaUIR getAU() {
+    return au;
+  }
 
-    /**
-     * Sets the value of the au property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaUIR }
-     *     
-     */
-    public void setAU(AdresaUIR value) {
-        this.au = value;
-    }
+  /**
+   * Sets the value of the au property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaUIR }
+   */
+  public void setAU(AdresaUIR value) {
+    this.au = value;
+  }
 
-    /**
-     * Gets the value of the dod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDod() {
-        return dod;
-    }
+  /**
+   * Gets the value of the dod property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDod() {
+    return dod;
+  }
 
-    /**
-     * Sets the value of the dod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDod(XMLGregorianCalendar value) {
-        this.dod = value;
-    }
+  /**
+   * Sets the value of the dod property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDod(XMLGregorianCalendar value) {
+    this.dod = value;
+  }
 
-    /**
-     * Gets the value of the ddo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDdo() {
-        return ddo;
-    }
+  /**
+   * Gets the value of the ddo property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDdo() {
+    return ddo;
+  }
 
-    /**
-     * Sets the value of the ddo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDdo(XMLGregorianCalendar value) {
-        this.ddo = value;
-    }
+  /**
+   * Sets the value of the ddo property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDdo(XMLGregorianCalendar value) {
+    this.ddo = value;
+  }
 
-    /**
-     * Gets the value of the zdroj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public ZdrojType getZdroj() {
-        return zdroj;
-    }
+  /**
+   * Gets the value of the zdroj property.
+   *
+   * @return possible object is
+   * {@link ZdrojType }
+   */
+  public ZdrojType getZdroj() {
+    return zdroj;
+  }
 
-    /**
-     * Sets the value of the zdroj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public void setZdroj(ZdrojType value) {
-        this.zdroj = value;
-    }
+  /**
+   * Sets the value of the zdroj property.
+   *
+   * @param value allowed object is
+   *              {@link ZdrojType }
+   */
+  public void setZdroj(ZdrojType value) {
+    this.zdroj = value;
+  }
 
 }

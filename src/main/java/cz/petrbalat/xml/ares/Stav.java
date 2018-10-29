@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * S subjektu: Aktivní / Zaniklý a atributy KKZ, VY, ZAM, LI
- * 
+ *
  * <p>Java class for stav complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="stav">
  *   &lt;complexContent>
@@ -37,149 +33,127 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "stav", propOrder = {
-    "ssu",
-    "kkz",
-    "vy",
-    "zam",
-    "li"
+  "ssu",
+  "kkz",
+  "vy",
+  "zam",
+  "li"
 })
 public class Stav {
 
-    @XmlElement(name = "SSU")
-    @XmlSchemaType(name = "string")
-    protected StavSubjektu ssu;
-    @XmlElement(name = "KKZ", required = true)
-    protected StavKVZ kkz;
-    @XmlElement(name = "VY", required = true)
-    protected StavKVZ vy;
-    @XmlElement(name = "ZAM", required = true)
-    protected StavKVZ zam;
-    @XmlElement(name = "LI", required = true)
-    protected StavKVZ li;
+  @XmlElement(name = "SSU")
+  @XmlSchemaType(name = "string")
+  protected StavSubjektu ssu;
+  @XmlElement(name = "KKZ", required = true)
+  protected StavKVZ kkz;
+  @XmlElement(name = "VY", required = true)
+  protected StavKVZ vy;
+  @XmlElement(name = "ZAM", required = true)
+  protected StavKVZ zam;
+  @XmlElement(name = "LI", required = true)
+  protected StavKVZ li;
 
-    /**
-     * Gets the value of the ssu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavSubjektu }
-     *     
-     */
-    public StavSubjektu getSSU() {
-        return ssu;
-    }
+  /**
+   * Gets the value of the ssu property.
+   *
+   * @return possible object is
+   * {@link StavSubjektu }
+   */
+  public StavSubjektu getSSU() {
+    return ssu;
+  }
 
-    /**
-     * Sets the value of the ssu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavSubjektu }
-     *     
-     */
-    public void setSSU(StavSubjektu value) {
-        this.ssu = value;
-    }
+  /**
+   * Sets the value of the ssu property.
+   *
+   * @param value allowed object is
+   *              {@link StavSubjektu }
+   */
+  public void setSSU(StavSubjektu value) {
+    this.ssu = value;
+  }
 
-    /**
-     * Gets the value of the kkz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public StavKVZ getKKZ() {
-        return kkz;
-    }
+  /**
+   * Gets the value of the kkz property.
+   *
+   * @return possible object is
+   * {@link StavKVZ }
+   */
+  public StavKVZ getKKZ() {
+    return kkz;
+  }
 
-    /**
-     * Sets the value of the kkz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public void setKKZ(StavKVZ value) {
-        this.kkz = value;
-    }
+  /**
+   * Sets the value of the kkz property.
+   *
+   * @param value allowed object is
+   *              {@link StavKVZ }
+   */
+  public void setKKZ(StavKVZ value) {
+    this.kkz = value;
+  }
 
-    /**
-     * Gets the value of the vy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public StavKVZ getVY() {
-        return vy;
-    }
+  /**
+   * Gets the value of the vy property.
+   *
+   * @return possible object is
+   * {@link StavKVZ }
+   */
+  public StavKVZ getVY() {
+    return vy;
+  }
 
-    /**
-     * Sets the value of the vy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public void setVY(StavKVZ value) {
-        this.vy = value;
-    }
+  /**
+   * Sets the value of the vy property.
+   *
+   * @param value allowed object is
+   *              {@link StavKVZ }
+   */
+  public void setVY(StavKVZ value) {
+    this.vy = value;
+  }
 
-    /**
-     * Gets the value of the zam property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public StavKVZ getZAM() {
-        return zam;
-    }
+  /**
+   * Gets the value of the zam property.
+   *
+   * @return possible object is
+   * {@link StavKVZ }
+   */
+  public StavKVZ getZAM() {
+    return zam;
+  }
 
-    /**
-     * Sets the value of the zam property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public void setZAM(StavKVZ value) {
-        this.zam = value;
-    }
+  /**
+   * Sets the value of the zam property.
+   *
+   * @param value allowed object is
+   *              {@link StavKVZ }
+   */
+  public void setZAM(StavKVZ value) {
+    this.zam = value;
+  }
 
-    /**
-     * Gets the value of the li property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public StavKVZ getLI() {
-        return li;
-    }
+  /**
+   * Gets the value of the li property.
+   *
+   * @return possible object is
+   * {@link StavKVZ }
+   */
+  public StavKVZ getLI() {
+    return li;
+  }
 
-    /**
-     * Sets the value of the li property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavKVZ }
-     *     
-     */
-    public void setLI(StavKVZ value) {
-        this.li = value;
-    }
+  /**
+   * Sets the value of the li property.
+   *
+   * @param value allowed object is
+   *              {@link StavKVZ }
+   */
+  public void setLI(StavKVZ value) {
+    this.li = value;
+  }
 
 }

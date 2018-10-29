@@ -8,18 +8,18 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.math.BigInteger;
 
 
 /**
  * <p>Java class for typ_fyzicke_osoby complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="typ_fyzicke_osoby">
  *   &lt;complexContent>
@@ -32,67 +32,57 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "typ_fyzicke_osoby", propOrder = {
-    "typFOKod",
-    "typFO"
+  "typFOKod",
+  "typFO"
 })
 public class TypFyzickeOsoby {
 
-    @XmlElement(name = "Typ_FO_kod")
-    protected BigInteger typFOKod;
-    @XmlElement(name = "Typ_FO")
-    protected String typFO;
+  @XmlElement(name = "Typ_FO_kod")
+  protected BigInteger typFOKod;
+  @XmlElement(name = "Typ_FO")
+  protected String typFO;
 
-    /**
-     * Gets the value of the typFOKod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigInteger }
-     *     
-     */
-    public BigInteger getTypFOKod() {
-        return typFOKod;
-    }
+  /**
+   * Gets the value of the typFOKod property.
+   *
+   * @return possible object is
+   * {@link BigInteger }
+   */
+  public BigInteger getTypFOKod() {
+    return typFOKod;
+  }
 
-    /**
-     * Sets the value of the typFOKod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigInteger }
-     *     
-     */
-    public void setTypFOKod(BigInteger value) {
-        this.typFOKod = value;
-    }
+  /**
+   * Sets the value of the typFOKod property.
+   *
+   * @param value allowed object is
+   *              {@link BigInteger }
+   */
+  public void setTypFOKod(BigInteger value) {
+    this.typFOKod = value;
+  }
 
-    /**
-     * Gets the value of the typFO property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTypFO() {
-        return typFO;
-    }
+  /**
+   * Gets the value of the typFO property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getTypFO() {
+    return typFO;
+  }
 
-    /**
-     * Sets the value of the typFO property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTypFO(String value) {
-        this.typFO = value;
-    }
+  /**
+   * Sets the value of the typFO property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setTypFO(String value) {
+    this.typFO = value;
+  }
 
 }

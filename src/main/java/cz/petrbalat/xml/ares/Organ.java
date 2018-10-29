@@ -8,24 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
+import javax.xml.bind.annotation.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Kombinované angažmá -  rozsirena PO je s více FO
- * 
+ *
  * <p>Java class for organ complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="organ">
  *   &lt;complexContent>
@@ -48,342 +43,294 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "organ", propOrder = {
-    "ico",
-    "of",
-    "fu",
-    "dic",
-    "zkrStatu",
-    "ns",
-    "kpf",
-    "npf",
-    "a",
-    "organFO"
+  "ico",
+  "of",
+  "fu",
+  "dic",
+  "zkrStatu",
+  "ns",
+  "kpf",
+  "npf",
+  "a",
+  "organFO"
 })
 public class Organ {
 
-    @XmlElement(name = "ICO")
-    protected String ico;
-    @XmlElement(name = "OF")
-    protected String of;
-    @XmlElement(name = "FU")
-    protected FinancniUrad fu;
-    @XmlElement(name = "DIC")
-    protected Dic dic;
-    @XmlElement(name = "Zkr_statu")
-    protected String zkrStatu;
-    @XmlElement(name = "NS")
-    protected String ns;
-    @XmlElement(name = "KPF")
-    protected Short kpf;
-    @XmlElement(name = "NPF")
-    protected String npf;
-    @XmlElement(name = "A")
-    protected AdresaARES a;
-    @XmlElement(name = "Organ_FO")
-    protected List<OrganFO> organFO;
-    @XmlAttribute(name = "dod")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dod;
-    @XmlAttribute(name = "ddo")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar ddo;
+  @XmlElement(name = "ICO")
+  protected String ico;
+  @XmlElement(name = "OF")
+  protected String of;
+  @XmlElement(name = "FU")
+  protected FinancniUrad fu;
+  @XmlElement(name = "DIC")
+  protected Dic dic;
+  @XmlElement(name = "Zkr_statu")
+  protected String zkrStatu;
+  @XmlElement(name = "NS")
+  protected String ns;
+  @XmlElement(name = "KPF")
+  protected Short kpf;
+  @XmlElement(name = "NPF")
+  protected String npf;
+  @XmlElement(name = "A")
+  protected AdresaARES a;
+  @XmlElement(name = "Organ_FO")
+  protected List<OrganFO> organFO;
+  @XmlAttribute(name = "dod")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dod;
+  @XmlAttribute(name = "ddo")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar ddo;
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setICO(String value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setICO(String value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the of property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOF() {
-        return of;
-    }
+  /**
+   * Gets the value of the of property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOF() {
+    return of;
+  }
 
-    /**
-     * Sets the value of the of property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOF(String value) {
-        this.of = value;
-    }
+  /**
+   * Sets the value of the of property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOF(String value) {
+    this.of = value;
+  }
 
-    /**
-     * Gets the value of the fu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public FinancniUrad getFU() {
-        return fu;
-    }
+  /**
+   * Gets the value of the fu property.
+   *
+   * @return possible object is
+   * {@link FinancniUrad }
+   */
+  public FinancniUrad getFU() {
+    return fu;
+  }
 
-    /**
-     * Sets the value of the fu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FinancniUrad }
-     *     
-     */
-    public void setFU(FinancniUrad value) {
-        this.fu = value;
-    }
+  /**
+   * Sets the value of the fu property.
+   *
+   * @param value allowed object is
+   *              {@link FinancniUrad }
+   */
+  public void setFU(FinancniUrad value) {
+    this.fu = value;
+  }
 
-    /**
-     * Gets the value of the dic property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Dic }
-     *     
-     */
-    public Dic getDIC() {
-        return dic;
-    }
+  /**
+   * Gets the value of the dic property.
+   *
+   * @return possible object is
+   * {@link Dic }
+   */
+  public Dic getDIC() {
+    return dic;
+  }
 
-    /**
-     * Sets the value of the dic property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Dic }
-     *     
-     */
-    public void setDIC(Dic value) {
-        this.dic = value;
-    }
+  /**
+   * Sets the value of the dic property.
+   *
+   * @param value allowed object is
+   *              {@link Dic }
+   */
+  public void setDIC(Dic value) {
+    this.dic = value;
+  }
 
-    /**
-     * Gets the value of the zkrStatu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getZkrStatu() {
-        return zkrStatu;
-    }
+  /**
+   * Gets the value of the zkrStatu property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getZkrStatu() {
+    return zkrStatu;
+  }
 
-    /**
-     * Sets the value of the zkrStatu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setZkrStatu(String value) {
-        this.zkrStatu = value;
-    }
+  /**
+   * Sets the value of the zkrStatu property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setZkrStatu(String value) {
+    this.zkrStatu = value;
+  }
 
-    /**
-     * Gets the value of the ns property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNS() {
-        return ns;
-    }
+  /**
+   * Gets the value of the ns property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNS() {
+    return ns;
+  }
 
-    /**
-     * Sets the value of the ns property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNS(String value) {
-        this.ns = value;
-    }
+  /**
+   * Sets the value of the ns property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNS(String value) {
+    this.ns = value;
+  }
 
-    /**
-     * Gets the value of the kpf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getKPF() {
-        return kpf;
-    }
+  /**
+   * Gets the value of the kpf property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getKPF() {
+    return kpf;
+  }
 
-    /**
-     * Sets the value of the kpf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setKPF(Short value) {
-        this.kpf = value;
-    }
+  /**
+   * Sets the value of the kpf property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setKPF(Short value) {
+    this.kpf = value;
+  }
 
-    /**
-     * Gets the value of the npf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNPF() {
-        return npf;
-    }
+  /**
+   * Gets the value of the npf property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNPF() {
+    return npf;
+  }
 
-    /**
-     * Sets the value of the npf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNPF(String value) {
-        this.npf = value;
-    }
+  /**
+   * Sets the value of the npf property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNPF(String value) {
+    this.npf = value;
+  }
 
-    /**
-     * Gets the value of the a property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getA() {
-        return a;
-    }
+  /**
+   * Gets the value of the a property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getA() {
+    return a;
+  }
 
-    /**
-     * Sets the value of the a property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setA(AdresaARES value) {
-        this.a = value;
-    }
+  /**
+   * Sets the value of the a property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setA(AdresaARES value) {
+    this.a = value;
+  }
 
-    /**
-     * Gets the value of the organFO property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the organFO property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOrganFO().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link OrganFO }
-     * 
-     * 
-     */
-    public List<OrganFO> getOrganFO() {
-        if (organFO == null) {
-            organFO = new ArrayList<OrganFO>();
-        }
-        return this.organFO;
+  /**
+   * Gets the value of the organFO property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the organFO property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getOrganFO().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link OrganFO }
+   */
+  public List<OrganFO> getOrganFO() {
+    if (organFO == null) {
+      organFO = new ArrayList<OrganFO>();
     }
+    return this.organFO;
+  }
 
-    /**
-     * Gets the value of the dod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDod() {
-        return dod;
-    }
+  /**
+   * Gets the value of the dod property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDod() {
+    return dod;
+  }
 
-    /**
-     * Sets the value of the dod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDod(XMLGregorianCalendar value) {
-        this.dod = value;
-    }
+  /**
+   * Sets the value of the dod property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDod(XMLGregorianCalendar value) {
+    this.dod = value;
+  }
 
-    /**
-     * Gets the value of the ddo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDdo() {
-        return ddo;
-    }
+  /**
+   * Gets the value of the ddo property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDdo() {
+    return ddo;
+  }
 
-    /**
-     * Sets the value of the ddo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDdo(XMLGregorianCalendar value) {
-        this.ddo = value;
-    }
+  /**
+   * Sets the value of the ddo property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDdo(XMLGregorianCalendar value) {
+    this.ddo = value;
+  }
 
 }

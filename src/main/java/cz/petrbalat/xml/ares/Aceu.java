@@ -16,11 +16,11 @@ import java.util.List;
 
 /**
  * Data upravená dle ARES (tabulka k_podnet)
- * 
+ *
  * <p>Java class for aceu complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="aceu">
  *   &lt;complexContent>
@@ -40,246 +40,214 @@ import java.util.List;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "aceu", propOrder = {
-    "kKonkurz",
-    "poradi",
-    "dvPodnetu",
-    "kUkonuPodnetu",
-    "priznakUsneseni",
-    "radkyTextuUsneseni",
-    "jSouboruSUsnesenim",
-    "spravceKonkurzu",
-    "priznaky"
+  "kKonkurz",
+  "poradi",
+  "dvPodnetu",
+  "kUkonuPodnetu",
+  "priznakUsneseni",
+  "radkyTextuUsneseni",
+  "jSouboruSUsnesenim",
+  "spravceKonkurzu",
+  "priznaky"
 })
 public class Aceu {
 
-    @XmlElement(name = "K_konkurz", required = true)
-    protected KKonkurz kKonkurz;
-    @XmlElement(name = "Poradi")
-    protected short poradi;
-    @XmlElement(name = "DV_podnetu", required = true)
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dvPodnetu;
-    @XmlElement(name = "K_ukonu_podnetu")
-    protected byte kUkonuPodnetu;
-    @XmlElement(name = "Priznak_usneseni", required = true)
-    protected String priznakUsneseni;
-    @XmlElement(name = "Radky_textu_usneseni")
-    protected RadkyTextuUsneseni radkyTextuUsneseni;
-    @XmlElement(name = "J_souboru_s_usnesenim")
-    protected String jSouboruSUsnesenim;
-    @XmlElement(name = "Spravce_konkurzu")
-    protected List<SpravceKonkurzuCEU> spravceKonkurzu;
-    @XmlElement(name = "Priznaky", required = true)
-    protected String priznaky;
+  @XmlElement(name = "K_konkurz", required = true)
+  protected KKonkurz kKonkurz;
+  @XmlElement(name = "Poradi")
+  protected short poradi;
+  @XmlElement(name = "DV_podnetu", required = true)
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dvPodnetu;
+  @XmlElement(name = "K_ukonu_podnetu")
+  protected byte kUkonuPodnetu;
+  @XmlElement(name = "Priznak_usneseni", required = true)
+  protected String priznakUsneseni;
+  @XmlElement(name = "Radky_textu_usneseni")
+  protected RadkyTextuUsneseni radkyTextuUsneseni;
+  @XmlElement(name = "J_souboru_s_usnesenim")
+  protected String jSouboruSUsnesenim;
+  @XmlElement(name = "Spravce_konkurzu")
+  protected List<SpravceKonkurzuCEU> spravceKonkurzu;
+  @XmlElement(name = "Priznaky", required = true)
+  protected String priznaky;
 
-    /**
-     * Gets the value of the kKonkurz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KKonkurz }
-     *     
-     */
-    public KKonkurz getKKonkurz() {
-        return kKonkurz;
-    }
+  /**
+   * Gets the value of the kKonkurz property.
+   *
+   * @return possible object is
+   * {@link KKonkurz }
+   */
+  public KKonkurz getKKonkurz() {
+    return kKonkurz;
+  }
 
-    /**
-     * Sets the value of the kKonkurz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KKonkurz }
-     *     
-     */
-    public void setKKonkurz(KKonkurz value) {
-        this.kKonkurz = value;
-    }
+  /**
+   * Sets the value of the kKonkurz property.
+   *
+   * @param value allowed object is
+   *              {@link KKonkurz }
+   */
+  public void setKKonkurz(KKonkurz value) {
+    this.kKonkurz = value;
+  }
 
-    /**
-     * Gets the value of the poradi property.
-     * 
-     */
-    public short getPoradi() {
-        return poradi;
-    }
+  /**
+   * Gets the value of the poradi property.
+   */
+  public short getPoradi() {
+    return poradi;
+  }
 
-    /**
-     * Sets the value of the poradi property.
-     * 
-     */
-    public void setPoradi(short value) {
-        this.poradi = value;
-    }
+  /**
+   * Sets the value of the poradi property.
+   */
+  public void setPoradi(short value) {
+    this.poradi = value;
+  }
 
-    /**
-     * Gets the value of the dvPodnetu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDVPodnetu() {
-        return dvPodnetu;
-    }
+  /**
+   * Gets the value of the dvPodnetu property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDVPodnetu() {
+    return dvPodnetu;
+  }
 
-    /**
-     * Sets the value of the dvPodnetu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDVPodnetu(XMLGregorianCalendar value) {
-        this.dvPodnetu = value;
-    }
+  /**
+   * Sets the value of the dvPodnetu property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDVPodnetu(XMLGregorianCalendar value) {
+    this.dvPodnetu = value;
+  }
 
-    /**
-     * Gets the value of the kUkonuPodnetu property.
-     * 
-     */
-    public byte getKUkonuPodnetu() {
-        return kUkonuPodnetu;
-    }
+  /**
+   * Gets the value of the kUkonuPodnetu property.
+   */
+  public byte getKUkonuPodnetu() {
+    return kUkonuPodnetu;
+  }
 
-    /**
-     * Sets the value of the kUkonuPodnetu property.
-     * 
-     */
-    public void setKUkonuPodnetu(byte value) {
-        this.kUkonuPodnetu = value;
-    }
+  /**
+   * Sets the value of the kUkonuPodnetu property.
+   */
+  public void setKUkonuPodnetu(byte value) {
+    this.kUkonuPodnetu = value;
+  }
 
-    /**
-     * Gets the value of the priznakUsneseni property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPriznakUsneseni() {
-        return priznakUsneseni;
-    }
+  /**
+   * Gets the value of the priznakUsneseni property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPriznakUsneseni() {
+    return priznakUsneseni;
+  }
 
-    /**
-     * Sets the value of the priznakUsneseni property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPriznakUsneseni(String value) {
-        this.priznakUsneseni = value;
-    }
+  /**
+   * Sets the value of the priznakUsneseni property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPriznakUsneseni(String value) {
+    this.priznakUsneseni = value;
+  }
 
-    /**
-     * Gets the value of the radkyTextuUsneseni property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link RadkyTextuUsneseni }
-     *     
-     */
-    public RadkyTextuUsneseni getRadkyTextuUsneseni() {
-        return radkyTextuUsneseni;
-    }
+  /**
+   * Gets the value of the radkyTextuUsneseni property.
+   *
+   * @return possible object is
+   * {@link RadkyTextuUsneseni }
+   */
+  public RadkyTextuUsneseni getRadkyTextuUsneseni() {
+    return radkyTextuUsneseni;
+  }
 
-    /**
-     * Sets the value of the radkyTextuUsneseni property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link RadkyTextuUsneseni }
-     *     
-     */
-    public void setRadkyTextuUsneseni(RadkyTextuUsneseni value) {
-        this.radkyTextuUsneseni = value;
-    }
+  /**
+   * Sets the value of the radkyTextuUsneseni property.
+   *
+   * @param value allowed object is
+   *              {@link RadkyTextuUsneseni }
+   */
+  public void setRadkyTextuUsneseni(RadkyTextuUsneseni value) {
+    this.radkyTextuUsneseni = value;
+  }
 
-    /**
-     * Gets the value of the jSouboruSUsnesenim property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getJSouboruSUsnesenim() {
-        return jSouboruSUsnesenim;
-    }
+  /**
+   * Gets the value of the jSouboruSUsnesenim property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getJSouboruSUsnesenim() {
+    return jSouboruSUsnesenim;
+  }
 
-    /**
-     * Sets the value of the jSouboruSUsnesenim property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setJSouboruSUsnesenim(String value) {
-        this.jSouboruSUsnesenim = value;
-    }
+  /**
+   * Sets the value of the jSouboruSUsnesenim property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setJSouboruSUsnesenim(String value) {
+    this.jSouboruSUsnesenim = value;
+  }
 
-    /**
-     * Gets the value of the spravceKonkurzu property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the spravceKonkurzu property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSpravceKonkurzu().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SpravceKonkurzuCEU }
-     * 
-     * 
-     */
-    public List<SpravceKonkurzuCEU> getSpravceKonkurzu() {
-        if (spravceKonkurzu == null) {
-            spravceKonkurzu = new ArrayList<SpravceKonkurzuCEU>();
-        }
-        return this.spravceKonkurzu;
+  /**
+   * Gets the value of the spravceKonkurzu property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the spravceKonkurzu property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getSpravceKonkurzu().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link SpravceKonkurzuCEU }
+   */
+  public List<SpravceKonkurzuCEU> getSpravceKonkurzu() {
+    if (spravceKonkurzu == null) {
+      spravceKonkurzu = new ArrayList<SpravceKonkurzuCEU>();
     }
+    return this.spravceKonkurzu;
+  }
 
-    /**
-     * Gets the value of the priznaky property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPriznaky() {
-        return priznaky;
-    }
+  /**
+   * Gets the value of the priznaky property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPriznaky() {
+    return priznaky;
+  }
 
-    /**
-     * Sets the value of the priznaky property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPriznaky(String value) {
-        this.priznaky = value;
-    }
+  /**
+   * Sets the value of the priznaky property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPriznaky(String value) {
+    this.priznaky = value;
+  }
 
 }

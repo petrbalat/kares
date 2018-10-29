@@ -8,19 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for udalosti complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="udalosti">
  *   &lt;complexContent>
@@ -32,45 +32,41 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "udalosti", propOrder = {
-    "u"
+  "u"
 })
 public class Udalosti {
 
-    @XmlElement(name = "U", required = true)
-    protected List<Udalost> u;
+  @XmlElement(name = "U", required = true)
+  protected List<Udalost> u;
 
-    /**
-     * Gets the value of the u property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the u property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getU().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Udalost }
-     * 
-     * 
-     */
-    public List<Udalost> getU() {
-        if (u == null) {
-            u = new ArrayList<Udalost>();
-        }
-        return this.u;
+  /**
+   * Gets the value of the u property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the u property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getU().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Udalost }
+   */
+  public List<Udalost> getU() {
+    if (u == null) {
+      u = new ArrayList<Udalost>();
     }
+    return this.u;
+  }
 
 }

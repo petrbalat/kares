@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for druh_akcie.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -37,55 +37,54 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "druh_akcie")
 @XmlEnum
 public enum DruhAkcie {
 
-    @XmlEnumValue("Akcie na jm\u00e9no")
-    AKCIE_NA_JMENO("Akcie na jm\u00e9no"),
-    @XmlEnumValue("Akcie na majitele")
-    AKCIE_NA_MAJITELE("Akcie na majitele"),
-    @XmlEnumValue("Zam\u011bstnaneck\u00e9 akcie na jm\u00e9no")
-    ZAMĚSTNANECKÉ_AKCIE_NA_JMENO("Zam\u011bstnaneck\u00e9 akcie na jm\u00e9no"),
-    @XmlEnumValue("Prioritn\u00ed akcie na majitele")
-    PRIORITNI_AKCIE_NA_MAJITELE("Prioritn\u00ed akcie na majitele"),
-    @XmlEnumValue("Prioritn\u00ed akcie na jm\u00e9no")
-    PRIORITNI_AKCIE_NA_JMENO("Prioritn\u00ed akcie na jm\u00e9no"),
-    @XmlEnumValue("Akcie se zvl\u00e1\u0161tn\u00edmi pr\u00e1vy")
-    AKCIE_SE_ZVLASTNiMI_PRAVY("Akcie se zvl\u00e1\u0161tn\u00edmi pr\u00e1vy"),
-    @XmlEnumValue("Kmenov\u00e9 akcie na jm\u00e9no")
-    KMENOVE_AKCIE_NA_JMENO("Kmenov\u00e9 akcie na jm\u00e9no"),
-    @XmlEnumValue("Kmenov\u00e9 akcie na majitele")
-    KMENOVE_AKCIE_NA_MAJITELE("Kmenov\u00e9 akcie na majitele"),
-    @XmlEnumValue("Na doru\u010ditele")
-    NA_DORUCTELE("Na doru\u010ditele"),
-    @XmlEnumValue("Na jm\u00e9no a majitele")
-    NA_JMENO_A_MAJITELE("Na jm\u00e9no a majitele"),
-    @XmlEnumValue("Na dr\u017eitele")
-    NA_DRZITELE("Na dr\u017eitele"),
-    @XmlEnumValue("Bez uveden\u00ed druhu")
-    BEZ_UVEDENI_DRUHU("Bez uveden\u00ed druhu"),
-    @XmlEnumValue("Hromadn\u00e1 akcie")
-    HROMADNA_AKCIE("Hromadn\u00e1 akcie");
-    private final String value;
+  @XmlEnumValue("Akcie na jm\u00e9no")
+  AKCIE_NA_JMENO("Akcie na jm\u00e9no"),
+  @XmlEnumValue("Akcie na majitele")
+  AKCIE_NA_MAJITELE("Akcie na majitele"),
+  @XmlEnumValue("Zam\u011bstnaneck\u00e9 akcie na jm\u00e9no")
+  ZAMĚSTNANECKÉ_AKCIE_NA_JMENO("Zam\u011bstnaneck\u00e9 akcie na jm\u00e9no"),
+  @XmlEnumValue("Prioritn\u00ed akcie na majitele")
+  PRIORITNI_AKCIE_NA_MAJITELE("Prioritn\u00ed akcie na majitele"),
+  @XmlEnumValue("Prioritn\u00ed akcie na jm\u00e9no")
+  PRIORITNI_AKCIE_NA_JMENO("Prioritn\u00ed akcie na jm\u00e9no"),
+  @XmlEnumValue("Akcie se zvl\u00e1\u0161tn\u00edmi pr\u00e1vy")
+  AKCIE_SE_ZVLASTNiMI_PRAVY("Akcie se zvl\u00e1\u0161tn\u00edmi pr\u00e1vy"),
+  @XmlEnumValue("Kmenov\u00e9 akcie na jm\u00e9no")
+  KMENOVE_AKCIE_NA_JMENO("Kmenov\u00e9 akcie na jm\u00e9no"),
+  @XmlEnumValue("Kmenov\u00e9 akcie na majitele")
+  KMENOVE_AKCIE_NA_MAJITELE("Kmenov\u00e9 akcie na majitele"),
+  @XmlEnumValue("Na doru\u010ditele")
+  NA_DORUCTELE("Na doru\u010ditele"),
+  @XmlEnumValue("Na jm\u00e9no a majitele")
+  NA_JMENO_A_MAJITELE("Na jm\u00e9no a majitele"),
+  @XmlEnumValue("Na dr\u017eitele")
+  NA_DRZITELE("Na dr\u017eitele"),
+  @XmlEnumValue("Bez uveden\u00ed druhu")
+  BEZ_UVEDENI_DRUHU("Bez uveden\u00ed druhu"),
+  @XmlEnumValue("Hromadn\u00e1 akcie")
+  HROMADNA_AKCIE("Hromadn\u00e1 akcie");
+  private final String value;
 
-    DruhAkcie(String v) {
-        value = v;
-    }
+  DruhAkcie(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static DruhAkcie fromValue(String v) {
+    for (DruhAkcie c : DruhAkcie.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static DruhAkcie fromValue(String v) {
-        for (DruhAkcie c: DruhAkcie.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

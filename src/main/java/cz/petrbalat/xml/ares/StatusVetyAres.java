@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for status_vety_ares.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -26,37 +26,33 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "status_vety_ares")
 @XmlEnum
 public enum StatusVetyAres {
 
 
-    /**
-     * aktuálně platný záznam u ekonomického subjektu
-     * 
-     */
-    A,
+  /**
+   * aktuálně platný záznam u ekonomického subjektu
+   */
+  A,
 
-    /**
-     * ekonomický subjekt u daného záznamu je zaniklý
-     * 
-     */
-    Z,
+  /**
+   * ekonomický subjekt u daného záznamu je zaniklý
+   */
+  Z,
 
-    /**
-     * status věty neuveden
-     * 
-     */
-    N;
+  /**
+   * status věty neuveden
+   */
+  N;
 
-    public String value() {
-        return name();
-    }
+  public static StatusVetyAres fromValue(String v) {
+    return valueOf(v);
+  }
 
-    public static StatusVetyAres fromValue(String v) {
-        return valueOf(v);
-    }
+  public String value() {
+    return name();
+  }
 
 }

@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * Hlavní tabulka úpadců - slouží zejména pro rozlišení, o jakého úpadce se jedná
- * 
+ *
  * <p>Java class for k_upadce complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="k_upadce">
  *   &lt;complexContent>
@@ -38,170 +34,146 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "k_upadce", propOrder = {
-    "sUpadce",
-    "pfc",
-    "kEksubj",
-    "kCosoba",
-    "sko",
-    "svy"
+  "sUpadce",
+  "pfc",
+  "kEksubj",
+  "kCosoba",
+  "sko",
+  "svy"
 })
 public class KUpadce {
 
-    @XmlElement(name = "S_upadce")
-    protected int sUpadce;
-    @XmlElement(name = "PFC", required = true)
-    @XmlSchemaType(name = "string")
-    protected Pfc pfc;
-    @XmlElement(name = "K_eksubj")
-    protected KEksubj kEksubj;
-    @XmlElement(name = "K_cosoba")
-    protected KCosoba kCosoba;
-    @XmlElement(name = "SKO", required = true)
-    @XmlSchemaType(name = "string")
-    protected StavUpadceCEU sko;
-    @XmlElement(name = "SVY", required = true)
-    @XmlSchemaType(name = "string")
-    protected StavUpadceCEU svy;
+  @XmlElement(name = "S_upadce")
+  protected int sUpadce;
+  @XmlElement(name = "PFC", required = true)
+  @XmlSchemaType(name = "string")
+  protected Pfc pfc;
+  @XmlElement(name = "K_eksubj")
+  protected KEksubj kEksubj;
+  @XmlElement(name = "K_cosoba")
+  protected KCosoba kCosoba;
+  @XmlElement(name = "SKO", required = true)
+  @XmlSchemaType(name = "string")
+  protected StavUpadceCEU sko;
+  @XmlElement(name = "SVY", required = true)
+  @XmlSchemaType(name = "string")
+  protected StavUpadceCEU svy;
 
-    /**
-     * Gets the value of the sUpadce property.
-     * 
-     */
-    public int getSUpadce() {
-        return sUpadce;
-    }
+  /**
+   * Gets the value of the sUpadce property.
+   */
+  public int getSUpadce() {
+    return sUpadce;
+  }
 
-    /**
-     * Sets the value of the sUpadce property.
-     * 
-     */
-    public void setSUpadce(int value) {
-        this.sUpadce = value;
-    }
+  /**
+   * Sets the value of the sUpadce property.
+   */
+  public void setSUpadce(int value) {
+    this.sUpadce = value;
+  }
 
-    /**
-     * Gets the value of the pfc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Pfc }
-     *     
-     */
-    public Pfc getPFC() {
-        return pfc;
-    }
+  /**
+   * Gets the value of the pfc property.
+   *
+   * @return possible object is
+   * {@link Pfc }
+   */
+  public Pfc getPFC() {
+    return pfc;
+  }
 
-    /**
-     * Sets the value of the pfc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Pfc }
-     *     
-     */
-    public void setPFC(Pfc value) {
-        this.pfc = value;
-    }
+  /**
+   * Sets the value of the pfc property.
+   *
+   * @param value allowed object is
+   *              {@link Pfc }
+   */
+  public void setPFC(Pfc value) {
+    this.pfc = value;
+  }
 
-    /**
-     * Gets the value of the kEksubj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KEksubj }
-     *     
-     */
-    public KEksubj getKEksubj() {
-        return kEksubj;
-    }
+  /**
+   * Gets the value of the kEksubj property.
+   *
+   * @return possible object is
+   * {@link KEksubj }
+   */
+  public KEksubj getKEksubj() {
+    return kEksubj;
+  }
 
-    /**
-     * Sets the value of the kEksubj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KEksubj }
-     *     
-     */
-    public void setKEksubj(KEksubj value) {
-        this.kEksubj = value;
-    }
+  /**
+   * Sets the value of the kEksubj property.
+   *
+   * @param value allowed object is
+   *              {@link KEksubj }
+   */
+  public void setKEksubj(KEksubj value) {
+    this.kEksubj = value;
+  }
 
-    /**
-     * Gets the value of the kCosoba property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KCosoba }
-     *     
-     */
-    public KCosoba getKCosoba() {
-        return kCosoba;
-    }
+  /**
+   * Gets the value of the kCosoba property.
+   *
+   * @return possible object is
+   * {@link KCosoba }
+   */
+  public KCosoba getKCosoba() {
+    return kCosoba;
+  }
 
-    /**
-     * Sets the value of the kCosoba property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KCosoba }
-     *     
-     */
-    public void setKCosoba(KCosoba value) {
-        this.kCosoba = value;
-    }
+  /**
+   * Sets the value of the kCosoba property.
+   *
+   * @param value allowed object is
+   *              {@link KCosoba }
+   */
+  public void setKCosoba(KCosoba value) {
+    this.kCosoba = value;
+  }
 
-    /**
-     * Gets the value of the sko property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public StavUpadceCEU getSKO() {
-        return sko;
-    }
+  /**
+   * Gets the value of the sko property.
+   *
+   * @return possible object is
+   * {@link StavUpadceCEU }
+   */
+  public StavUpadceCEU getSKO() {
+    return sko;
+  }
 
-    /**
-     * Sets the value of the sko property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public void setSKO(StavUpadceCEU value) {
-        this.sko = value;
-    }
+  /**
+   * Sets the value of the sko property.
+   *
+   * @param value allowed object is
+   *              {@link StavUpadceCEU }
+   */
+  public void setSKO(StavUpadceCEU value) {
+    this.sko = value;
+  }
 
-    /**
-     * Gets the value of the svy property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public StavUpadceCEU getSVY() {
-        return svy;
-    }
+  /**
+   * Gets the value of the svy property.
+   *
+   * @return possible object is
+   * {@link StavUpadceCEU }
+   */
+  public StavUpadceCEU getSVY() {
+    return svy;
+  }
 
-    /**
-     * Sets the value of the svy property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavUpadceCEU }
-     *     
-     */
-    public void setSVY(StavUpadceCEU value) {
-        this.svy = value;
-    }
+  /**
+   * Sets the value of the svy property.
+   *
+   * @param value allowed object is
+   *              {@link StavUpadceCEU }
+   */
+  public void setSVY(StavUpadceCEU value) {
+    this.svy = value;
+  }
 
 }

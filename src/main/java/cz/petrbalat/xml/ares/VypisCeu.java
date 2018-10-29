@@ -8,21 +8,21 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Výpis informací o úpadci z Centrální evidence úpadců dle ARES
- * 
+ *
  * <p>Java class for vypis_ceu complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vypis_ceu">
  *   &lt;complexContent>
@@ -35,72 +35,64 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vypis_ceu", propOrder = {
-    "uvod",
-    "subjekt"
+  "uvod",
+  "subjekt"
 })
 public class VypisCeu {
 
-    @XmlElement(name = "UVOD", required = true)
-    protected Uvod uvod;
-    @XmlElement(name = "Subjekt", required = true)
-    protected List<SubjektCEU> subjekt;
+  @XmlElement(name = "UVOD", required = true)
+  protected Uvod uvod;
+  @XmlElement(name = "Subjekt", required = true)
+  protected List<SubjektCEU> subjekt;
 
-    /**
-     * Gets the value of the uvod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Uvod }
-     *     
-     */
-    public Uvod getUVOD() {
-        return uvod;
-    }
+  /**
+   * Gets the value of the uvod property.
+   *
+   * @return possible object is
+   * {@link Uvod }
+   */
+  public Uvod getUVOD() {
+    return uvod;
+  }
 
-    /**
-     * Sets the value of the uvod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Uvod }
-     *     
-     */
-    public void setUVOD(Uvod value) {
-        this.uvod = value;
-    }
+  /**
+   * Sets the value of the uvod property.
+   *
+   * @param value allowed object is
+   *              {@link Uvod }
+   */
+  public void setUVOD(Uvod value) {
+    this.uvod = value;
+  }
 
-    /**
-     * Gets the value of the subjekt property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the subjekt property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSubjekt().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link SubjektCEU }
-     * 
-     * 
-     */
-    public List<SubjektCEU> getSubjekt() {
-        if (subjekt == null) {
-            subjekt = new ArrayList<SubjektCEU>();
-        }
-        return this.subjekt;
+  /**
+   * Gets the value of the subjekt property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the subjekt property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getSubjekt().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link SubjektCEU }
+   */
+  public List<SubjektCEU> getSubjekt() {
+    if (subjekt == null) {
+      subjekt = new ArrayList<SubjektCEU>();
     }
+    return this.subjekt;
+  }
 
 }

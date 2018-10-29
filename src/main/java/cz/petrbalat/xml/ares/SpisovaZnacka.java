@@ -8,22 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Spisová značka, pod kterou je veden spis subjektu u daného soudu. (Bývá zapisována oddíl / vložka.)
- * 
+ *
  * <p>Java class for spisova_znacka complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="spisova_znacka">
  *   &lt;complexContent>
@@ -39,147 +34,125 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "spisova_znacka", propOrder = {
-    "sd",
-    "ov"
+  "sd",
+  "ov"
 })
 public class SpisovaZnacka {
 
-    @XmlElement(name = "SD", required = true)
-    protected Soud sd;
-    @XmlElement(name = "OV", required = true)
-    protected String ov;
-    @XmlAttribute(name = "dod")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dod;
-    @XmlAttribute(name = "ddo")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar ddo;
-    @XmlAttribute(name = "zdroj")
-    protected ZdrojType zdroj;
+  @XmlElement(name = "SD", required = true)
+  protected Soud sd;
+  @XmlElement(name = "OV", required = true)
+  protected String ov;
+  @XmlAttribute(name = "dod")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dod;
+  @XmlAttribute(name = "ddo")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar ddo;
+  @XmlAttribute(name = "zdroj")
+  protected ZdrojType zdroj;
 
-    /**
-     * Gets the value of the sd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Soud }
-     *     
-     */
-    public Soud getSD() {
-        return sd;
-    }
+  /**
+   * Gets the value of the sd property.
+   *
+   * @return possible object is
+   * {@link Soud }
+   */
+  public Soud getSD() {
+    return sd;
+  }
 
-    /**
-     * Sets the value of the sd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Soud }
-     *     
-     */
-    public void setSD(Soud value) {
-        this.sd = value;
-    }
+  /**
+   * Sets the value of the sd property.
+   *
+   * @param value allowed object is
+   *              {@link Soud }
+   */
+  public void setSD(Soud value) {
+    this.sd = value;
+  }
 
-    /**
-     * Gets the value of the ov property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOV() {
-        return ov;
-    }
+  /**
+   * Gets the value of the ov property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOV() {
+    return ov;
+  }
 
-    /**
-     * Sets the value of the ov property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOV(String value) {
-        this.ov = value;
-    }
+  /**
+   * Sets the value of the ov property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOV(String value) {
+    this.ov = value;
+  }
 
-    /**
-     * Gets the value of the dod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDod() {
-        return dod;
-    }
+  /**
+   * Gets the value of the dod property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDod() {
+    return dod;
+  }
 
-    /**
-     * Sets the value of the dod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDod(XMLGregorianCalendar value) {
-        this.dod = value;
-    }
+  /**
+   * Sets the value of the dod property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDod(XMLGregorianCalendar value) {
+    this.dod = value;
+  }
 
-    /**
-     * Gets the value of the ddo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDdo() {
-        return ddo;
-    }
+  /**
+   * Gets the value of the ddo property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDdo() {
+    return ddo;
+  }
 
-    /**
-     * Sets the value of the ddo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDdo(XMLGregorianCalendar value) {
-        this.ddo = value;
-    }
+  /**
+   * Sets the value of the ddo property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDdo(XMLGregorianCalendar value) {
+    this.ddo = value;
+  }
 
-    /**
-     * Gets the value of the zdroj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public ZdrojType getZdroj() {
-        return zdroj;
-    }
+  /**
+   * Gets the value of the zdroj property.
+   *
+   * @return possible object is
+   * {@link ZdrojType }
+   */
+  public ZdrojType getZdroj() {
+    return zdroj;
+  }
 
-    /**
-     * Sets the value of the zdroj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public void setZdroj(ZdrojType value) {
-        this.zdroj = value;
-    }
+  /**
+   * Sets the value of the zdroj property.
+   *
+   * @param value allowed object is
+   *              {@link ZdrojType }
+   */
+  public void setZdroj(ZdrojType value) {
+    this.zdroj = value;
+  }
 
 }

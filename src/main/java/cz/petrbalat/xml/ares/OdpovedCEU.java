@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for odpoved_CEU complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="odpoved_CEU">
  *   &lt;complexContent>
@@ -34,132 +34,114 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "odpoved_CEU", propOrder = {
-    "pid",
-    "e",
-    "vh",
-    "pza",
-    "vypisCEU"
+  "pid",
+  "e",
+  "vh",
+  "pza",
+  "vypisCEU"
 })
 public class OdpovedCEU {
 
-    @XmlElement(name = "PID")
-    protected int pid;
-    @XmlElement(name = "E", required = true)
-    protected ErrorARES e;
-    @XmlElement(name = "VH", required = true)
-    protected VysledekHledani vh;
-    @XmlElement(name = "PZA")
-    protected int pza;
-    @XmlElement(name = "Vypis_CEU")
-    protected VypisCeu vypisCEU;
+  @XmlElement(name = "PID")
+  protected int pid;
+  @XmlElement(name = "E", required = true)
+  protected ErrorARES e;
+  @XmlElement(name = "VH", required = true)
+  protected VysledekHledani vh;
+  @XmlElement(name = "PZA")
+  protected int pza;
+  @XmlElement(name = "Vypis_CEU")
+  protected VypisCeu vypisCEU;
 
-    /**
-     * Gets the value of the pid property.
-     * 
-     */
-    public int getPID() {
-        return pid;
-    }
+  /**
+   * Gets the value of the pid property.
+   */
+  public int getPID() {
+    return pid;
+  }
 
-    /**
-     * Sets the value of the pid property.
-     * 
-     */
-    public void setPID(int value) {
-        this.pid = value;
-    }
+  /**
+   * Sets the value of the pid property.
+   */
+  public void setPID(int value) {
+    this.pid = value;
+  }
 
-    /**
-     * Gets the value of the e property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ErrorARES }
-     *     
-     */
-    public ErrorARES getE() {
-        return e;
-    }
+  /**
+   * Gets the value of the e property.
+   *
+   * @return possible object is
+   * {@link ErrorARES }
+   */
+  public ErrorARES getE() {
+    return e;
+  }
 
-    /**
-     * Sets the value of the e property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ErrorARES }
-     *     
-     */
-    public void setE(ErrorARES value) {
-        this.e = value;
-    }
+  /**
+   * Sets the value of the e property.
+   *
+   * @param value allowed object is
+   *              {@link ErrorARES }
+   */
+  public void setE(ErrorARES value) {
+    this.e = value;
+  }
 
-    /**
-     * Gets the value of the vh property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VysledekHledani }
-     *     
-     */
-    public VysledekHledani getVH() {
-        return vh;
-    }
+  /**
+   * Gets the value of the vh property.
+   *
+   * @return possible object is
+   * {@link VysledekHledani }
+   */
+  public VysledekHledani getVH() {
+    return vh;
+  }
 
-    /**
-     * Sets the value of the vh property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VysledekHledani }
-     *     
-     */
-    public void setVH(VysledekHledani value) {
-        this.vh = value;
-    }
+  /**
+   * Sets the value of the vh property.
+   *
+   * @param value allowed object is
+   *              {@link VysledekHledani }
+   */
+  public void setVH(VysledekHledani value) {
+    this.vh = value;
+  }
 
-    /**
-     * Gets the value of the pza property.
-     * 
-     */
-    public int getPZA() {
-        return pza;
-    }
+  /**
+   * Gets the value of the pza property.
+   */
+  public int getPZA() {
+    return pza;
+  }
 
-    /**
-     * Sets the value of the pza property.
-     * 
-     */
-    public void setPZA(int value) {
-        this.pza = value;
-    }
+  /**
+   * Sets the value of the pza property.
+   */
+  public void setPZA(int value) {
+    this.pza = value;
+  }
 
-    /**
-     * Gets the value of the vypisCEU property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VypisCeu }
-     *     
-     */
-    public VypisCeu getVypisCEU() {
-        return vypisCEU;
-    }
+  /**
+   * Gets the value of the vypisCEU property.
+   *
+   * @return possible object is
+   * {@link VypisCeu }
+   */
+  public VypisCeu getVypisCEU() {
+    return vypisCEU;
+  }
 
-    /**
-     * Sets the value of the vypisCEU property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VypisCeu }
-     *     
-     */
-    public void setVypisCEU(VypisCeu value) {
-        this.vypisCEU = value;
-    }
+  /**
+   * Sets the value of the vypisCEU property.
+   *
+   * @param value allowed object is
+   *              {@link VypisCeu }
+   */
+  public void setVypisCEU(VypisCeu value) {
+    this.vypisCEU = value;
+  }
 
 }

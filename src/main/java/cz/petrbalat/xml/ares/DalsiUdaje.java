@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for dalsi_udaje complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="dalsi_udaje">
  *   &lt;complexContent>
@@ -33,121 +33,103 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "dalsi_udaje", propOrder = {
-    "drk",
-    "drz",
-    "tuk",
-    "tu"
+  "drk",
+  "drz",
+  "tuk",
+  "tu"
 })
 public class DalsiUdaje {
 
-    @XmlElement(name = "DRK")
-    protected Short drk;
-    @XmlElement(name = "DRZ")
-    protected String drz;
-    @XmlElement(name = "TUK")
-    protected Short tuk;
-    @XmlElement(name = "TU")
-    protected String tu;
+  @XmlElement(name = "DRK")
+  protected Short drk;
+  @XmlElement(name = "DRZ")
+  protected String drz;
+  @XmlElement(name = "TUK")
+  protected Short tuk;
+  @XmlElement(name = "TU")
+  protected String tu;
 
-    /**
-     * Gets the value of the drk property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getDRK() {
-        return drk;
-    }
+  /**
+   * Gets the value of the drk property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getDRK() {
+    return drk;
+  }
 
-    /**
-     * Sets the value of the drk property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setDRK(Short value) {
-        this.drk = value;
-    }
+  /**
+   * Sets the value of the drk property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setDRK(Short value) {
+    this.drk = value;
+  }
 
-    /**
-     * Gets the value of the drz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getDRZ() {
-        return drz;
-    }
+  /**
+   * Gets the value of the drz property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getDRZ() {
+    return drz;
+  }
 
-    /**
-     * Sets the value of the drz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDRZ(String value) {
-        this.drz = value;
-    }
+  /**
+   * Sets the value of the drz property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setDRZ(String value) {
+    this.drz = value;
+  }
 
-    /**
-     * Gets the value of the tuk property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Short }
-     *     
-     */
-    public Short getTUK() {
-        return tuk;
-    }
+  /**
+   * Gets the value of the tuk property.
+   *
+   * @return possible object is
+   * {@link Short }
+   */
+  public Short getTUK() {
+    return tuk;
+  }
 
-    /**
-     * Sets the value of the tuk property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Short }
-     *     
-     */
-    public void setTUK(Short value) {
-        this.tuk = value;
-    }
+  /**
+   * Sets the value of the tuk property.
+   *
+   * @param value allowed object is
+   *              {@link Short }
+   */
+  public void setTUK(Short value) {
+    this.tuk = value;
+  }
 
-    /**
-     * Gets the value of the tu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTU() {
-        return tu;
-    }
+  /**
+   * Gets the value of the tu property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getTU() {
+    return tu;
+  }
 
-    /**
-     * Sets the value of the tu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTU(String value) {
-        this.tu = value;
-    }
+  /**
+   * Sets the value of the tu property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setTU(String value) {
+    this.tu = value;
+  }
 
 }

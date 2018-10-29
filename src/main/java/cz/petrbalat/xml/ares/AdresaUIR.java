@@ -8,20 +8,16 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
- * Definice elementu obecné adresy 
- * 
+ * Definice elementu obecné adresy
+ *
  * <p>Java class for adresa_UIR complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="adresa_UIR">
  *   &lt;complexContent>
@@ -50,500 +46,426 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "adresa_UIR", namespace = "http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.3", propOrder = {
-    "kol",
-    "kk",
-    "kok",
-    "ko",
-    "kpo",
-    "kso",
-    "kn",
-    "kco",
-    "kmc",
-    "psc",
-    "kul",
-    "cd",
-    "tcd",
-    "co",
-    "pco",
-    "ka",
-    "kob",
-    "pcd"
+  "kol",
+  "kk",
+  "kok",
+  "ko",
+  "kpo",
+  "kso",
+  "kn",
+  "kco",
+  "kmc",
+  "psc",
+  "kul",
+  "cd",
+  "tcd",
+  "co",
+  "pco",
+  "ka",
+  "kob",
+  "pcd"
 })
 public class AdresaUIR {
 
-    @XmlElement(name = "KOL")
-    protected String kol;
-    @XmlElement(name = "KK")
-    protected String kk;
-    @XmlElement(name = "KOK")
-    @XmlSchemaType(name = "integer")
-    protected Integer kok;
-    @XmlElement(name = "KO")
-    protected String ko;
-    @XmlElement(name = "KPO")
-    protected String kpo;
-    @XmlElement(name = "KSO")
-    protected String kso;
-    @XmlElement(name = "KN")
-    protected String kn;
-    @XmlElement(name = "KCO")
-    protected String kco;
-    @XmlElement(name = "KMC")
-    protected String kmc;
-    @XmlElement(name = "PSC")
-    protected String psc;
-    @XmlElement(name = "KUL")
-    protected String kul;
-    @XmlElement(name = "CD")
-    protected Integer cd;
-    @XmlElement(name = "TCD")
-    protected Byte tcd;
-    @XmlElement(name = "CO")
-    protected String co;
-    @XmlElement(name = "PCO")
-    protected String pco;
-    @XmlElement(name = "KA")
-    protected String ka;
-    @XmlElement(name = "KOB")
-    protected String kob;
-    @XmlElement(name = "PCD")
-    protected String pcd;
+  @XmlElement(name = "KOL")
+  protected String kol;
+  @XmlElement(name = "KK")
+  protected String kk;
+  @XmlElement(name = "KOK")
+  @XmlSchemaType(name = "integer")
+  protected Integer kok;
+  @XmlElement(name = "KO")
+  protected String ko;
+  @XmlElement(name = "KPO")
+  protected String kpo;
+  @XmlElement(name = "KSO")
+  protected String kso;
+  @XmlElement(name = "KN")
+  protected String kn;
+  @XmlElement(name = "KCO")
+  protected String kco;
+  @XmlElement(name = "KMC")
+  protected String kmc;
+  @XmlElement(name = "PSC")
+  protected String psc;
+  @XmlElement(name = "KUL")
+  protected String kul;
+  @XmlElement(name = "CD")
+  protected Integer cd;
+  @XmlElement(name = "TCD")
+  protected Byte tcd;
+  @XmlElement(name = "CO")
+  protected String co;
+  @XmlElement(name = "PCO")
+  protected String pco;
+  @XmlElement(name = "KA")
+  protected String ka;
+  @XmlElement(name = "KOB")
+  protected String kob;
+  @XmlElement(name = "PCD")
+  protected String pcd;
 
-    /**
-     * Gets the value of the kol property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKOL() {
-        return kol;
-    }
+  /**
+   * Gets the value of the kol property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKOL() {
+    return kol;
+  }
 
-    /**
-     * Sets the value of the kol property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKOL(String value) {
-        this.kol = value;
-    }
+  /**
+   * Sets the value of the kol property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKOL(String value) {
+    this.kol = value;
+  }
 
-    /**
-     * Gets the value of the kk property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKK() {
-        return kk;
-    }
+  /**
+   * Gets the value of the kk property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKK() {
+    return kk;
+  }
 
-    /**
-     * Sets the value of the kk property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKK(String value) {
-        this.kk = value;
-    }
+  /**
+   * Sets the value of the kk property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKK(String value) {
+    this.kk = value;
+  }
 
-    /**
-     * Gets the value of the kok property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getKOK() {
-        return kok;
-    }
+  /**
+   * Gets the value of the kok property.
+   *
+   * @return possible object is
+   * {@link Integer }
+   */
+  public Integer getKOK() {
+    return kok;
+  }
 
-    /**
-     * Sets the value of the kok property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setKOK(Integer value) {
-        this.kok = value;
-    }
+  /**
+   * Sets the value of the kok property.
+   *
+   * @param value allowed object is
+   *              {@link Integer }
+   */
+  public void setKOK(Integer value) {
+    this.kok = value;
+  }
 
-    /**
-     * Gets the value of the ko property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKO() {
-        return ko;
-    }
+  /**
+   * Gets the value of the ko property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKO() {
+    return ko;
+  }
 
-    /**
-     * Sets the value of the ko property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKO(String value) {
-        this.ko = value;
-    }
+  /**
+   * Sets the value of the ko property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKO(String value) {
+    this.ko = value;
+  }
 
-    /**
-     * Gets the value of the kpo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKPO() {
-        return kpo;
-    }
+  /**
+   * Gets the value of the kpo property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKPO() {
+    return kpo;
+  }
 
-    /**
-     * Sets the value of the kpo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKPO(String value) {
-        this.kpo = value;
-    }
+  /**
+   * Sets the value of the kpo property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKPO(String value) {
+    this.kpo = value;
+  }
 
-    /**
-     * Gets the value of the kso property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKSO() {
-        return kso;
-    }
+  /**
+   * Gets the value of the kso property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKSO() {
+    return kso;
+  }
 
-    /**
-     * Sets the value of the kso property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKSO(String value) {
-        this.kso = value;
-    }
+  /**
+   * Sets the value of the kso property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKSO(String value) {
+    this.kso = value;
+  }
 
-    /**
-     * Gets the value of the kn property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKN() {
-        return kn;
-    }
+  /**
+   * Gets the value of the kn property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKN() {
+    return kn;
+  }
 
-    /**
-     * Sets the value of the kn property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKN(String value) {
-        this.kn = value;
-    }
+  /**
+   * Sets the value of the kn property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKN(String value) {
+    this.kn = value;
+  }
 
-    /**
-     * Gets the value of the kco property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKCO() {
-        return kco;
-    }
+  /**
+   * Gets the value of the kco property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKCO() {
+    return kco;
+  }
 
-    /**
-     * Sets the value of the kco property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKCO(String value) {
-        this.kco = value;
-    }
+  /**
+   * Sets the value of the kco property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKCO(String value) {
+    this.kco = value;
+  }
 
-    /**
-     * Gets the value of the kmc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKMC() {
-        return kmc;
-    }
+  /**
+   * Gets the value of the kmc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKMC() {
+    return kmc;
+  }
 
-    /**
-     * Sets the value of the kmc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKMC(String value) {
-        this.kmc = value;
-    }
+  /**
+   * Sets the value of the kmc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKMC(String value) {
+    this.kmc = value;
+  }
 
-    /**
-     * Gets the value of the psc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPSC() {
-        return psc;
-    }
+  /**
+   * Gets the value of the psc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPSC() {
+    return psc;
+  }
 
-    /**
-     * Sets the value of the psc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPSC(String value) {
-        this.psc = value;
-    }
+  /**
+   * Sets the value of the psc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPSC(String value) {
+    this.psc = value;
+  }
 
-    /**
-     * Gets the value of the kul property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKUL() {
-        return kul;
-    }
+  /**
+   * Gets the value of the kul property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKUL() {
+    return kul;
+  }
 
-    /**
-     * Sets the value of the kul property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKUL(String value) {
-        this.kul = value;
-    }
+  /**
+   * Sets the value of the kul property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKUL(String value) {
+    this.kul = value;
+  }
 
-    /**
-     * Gets the value of the cd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Integer }
-     *     
-     */
-    public Integer getCD() {
-        return cd;
-    }
+  /**
+   * Gets the value of the cd property.
+   *
+   * @return possible object is
+   * {@link Integer }
+   */
+  public Integer getCD() {
+    return cd;
+  }
 
-    /**
-     * Sets the value of the cd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Integer }
-     *     
-     */
-    public void setCD(Integer value) {
-        this.cd = value;
-    }
+  /**
+   * Sets the value of the cd property.
+   *
+   * @param value allowed object is
+   *              {@link Integer }
+   */
+  public void setCD(Integer value) {
+    this.cd = value;
+  }
 
-    /**
-     * Gets the value of the tcd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Byte }
-     *     
-     */
-    public Byte getTCD() {
-        return tcd;
-    }
+  /**
+   * Gets the value of the tcd property.
+   *
+   * @return possible object is
+   * {@link Byte }
+   */
+  public Byte getTCD() {
+    return tcd;
+  }
 
-    /**
-     * Sets the value of the tcd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Byte }
-     *     
-     */
-    public void setTCD(Byte value) {
-        this.tcd = value;
-    }
+  /**
+   * Sets the value of the tcd property.
+   *
+   * @param value allowed object is
+   *              {@link Byte }
+   */
+  public void setTCD(Byte value) {
+    this.tcd = value;
+  }
 
-    /**
-     * Gets the value of the co property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCO() {
-        return co;
-    }
+  /**
+   * Gets the value of the co property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCO() {
+    return co;
+  }
 
-    /**
-     * Sets the value of the co property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCO(String value) {
-        this.co = value;
-    }
+  /**
+   * Sets the value of the co property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCO(String value) {
+    this.co = value;
+  }
 
-    /**
-     * Gets the value of the pco property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPCO() {
-        return pco;
-    }
+  /**
+   * Gets the value of the pco property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPCO() {
+    return pco;
+  }
 
-    /**
-     * Sets the value of the pco property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPCO(String value) {
-        this.pco = value;
-    }
+  /**
+   * Sets the value of the pco property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPCO(String value) {
+    this.pco = value;
+  }
 
-    /**
-     * Gets the value of the ka property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKA() {
-        return ka;
-    }
+  /**
+   * Gets the value of the ka property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKA() {
+    return ka;
+  }
 
-    /**
-     * Sets the value of the ka property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKA(String value) {
-        this.ka = value;
-    }
+  /**
+   * Sets the value of the ka property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKA(String value) {
+    this.ka = value;
+  }
 
-    /**
-     * Gets the value of the kob property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKOB() {
-        return kob;
-    }
+  /**
+   * Gets the value of the kob property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKOB() {
+    return kob;
+  }
 
-    /**
-     * Sets the value of the kob property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKOB(String value) {
-        this.kob = value;
-    }
+  /**
+   * Sets the value of the kob property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKOB(String value) {
+    this.kob = value;
+  }
 
-    /**
-     * Gets the value of the pcd property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPCD() {
-        return pcd;
-    }
+  /**
+   * Gets the value of the pcd property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPCD() {
+    return pcd;
+  }
 
-    /**
-     * Sets the value of the pcd property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPCD(String value) {
-        this.pcd = value;
-    }
+  /**
+   * Sets the value of the pcd property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPCD(String value) {
+    this.pcd = value;
+  }
 
 }

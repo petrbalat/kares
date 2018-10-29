@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for stadrs_odpoved complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="stadrs_odpoved">
  *   &lt;complexContent>
@@ -31,67 +31,57 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "stadrs_odpoved", propOrder = {
-    "vsechnaSlova",
-    "poRedukciSlov"
+  "vsechnaSlova",
+  "poRedukciSlov"
 })
 public class StadrsOdpoved {
 
-    @XmlElement(name = "Vsechna_slova", required = true)
-    protected VysledekDotazu vsechnaSlova;
-    @XmlElement(name = "Po_redukci_slov")
-    protected VysledekDotazu poRedukciSlov;
+  @XmlElement(name = "Vsechna_slova", required = true)
+  protected VysledekDotazu vsechnaSlova;
+  @XmlElement(name = "Po_redukci_slov")
+  protected VysledekDotazu poRedukciSlov;
 
-    /**
-     * Gets the value of the vsechnaSlova property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VysledekDotazu }
-     *     
-     */
-    public VysledekDotazu getVsechnaSlova() {
-        return vsechnaSlova;
-    }
+  /**
+   * Gets the value of the vsechnaSlova property.
+   *
+   * @return possible object is
+   * {@link VysledekDotazu }
+   */
+  public VysledekDotazu getVsechnaSlova() {
+    return vsechnaSlova;
+  }
 
-    /**
-     * Sets the value of the vsechnaSlova property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VysledekDotazu }
-     *     
-     */
-    public void setVsechnaSlova(VysledekDotazu value) {
-        this.vsechnaSlova = value;
-    }
+  /**
+   * Sets the value of the vsechnaSlova property.
+   *
+   * @param value allowed object is
+   *              {@link VysledekDotazu }
+   */
+  public void setVsechnaSlova(VysledekDotazu value) {
+    this.vsechnaSlova = value;
+  }
 
-    /**
-     * Gets the value of the poRedukciSlov property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link VysledekDotazu }
-     *     
-     */
-    public VysledekDotazu getPoRedukciSlov() {
-        return poRedukciSlov;
-    }
+  /**
+   * Gets the value of the poRedukciSlov property.
+   *
+   * @return possible object is
+   * {@link VysledekDotazu }
+   */
+  public VysledekDotazu getPoRedukciSlov() {
+    return poRedukciSlov;
+  }
 
-    /**
-     * Sets the value of the poRedukciSlov property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link VysledekDotazu }
-     *     
-     */
-    public void setPoRedukciSlov(VysledekDotazu value) {
-        this.poRedukciSlov = value;
-    }
+  /**
+   * Sets the value of the poRedukciSlov property.
+   *
+   * @param value allowed object is
+   *              {@link VysledekDotazu }
+   */
+  public void setPoRedukciSlov(VysledekDotazu value) {
+    this.poRedukciSlov = value;
+  }
 
 }

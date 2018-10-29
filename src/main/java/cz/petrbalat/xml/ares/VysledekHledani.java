@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Definice elementu výsledku  hledání IČO pro seznam registrů a výpis z OR
- * 
+ *
  * <p>Java class for vysledek_hledani complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vysledek_hledani">
  *   &lt;complexContent>
@@ -36,87 +32,75 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vysledek_hledani", propOrder = {
-    "k",
-    "dv",
-    "t"
+  "k",
+  "dv",
+  "t"
 })
 public class VysledekHledani {
 
-    @XmlElement(name = "K")
-    protected int k;
-    @XmlElement(name = "DV")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "T")
-    protected String t;
+  @XmlElement(name = "K")
+  protected int k;
+  @XmlElement(name = "DV")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "T")
+  protected String t;
 
-    /**
-     * Gets the value of the k property.
-     * 
-     */
-    public int getK() {
-        return k;
-    }
+  /**
+   * Gets the value of the k property.
+   */
+  public int getK() {
+    return k;
+  }
 
-    /**
-     * Sets the value of the k property.
-     * 
-     */
-    public void setK(int value) {
-        this.k = value;
-    }
+  /**
+   * Sets the value of the k property.
+   */
+  public void setK(int value) {
+    this.k = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getT() {
-        return t;
-    }
+  /**
+   * Gets the value of the t property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getT() {
+    return t;
+  }
 
-    /**
-     * Sets the value of the t property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setT(String value) {
-        this.t = value;
-    }
+  /**
+   * Sets the value of the t property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setT(String value) {
+    this.t = value;
+  }
 
 }

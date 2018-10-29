@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for mena.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -31,37 +31,36 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "mena")
 @XmlEnum
 public enum Mena {
 
-    @XmlEnumValue("K\u010d")
-    KČ("K\u010d"),
-    USD("USD"),
-    DM("DM"),
-    GBP("GBP"),
-    SK("SK"),
-    EUR("EUR"),
-    EURO("EURO");
-    private final String value;
+  @XmlEnumValue("K\u010d")
+  KČ("K\u010d"),
+  USD("USD"),
+  DM("DM"),
+  GBP("GBP"),
+  SK("SK"),
+  EUR("EUR"),
+  EURO("EURO");
+  private final String value;
 
-    Mena(String v) {
-        value = v;
-    }
+  Mena(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static Mena fromValue(String v) {
+    for (Mena c : Mena.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static Mena fromValue(String v) {
-        for (Mena c: Mena.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

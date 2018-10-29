@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Informace o splacení částky vkladu v Kč, procentech nebo slovy volným textem
- * 
+ *
  * <p>Java class for splaceno complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="splaceno">
  *   &lt;complexContent>
@@ -34,94 +34,80 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "splaceno", propOrder = {
-    "kc",
-    "prc",
-    "ost"
+  "kc",
+  "prc",
+  "ost"
 })
 public class Splaceno {
 
-    @XmlElement(name = "KC")
-    protected String kc;
-    @XmlElement(name = "PRC")
-    protected String prc;
-    @XmlElement(name = "OST")
-    protected String ost;
+  @XmlElement(name = "KC")
+  protected String kc;
+  @XmlElement(name = "PRC")
+  protected String prc;
+  @XmlElement(name = "OST")
+  protected String ost;
 
-    /**
-     * Gets the value of the kc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getKC() {
-        return kc;
-    }
+  /**
+   * Gets the value of the kc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getKC() {
+    return kc;
+  }
 
-    /**
-     * Sets the value of the kc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setKC(String value) {
-        this.kc = value;
-    }
+  /**
+   * Sets the value of the kc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setKC(String value) {
+    this.kc = value;
+  }
 
-    /**
-     * Gets the value of the prc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPRC() {
-        return prc;
-    }
+  /**
+   * Gets the value of the prc property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPRC() {
+    return prc;
+  }
 
-    /**
-     * Sets the value of the prc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPRC(String value) {
-        this.prc = value;
-    }
+  /**
+   * Sets the value of the prc property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPRC(String value) {
+    this.prc = value;
+  }
 
-    /**
-     * Gets the value of the ost property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getOST() {
-        return ost;
-    }
+  /**
+   * Gets the value of the ost property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getOST() {
+    return ost;
+  }
 
-    /**
-     * Sets the value of the ost property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setOST(String value) {
-        this.ost = value;
-    }
+  /**
+   * Sets the value of the ost property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setOST(String value) {
+    this.ost = value;
+  }
 
 }

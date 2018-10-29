@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Informace o chybě včetně krátké nápovědy
- * 
+ *
  * <p>Java class for chyba complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="chyba">
  *   &lt;complexContent>
@@ -34,94 +34,80 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "chyba", propOrder = {
-    "k",
-    "popis",
-    "napoveda"
+  "k",
+  "popis",
+  "napoveda"
 })
 public class Chyba {
 
-    @XmlElement(name = "K", required = true)
-    protected String k;
-    @XmlElement(name = "Popis", required = true)
-    protected String popis;
-    @XmlElement(name = "Napoveda", required = true)
-    protected String napoveda;
+  @XmlElement(name = "K", required = true)
+  protected String k;
+  @XmlElement(name = "Popis", required = true)
+  protected String popis;
+  @XmlElement(name = "Napoveda", required = true)
+  protected String napoveda;
 
-    /**
-     * Gets the value of the k property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getK() {
-        return k;
-    }
+  /**
+   * Gets the value of the k property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getK() {
+    return k;
+  }
 
-    /**
-     * Sets the value of the k property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setK(String value) {
-        this.k = value;
-    }
+  /**
+   * Sets the value of the k property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setK(String value) {
+    this.k = value;
+  }
 
-    /**
-     * Gets the value of the popis property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPopis() {
-        return popis;
-    }
+  /**
+   * Gets the value of the popis property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPopis() {
+    return popis;
+  }
 
-    /**
-     * Sets the value of the popis property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPopis(String value) {
-        this.popis = value;
-    }
+  /**
+   * Sets the value of the popis property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPopis(String value) {
+    this.popis = value;
+  }
 
-    /**
-     * Gets the value of the napoveda property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNapoveda() {
-        return napoveda;
-    }
+  /**
+   * Gets the value of the napoveda property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getNapoveda() {
+    return napoveda;
+  }
 
-    /**
-     * Sets the value of the napoveda property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNapoveda(String value) {
-        this.napoveda = value;
-    }
+  /**
+   * Sets the value of the napoveda property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setNapoveda(String value) {
+    this.napoveda = value;
+  }
 
 }

@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Definice elementu obecné chyby dotazu v ARES
- * 
+ *
  * <p>Java class for error_ARES complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="error_ARES">
  *   &lt;complexContent>
@@ -33,59 +33,51 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "error_ARES", propOrder = {
-    "ek",
-    "et"
+  "ek",
+  "et"
 })
 public class ErrorARES {
 
-    @XmlElement(name = "EK")
-    protected byte ek;
-    @XmlElement(name = "ET", required = true)
-    protected String et;
+  @XmlElement(name = "EK")
+  protected byte ek;
+  @XmlElement(name = "ET", required = true)
+  protected String et;
 
-    /**
-     * Gets the value of the ek property.
-     * 
-     */
-    public byte getEK() {
-        return ek;
-    }
+  /**
+   * Gets the value of the ek property.
+   */
+  public byte getEK() {
+    return ek;
+  }
 
-    /**
-     * Sets the value of the ek property.
-     * 
-     */
-    public void setEK(byte value) {
-        this.ek = value;
-    }
+  /**
+   * Sets the value of the ek property.
+   */
+  public void setEK(byte value) {
+    this.ek = value;
+  }
 
-    /**
-     * Gets the value of the et property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getET() {
-        return et;
-    }
+  /**
+   * Gets the value of the et property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getET() {
+    return et;
+  }
 
-    /**
-     * Sets the value of the et property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setET(String value) {
-        this.et = value;
-    }
+  /**
+   * Sets the value of the et property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setET(String value) {
+    this.et = value;
+  }
 
 }

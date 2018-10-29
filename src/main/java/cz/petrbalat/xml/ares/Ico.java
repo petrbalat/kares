@@ -8,22 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * IČO organizace nebo fyzické osoby s atributem
- * 
+ *
  * <p>Java class for ico complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="ico">
  *   &lt;simpleContent>
@@ -35,120 +30,102 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/simpleContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ico", propOrder = {
-    "value"
+  "value"
 })
 public class Ico {
 
-    @XmlValue
-    protected String value;
-    @XmlAttribute(name = "dod")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dod;
-    @XmlAttribute(name = "ddo")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar ddo;
-    @XmlAttribute(name = "zdroj")
-    protected ZdrojType zdroj;
+  @XmlValue
+  protected String value;
+  @XmlAttribute(name = "dod")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dod;
+  @XmlAttribute(name = "ddo")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar ddo;
+  @XmlAttribute(name = "zdroj")
+  protected ZdrojType zdroj;
 
-    /**
-     * Gets the value of the value property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getValue() {
-        return value;
-    }
+  /**
+   * Gets the value of the value property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getValue() {
+    return value;
+  }
 
-    /**
-     * Sets the value of the value property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setValue(String value) {
-        this.value = value;
-    }
+  /**
+   * Sets the value of the value property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setValue(String value) {
+    this.value = value;
+  }
 
-    /**
-     * Gets the value of the dod property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDod() {
-        return dod;
-    }
+  /**
+   * Gets the value of the dod property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDod() {
+    return dod;
+  }
 
-    /**
-     * Sets the value of the dod property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDod(XMLGregorianCalendar value) {
-        this.dod = value;
-    }
+  /**
+   * Sets the value of the dod property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDod(XMLGregorianCalendar value) {
+    this.dod = value;
+  }
 
-    /**
-     * Gets the value of the ddo property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDdo() {
-        return ddo;
-    }
+  /**
+   * Gets the value of the ddo property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDdo() {
+    return ddo;
+  }
 
-    /**
-     * Sets the value of the ddo property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDdo(XMLGregorianCalendar value) {
-        this.ddo = value;
-    }
+  /**
+   * Sets the value of the ddo property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDdo(XMLGregorianCalendar value) {
+    this.ddo = value;
+  }
 
-    /**
-     * Gets the value of the zdroj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public ZdrojType getZdroj() {
-        return zdroj;
-    }
+  /**
+   * Gets the value of the zdroj property.
+   *
+   * @return possible object is
+   * {@link ZdrojType }
+   */
+  public ZdrojType getZdroj() {
+    return zdroj;
+  }
 
-    /**
-     * Sets the value of the zdroj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ZdrojType }
-     *     
-     */
-    public void setZdroj(ZdrojType value) {
-        this.zdroj = value;
-    }
+  /**
+   * Sets the value of the zdroj property.
+   *
+   * @param value allowed object is
+   *              {@link ZdrojType }
+   */
+  public void setZdroj(ZdrojType value) {
+    this.zdroj = value;
+  }
 
 }

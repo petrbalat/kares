@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
+import javax.xml.bind.annotation.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * <p>Java class for vypis_basic complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="vypis_basic">
  *   &lt;complexContent>
@@ -52,548 +48,478 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "vypis_basic", propOrder = {
-    "ico",
-    "dic",
-    "of",
-    "dv",
-    "dz",
-    "pf",
-    "doplnujiciPF",
-    "ad",
-    "aa",
-    "adrPuv",
-    "psu",
-    "ror",
-    "rrz",
-    "sceu",
-    "kpp",
-    "okece",
-    "nace",
-    "ppi",
-    "oboryCinnosti"
+  "ico",
+  "dic",
+  "of",
+  "dv",
+  "dz",
+  "pf",
+  "doplnujiciPF",
+  "ad",
+  "aa",
+  "adrPuv",
+  "psu",
+  "ror",
+  "rrz",
+  "sceu",
+  "kpp",
+  "okece",
+  "nace",
+  "ppi",
+  "oboryCinnosti"
 })
 public class VypisBasic {
 
-    @XmlElement(name = "ICO", required = true)
-    protected Ico ico;
-    @XmlElement(name = "DIC")
-    protected Dic dic;
-    @XmlElement(name = "OF", required = true)
-    protected ObchodniFirma of;
-    @XmlElement(name = "DV")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dv;
-    @XmlElement(name = "DZ")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar dz;
-    @XmlElement(name = "PF")
-    protected PravniForma pf;
-    @XmlElement(name = "Doplnujici_PF")
-    protected DoplnujiciPravniFormy doplnujiciPF;
-    @XmlElement(name = "AD")
-    protected AdresaDorucovaci ad;
-    @XmlElement(name = "AA")
-    protected AdresaARES aa;
-    @XmlElement(name = "Adr_puv")
-    protected AdresaARES adrPuv;
-    @XmlElement(name = "PSU")
-    protected String psu;
-    @XmlElement(name = "ROR")
-    protected List<Registrace> ror;
-    @XmlElement(name = "RRZ")
-    protected List<RegistraceRZP> rrz;
-    @XmlElement(name = "SCEU")
-    protected StavSubjektuCeu sceu;
-    @XmlElement(name = "KPP")
-    protected KategoriePoctuPracovniku kpp;
-    @XmlElement(name = "OKECE")
-    protected List<Okec> okece;
-    @XmlElement(name = "Nace")
-    protected List<Nace> nace;
-    @XmlElement(name = "PPI")
-    protected PredmetyPodnikani ppi;
-    @XmlElement(name = "Obory_cinnosti")
-    protected OboryCinnosti oboryCinnosti;
+  @XmlElement(name = "ICO", required = true)
+  protected Ico ico;
+  @XmlElement(name = "DIC")
+  protected Dic dic;
+  @XmlElement(name = "OF", required = true)
+  protected ObchodniFirma of;
+  @XmlElement(name = "DV")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dv;
+  @XmlElement(name = "DZ")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar dz;
+  @XmlElement(name = "PF")
+  protected PravniForma pf;
+  @XmlElement(name = "Doplnujici_PF")
+  protected DoplnujiciPravniFormy doplnujiciPF;
+  @XmlElement(name = "AD")
+  protected AdresaDorucovaci ad;
+  @XmlElement(name = "AA")
+  protected AdresaARES aa;
+  @XmlElement(name = "Adr_puv")
+  protected AdresaARES adrPuv;
+  @XmlElement(name = "PSU")
+  protected String psu;
+  @XmlElement(name = "ROR")
+  protected List<Registrace> ror;
+  @XmlElement(name = "RRZ")
+  protected List<RegistraceRZP> rrz;
+  @XmlElement(name = "SCEU")
+  protected StavSubjektuCeu sceu;
+  @XmlElement(name = "KPP")
+  protected KategoriePoctuPracovniku kpp;
+  @XmlElement(name = "OKECE")
+  protected List<Okec> okece;
+  @XmlElement(name = "Nace")
+  protected List<Nace> nace;
+  @XmlElement(name = "PPI")
+  protected PredmetyPodnikani ppi;
+  @XmlElement(name = "Obory_cinnosti")
+  protected OboryCinnosti oboryCinnosti;
 
-    /**
-     * Gets the value of the ico property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Ico }
-     *     
-     */
-    public Ico getICO() {
-        return ico;
-    }
+  /**
+   * Gets the value of the ico property.
+   *
+   * @return possible object is
+   * {@link Ico }
+   */
+  public Ico getICO() {
+    return ico;
+  }
 
-    /**
-     * Sets the value of the ico property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Ico }
-     *     
-     */
-    public void setICO(Ico value) {
-        this.ico = value;
-    }
+  /**
+   * Sets the value of the ico property.
+   *
+   * @param value allowed object is
+   *              {@link Ico }
+   */
+  public void setICO(Ico value) {
+    this.ico = value;
+  }
 
-    /**
-     * Gets the value of the dic property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Dic }
-     *     
-     */
-    public Dic getDIC() {
-        return dic;
-    }
+  /**
+   * Gets the value of the dic property.
+   *
+   * @return possible object is
+   * {@link Dic }
+   */
+  public Dic getDIC() {
+    return dic;
+  }
 
-    /**
-     * Sets the value of the dic property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Dic }
-     *     
-     */
-    public void setDIC(Dic value) {
-        this.dic = value;
-    }
+  /**
+   * Sets the value of the dic property.
+   *
+   * @param value allowed object is
+   *              {@link Dic }
+   */
+  public void setDIC(Dic value) {
+    this.dic = value;
+  }
 
-    /**
-     * Gets the value of the of property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link ObchodniFirma }
-     *     
-     */
-    public ObchodniFirma getOF() {
-        return of;
-    }
+  /**
+   * Gets the value of the of property.
+   *
+   * @return possible object is
+   * {@link ObchodniFirma }
+   */
+  public ObchodniFirma getOF() {
+    return of;
+  }
 
-    /**
-     * Sets the value of the of property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link ObchodniFirma }
-     *     
-     */
-    public void setOF(ObchodniFirma value) {
-        this.of = value;
-    }
+  /**
+   * Sets the value of the of property.
+   *
+   * @param value allowed object is
+   *              {@link ObchodniFirma }
+   */
+  public void setOF(ObchodniFirma value) {
+    this.of = value;
+  }
 
-    /**
-     * Gets the value of the dv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDV() {
-        return dv;
-    }
+  /**
+   * Gets the value of the dv property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDV() {
+    return dv;
+  }
 
-    /**
-     * Sets the value of the dv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDV(XMLGregorianCalendar value) {
-        this.dv = value;
-    }
+  /**
+   * Sets the value of the dv property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDV(XMLGregorianCalendar value) {
+    this.dv = value;
+  }
 
-    /**
-     * Gets the value of the dz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDZ() {
-        return dz;
-    }
+  /**
+   * Gets the value of the dz property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDZ() {
+    return dz;
+  }
 
-    /**
-     * Sets the value of the dz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDZ(XMLGregorianCalendar value) {
-        this.dz = value;
-    }
+  /**
+   * Sets the value of the dz property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDZ(XMLGregorianCalendar value) {
+    this.dz = value;
+  }
 
-    /**
-     * Gets the value of the pf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PravniForma }
-     *     
-     */
-    public PravniForma getPF() {
-        return pf;
-    }
+  /**
+   * Gets the value of the pf property.
+   *
+   * @return possible object is
+   * {@link PravniForma }
+   */
+  public PravniForma getPF() {
+    return pf;
+  }
 
-    /**
-     * Sets the value of the pf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PravniForma }
-     *     
-     */
-    public void setPF(PravniForma value) {
-        this.pf = value;
-    }
+  /**
+   * Sets the value of the pf property.
+   *
+   * @param value allowed object is
+   *              {@link PravniForma }
+   */
+  public void setPF(PravniForma value) {
+    this.pf = value;
+  }
 
-    /**
-     * Gets the value of the doplnujiciPF property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link DoplnujiciPravniFormy }
-     *     
-     */
-    public DoplnujiciPravniFormy getDoplnujiciPF() {
-        return doplnujiciPF;
-    }
+  /**
+   * Gets the value of the doplnujiciPF property.
+   *
+   * @return possible object is
+   * {@link DoplnujiciPravniFormy }
+   */
+  public DoplnujiciPravniFormy getDoplnujiciPF() {
+    return doplnujiciPF;
+  }
 
-    /**
-     * Sets the value of the doplnujiciPF property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link DoplnujiciPravniFormy }
-     *     
-     */
-    public void setDoplnujiciPF(DoplnujiciPravniFormy value) {
-        this.doplnujiciPF = value;
-    }
+  /**
+   * Sets the value of the doplnujiciPF property.
+   *
+   * @param value allowed object is
+   *              {@link DoplnujiciPravniFormy }
+   */
+  public void setDoplnujiciPF(DoplnujiciPravniFormy value) {
+    this.doplnujiciPF = value;
+  }
 
-    /**
-     * Gets the value of the ad property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaDorucovaci }
-     *     
-     */
-    public AdresaDorucovaci getAD() {
-        return ad;
-    }
+  /**
+   * Gets the value of the ad property.
+   *
+   * @return possible object is
+   * {@link AdresaDorucovaci }
+   */
+  public AdresaDorucovaci getAD() {
+    return ad;
+  }
 
-    /**
-     * Sets the value of the ad property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaDorucovaci }
-     *     
-     */
-    public void setAD(AdresaDorucovaci value) {
-        this.ad = value;
-    }
+  /**
+   * Sets the value of the ad property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaDorucovaci }
+   */
+  public void setAD(AdresaDorucovaci value) {
+    this.ad = value;
+  }
 
-    /**
-     * Gets the value of the aa property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getAA() {
-        return aa;
-    }
+  /**
+   * Gets the value of the aa property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getAA() {
+    return aa;
+  }
 
-    /**
-     * Sets the value of the aa property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setAA(AdresaARES value) {
-        this.aa = value;
-    }
+  /**
+   * Sets the value of the aa property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setAA(AdresaARES value) {
+    this.aa = value;
+  }
 
-    /**
-     * Gets the value of the adrPuv property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public AdresaARES getAdrPuv() {
-        return adrPuv;
-    }
+  /**
+   * Gets the value of the adrPuv property.
+   *
+   * @return possible object is
+   * {@link AdresaARES }
+   */
+  public AdresaARES getAdrPuv() {
+    return adrPuv;
+  }
 
-    /**
-     * Sets the value of the adrPuv property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link AdresaARES }
-     *     
-     */
-    public void setAdrPuv(AdresaARES value) {
-        this.adrPuv = value;
-    }
+  /**
+   * Sets the value of the adrPuv property.
+   *
+   * @param value allowed object is
+   *              {@link AdresaARES }
+   */
+  public void setAdrPuv(AdresaARES value) {
+    this.adrPuv = value;
+  }
 
-    /**
-     * Gets the value of the psu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getPSU() {
-        return psu;
-    }
+  /**
+   * Gets the value of the psu property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getPSU() {
+    return psu;
+  }
 
-    /**
-     * Sets the value of the psu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPSU(String value) {
-        this.psu = value;
-    }
+  /**
+   * Sets the value of the psu property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setPSU(String value) {
+    this.psu = value;
+  }
 
-    /**
-     * Gets the value of the ror property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ror property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getROR().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Registrace }
-     * 
-     * 
-     */
-    public List<Registrace> getROR() {
-        if (ror == null) {
-            ror = new ArrayList<Registrace>();
-        }
-        return this.ror;
+  /**
+   * Gets the value of the ror property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the ror property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getROR().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Registrace }
+   */
+  public List<Registrace> getROR() {
+    if (ror == null) {
+      ror = new ArrayList<Registrace>();
     }
+    return this.ror;
+  }
 
-    /**
-     * Gets the value of the rrz property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the rrz property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getRRZ().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link RegistraceRZP }
-     * 
-     * 
-     */
-    public List<RegistraceRZP> getRRZ() {
-        if (rrz == null) {
-            rrz = new ArrayList<RegistraceRZP>();
-        }
-        return this.rrz;
+  /**
+   * Gets the value of the rrz property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the rrz property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getRRZ().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link RegistraceRZP }
+   */
+  public List<RegistraceRZP> getRRZ() {
+    if (rrz == null) {
+      rrz = new ArrayList<RegistraceRZP>();
     }
+    return this.rrz;
+  }
 
-    /**
-     * Gets the value of the sceu property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StavSubjektuCeu }
-     *     
-     */
-    public StavSubjektuCeu getSCEU() {
-        return sceu;
-    }
+  /**
+   * Gets the value of the sceu property.
+   *
+   * @return possible object is
+   * {@link StavSubjektuCeu }
+   */
+  public StavSubjektuCeu getSCEU() {
+    return sceu;
+  }
 
-    /**
-     * Sets the value of the sceu property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StavSubjektuCeu }
-     *     
-     */
-    public void setSCEU(StavSubjektuCeu value) {
-        this.sceu = value;
-    }
+  /**
+   * Sets the value of the sceu property.
+   *
+   * @param value allowed object is
+   *              {@link StavSubjektuCeu }
+   */
+  public void setSCEU(StavSubjektuCeu value) {
+    this.sceu = value;
+  }
 
-    /**
-     * Gets the value of the kpp property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link KategoriePoctuPracovniku }
-     *     
-     */
-    public KategoriePoctuPracovniku getKPP() {
-        return kpp;
-    }
+  /**
+   * Gets the value of the kpp property.
+   *
+   * @return possible object is
+   * {@link KategoriePoctuPracovniku }
+   */
+  public KategoriePoctuPracovniku getKPP() {
+    return kpp;
+  }
 
-    /**
-     * Sets the value of the kpp property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link KategoriePoctuPracovniku }
-     *     
-     */
-    public void setKPP(KategoriePoctuPracovniku value) {
-        this.kpp = value;
-    }
+  /**
+   * Sets the value of the kpp property.
+   *
+   * @param value allowed object is
+   *              {@link KategoriePoctuPracovniku }
+   */
+  public void setKPP(KategoriePoctuPracovniku value) {
+    this.kpp = value;
+  }
 
-    /**
-     * Gets the value of the okece property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the okece property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getOKECE().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Okec }
-     * 
-     * 
-     */
-    public List<Okec> getOKECE() {
-        if (okece == null) {
-            okece = new ArrayList<Okec>();
-        }
-        return this.okece;
+  /**
+   * Gets the value of the okece property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the okece property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getOKECE().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Okec }
+   */
+  public List<Okec> getOKECE() {
+    if (okece == null) {
+      okece = new ArrayList<Okec>();
     }
+    return this.okece;
+  }
 
-    /**
-     * Gets the value of the nace property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nace property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNace().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Nace }
-     * 
-     * 
-     */
-    public List<Nace> getNace() {
-        if (nace == null) {
-            nace = new ArrayList<Nace>();
-        }
-        return this.nace;
+  /**
+   * Gets the value of the nace property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the nace property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getNace().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Nace }
+   */
+  public List<Nace> getNace() {
+    if (nace == null) {
+      nace = new ArrayList<Nace>();
     }
+    return this.nace;
+  }
 
-    /**
-     * Gets the value of the ppi property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link PredmetyPodnikani }
-     *     
-     */
-    public PredmetyPodnikani getPPI() {
-        return ppi;
-    }
+  /**
+   * Gets the value of the ppi property.
+   *
+   * @return possible object is
+   * {@link PredmetyPodnikani }
+   */
+  public PredmetyPodnikani getPPI() {
+    return ppi;
+  }
 
-    /**
-     * Sets the value of the ppi property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link PredmetyPodnikani }
-     *     
-     */
-    public void setPPI(PredmetyPodnikani value) {
-        this.ppi = value;
-    }
+  /**
+   * Sets the value of the ppi property.
+   *
+   * @param value allowed object is
+   *              {@link PredmetyPodnikani }
+   */
+  public void setPPI(PredmetyPodnikani value) {
+    this.ppi = value;
+  }
 
-    /**
-     * Gets the value of the oboryCinnosti property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link OboryCinnosti }
-     *     
-     */
-    public OboryCinnosti getOboryCinnosti() {
-        return oboryCinnosti;
-    }
+  /**
+   * Gets the value of the oboryCinnosti property.
+   *
+   * @return possible object is
+   * {@link OboryCinnosti }
+   */
+  public OboryCinnosti getOboryCinnosti() {
+    return oboryCinnosti;
+  }
 
-    /**
-     * Sets the value of the oboryCinnosti property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link OboryCinnosti }
-     *     
-     */
-    public void setOboryCinnosti(OboryCinnosti value) {
-        this.oboryCinnosti = value;
-    }
+  /**
+   * Sets the value of the oboryCinnosti property.
+   *
+   * @param value allowed object is
+   *              {@link OboryCinnosti }
+   */
+  public void setOboryCinnosti(OboryCinnosti value) {
+    this.oboryCinnosti = value;
+  }
 
 }

@@ -8,21 +8,17 @@
 
 package cz.petrbalat.xml.ares;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
  * Údaje k registraci, zrušení, likvidaci dle číselníku rozhodnutí
- * 
+ *
  * <p>Java class for rozhodnuti complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="rozhodnuti">
  *   &lt;complexContent>
@@ -37,123 +33,105 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "rozhodnuti", propOrder = {
-    "typRozhodnuti",
-    "cisloRozhodnuti",
-    "datumRozhodnuti",
-    "pravniMoc"
+  "typRozhodnuti",
+  "cisloRozhodnuti",
+  "datumRozhodnuti",
+  "pravniMoc"
 })
 public class Rozhodnuti {
 
-    @XmlElement(name = "Typ_rozhodnuti")
-    protected String typRozhodnuti;
-    @XmlElement(name = "Cislo_rozhodnuti")
-    protected String cisloRozhodnuti;
-    @XmlElement(name = "Datum_rozhodnuti")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar datumRozhodnuti;
-    @XmlElement(name = "Pravni_moc")
-    @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar pravniMoc;
+  @XmlElement(name = "Typ_rozhodnuti")
+  protected String typRozhodnuti;
+  @XmlElement(name = "Cislo_rozhodnuti")
+  protected String cisloRozhodnuti;
+  @XmlElement(name = "Datum_rozhodnuti")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar datumRozhodnuti;
+  @XmlElement(name = "Pravni_moc")
+  @XmlSchemaType(name = "date")
+  protected XMLGregorianCalendar pravniMoc;
 
-    /**
-     * Gets the value of the typRozhodnuti property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getTypRozhodnuti() {
-        return typRozhodnuti;
-    }
+  /**
+   * Gets the value of the typRozhodnuti property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getTypRozhodnuti() {
+    return typRozhodnuti;
+  }
 
-    /**
-     * Sets the value of the typRozhodnuti property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setTypRozhodnuti(String value) {
-        this.typRozhodnuti = value;
-    }
+  /**
+   * Sets the value of the typRozhodnuti property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setTypRozhodnuti(String value) {
+    this.typRozhodnuti = value;
+  }
 
-    /**
-     * Gets the value of the cisloRozhodnuti property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCisloRozhodnuti() {
-        return cisloRozhodnuti;
-    }
+  /**
+   * Gets the value of the cisloRozhodnuti property.
+   *
+   * @return possible object is
+   * {@link String }
+   */
+  public String getCisloRozhodnuti() {
+    return cisloRozhodnuti;
+  }
 
-    /**
-     * Sets the value of the cisloRozhodnuti property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCisloRozhodnuti(String value) {
-        this.cisloRozhodnuti = value;
-    }
+  /**
+   * Sets the value of the cisloRozhodnuti property.
+   *
+   * @param value allowed object is
+   *              {@link String }
+   */
+  public void setCisloRozhodnuti(String value) {
+    this.cisloRozhodnuti = value;
+  }
 
-    /**
-     * Gets the value of the datumRozhodnuti property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getDatumRozhodnuti() {
-        return datumRozhodnuti;
-    }
+  /**
+   * Gets the value of the datumRozhodnuti property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getDatumRozhodnuti() {
+    return datumRozhodnuti;
+  }
 
-    /**
-     * Sets the value of the datumRozhodnuti property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setDatumRozhodnuti(XMLGregorianCalendar value) {
-        this.datumRozhodnuti = value;
-    }
+  /**
+   * Sets the value of the datumRozhodnuti property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setDatumRozhodnuti(XMLGregorianCalendar value) {
+    this.datumRozhodnuti = value;
+  }
 
-    /**
-     * Gets the value of the pravniMoc property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public XMLGregorianCalendar getPravniMoc() {
-        return pravniMoc;
-    }
+  /**
+   * Gets the value of the pravniMoc property.
+   *
+   * @return possible object is
+   * {@link XMLGregorianCalendar }
+   */
+  public XMLGregorianCalendar getPravniMoc() {
+    return pravniMoc;
+  }
 
-    /**
-     * Sets the value of the pravniMoc property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link XMLGregorianCalendar }
-     *     
-     */
-    public void setPravniMoc(XMLGregorianCalendar value) {
-        this.pravniMoc = value;
-    }
+  /**
+   * Sets the value of the pravniMoc property.
+   *
+   * @param value allowed object is
+   *              {@link XMLGregorianCalendar }
+   */
+  public void setPravniMoc(XMLGregorianCalendar value) {
+    this.pravniMoc = value;
+  }
 
 }

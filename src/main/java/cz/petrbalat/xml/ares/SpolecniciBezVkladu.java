@@ -8,19 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for spolecnici_bez_vkladu complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="spolecnici_bez_vkladu">
  *   &lt;complexContent>
@@ -33,77 +33,71 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "spolecnici_bez_vkladu", propOrder = {
-    "sb",
-    "t"
+  "sb",
+  "t"
 })
 public class SpolecniciBezVkladu {
 
-    @XmlElement(name = "SB")
-    protected List<Angazma> sb;
-    @XmlElement(name = "T")
-    protected List<TextType> t;
+  @XmlElement(name = "SB")
+  protected List<Angazma> sb;
+  @XmlElement(name = "T")
+  protected List<TextType> t;
 
-    /**
-     * Gets the value of the sb property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the sb property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSB().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Angazma }
-     * 
-     * 
-     */
-    public List<Angazma> getSB() {
-        if (sb == null) {
-            sb = new ArrayList<Angazma>();
-        }
-        return this.sb;
+  /**
+   * Gets the value of the sb property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the sb property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getSB().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link Angazma }
+   */
+  public List<Angazma> getSB() {
+    if (sb == null) {
+      sb = new ArrayList<Angazma>();
     }
+    return this.sb;
+  }
 
-    /**
-     * Gets the value of the t property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the t property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getT().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TextType }
-     * 
-     * 
-     */
-    public List<TextType> getT() {
-        if (t == null) {
-            t = new ArrayList<TextType>();
-        }
-        return this.t;
+  /**
+   * Gets the value of the t property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the t property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getT().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link TextType }
+   */
+  public List<TextType> getT() {
+    if (t == null) {
+      t = new ArrayList<TextType>();
     }
+    return this.t;
+  }
 
 }

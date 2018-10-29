@@ -8,19 +8,19 @@
 
 package cz.petrbalat.xml.ares;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * <p>Java class for seznam_navracenych complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="seznam_navracenych">
  *   &lt;complexContent>
@@ -32,45 +32,41 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "seznam_navracenych", propOrder = {
-    "ausNazvy"
+  "ausNazvy"
 })
 public class SeznamNavracenych {
 
-    @XmlElement(name = "AU_s_nazvy")
-    protected List<AdresaUIRSNazvy> ausNazvy;
+  @XmlElement(name = "AU_s_nazvy")
+  protected List<AdresaUIRSNazvy> ausNazvy;
 
-    /**
-     * Gets the value of the ausNazvy property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the ausNazvy property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getAUSNazvy().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link AdresaUIRSNazvy }
-     * 
-     * 
-     */
-    public List<AdresaUIRSNazvy> getAUSNazvy() {
-        if (ausNazvy == null) {
-            ausNazvy = new ArrayList<AdresaUIRSNazvy>();
-        }
-        return this.ausNazvy;
+  /**
+   * Gets the value of the ausNazvy property.
+   *
+   * <p>
+   * This accessor method returns a reference to the live list,
+   * not a snapshot. Therefore any modification you make to the
+   * returned list will be present inside the JAXB object.
+   * This is why there is not a <CODE>set</CODE> method for the ausNazvy property.
+   *
+   * <p>
+   * For example, to add a new item, do as follows:
+   * <pre>
+   *    getAUSNazvy().add(newItem);
+   * </pre>
+   *
+   *
+   * <p>
+   * Objects of the following type(s) are allowed in the list
+   * {@link AdresaUIRSNazvy }
+   */
+  public List<AdresaUIRSNazvy> getAUSNazvy() {
+    if (ausNazvy == null) {
+      ausNazvy = new ArrayList<AdresaUIRSNazvy>();
     }
+    return this.ausNazvy;
+  }
 
 }

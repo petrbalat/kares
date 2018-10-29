@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for xslt_ks.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -27,35 +27,34 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "xslt_ks")
 @XmlEnum
 public enum XsltKs {
 
-    @XmlEnumValue("klient")
-    KLIENT("klient"),
-    @XmlEnumValue("server")
-    SERVER("server"),
-    @XmlEnumValue("savexml")
-    SAVEXML("savexml");
-    private final String value;
+  @XmlEnumValue("klient")
+  KLIENT("klient"),
+  @XmlEnumValue("server")
+  SERVER("server"),
+  @XmlEnumValue("savexml")
+  SAVEXML("savexml");
+  private final String value;
 
-    XsltKs(String v) {
-        value = v;
-    }
+  XsltKs(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static XsltKs fromValue(String v) {
+    for (XsltKs c : XsltKs.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static XsltKs fromValue(String v) {
-        for (XsltKs c: XsltKs.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

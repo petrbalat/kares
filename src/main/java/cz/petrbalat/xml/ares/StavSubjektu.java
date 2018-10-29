@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Java class for stav_subjektu.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
@@ -26,33 +26,32 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- * 
  */
 @XmlType(name = "stav_subjektu")
 @XmlEnum
 public enum StavSubjektu {
 
-    @XmlEnumValue("Aktivn\u00ed")
-    AKTIVNÍ("Aktivn\u00ed"),
-    @XmlEnumValue("Zanikl\u00fd")
-    ZANIKLÝ("Zanikl\u00fd");
-    private final String value;
+  @XmlEnumValue("Aktivn\u00ed")
+  AKTIVNÍ("Aktivn\u00ed"),
+  @XmlEnumValue("Zanikl\u00fd")
+  ZANIKLÝ("Zanikl\u00fd");
+  private final String value;
 
-    StavSubjektu(String v) {
-        value = v;
-    }
+  StavSubjektu(String v) {
+    value = v;
+  }
 
-    public String value() {
-        return value;
+  public static StavSubjektu fromValue(String v) {
+    for (StavSubjektu c : StavSubjektu.values()) {
+      if (c.value.equals(v)) {
+        return c;
+      }
     }
+    throw new IllegalArgumentException(v);
+  }
 
-    public static StavSubjektu fromValue(String v) {
-        for (StavSubjektu c: StavSubjektu.values()) {
-            if (c.value.equals(v)) {
-                return c;
-            }
-        }
-        throw new IllegalArgumentException(v);
-    }
+  public String value() {
+    return value;
+  }
 
 }

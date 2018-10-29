@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Standardizace adres pro rejstříkové soudy opíše došlý dotaz a přidá k němu nalezenou odpověď
- * 
+ *
  * <p>Java class for stadrs complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="stadrs">
  *   &lt;complexContent>
@@ -33,67 +33,57 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "stadrs", propOrder = {
-    "stadrsDotaz",
-    "stadrsOdpoved"
+  "stadrsDotaz",
+  "stadrsOdpoved"
 })
 public class Stadrs {
 
-    @XmlElement(name = "Stadrs_dotaz", required = true)
-    protected StadrsDotaz stadrsDotaz;
-    @XmlElement(name = "Stadrs_odpoved", required = true)
-    protected StadrsOdpoved stadrsOdpoved;
+  @XmlElement(name = "Stadrs_dotaz", required = true)
+  protected StadrsDotaz stadrsDotaz;
+  @XmlElement(name = "Stadrs_odpoved", required = true)
+  protected StadrsOdpoved stadrsOdpoved;
 
-    /**
-     * Gets the value of the stadrsDotaz property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StadrsDotaz }
-     *     
-     */
-    public StadrsDotaz getStadrsDotaz() {
-        return stadrsDotaz;
-    }
+  /**
+   * Gets the value of the stadrsDotaz property.
+   *
+   * @return possible object is
+   * {@link StadrsDotaz }
+   */
+  public StadrsDotaz getStadrsDotaz() {
+    return stadrsDotaz;
+  }
 
-    /**
-     * Sets the value of the stadrsDotaz property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StadrsDotaz }
-     *     
-     */
-    public void setStadrsDotaz(StadrsDotaz value) {
-        this.stadrsDotaz = value;
-    }
+  /**
+   * Sets the value of the stadrsDotaz property.
+   *
+   * @param value allowed object is
+   *              {@link StadrsDotaz }
+   */
+  public void setStadrsDotaz(StadrsDotaz value) {
+    this.stadrsDotaz = value;
+  }
 
-    /**
-     * Gets the value of the stadrsOdpoved property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link StadrsOdpoved }
-     *     
-     */
-    public StadrsOdpoved getStadrsOdpoved() {
-        return stadrsOdpoved;
-    }
+  /**
+   * Gets the value of the stadrsOdpoved property.
+   *
+   * @return possible object is
+   * {@link StadrsOdpoved }
+   */
+  public StadrsOdpoved getStadrsOdpoved() {
+    return stadrsOdpoved;
+  }
 
-    /**
-     * Sets the value of the stadrsOdpoved property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link StadrsOdpoved }
-     *     
-     */
-    public void setStadrsOdpoved(StadrsOdpoved value) {
-        this.stadrsOdpoved = value;
-    }
+  /**
+   * Sets the value of the stadrsOdpoved property.
+   *
+   * @param value allowed object is
+   *              {@link StadrsOdpoved }
+   */
+  public void setStadrsOdpoved(StadrsOdpoved value) {
+    this.stadrsOdpoved = value;
+  }
 
 }
