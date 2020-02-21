@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinVersion = '1.3.50'
+        kotlinVersion = '1.3.61'
     }
     repositories {
         mavenLocal()
@@ -13,14 +13,14 @@ buildscript {
 
 apply plugin: 'kotlin'
 
-version = '0.4.1'
+version = '0.4.3'
 sourceCompatibility = 1.8
 compileJava.options.encoding = 'UTF-8'
 compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "12"
 }
 compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "12"
 }
 
 repositories {
